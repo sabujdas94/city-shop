@@ -21,7 +21,7 @@
 	                        <div class="col">
 	                            <div class="mtt-footer-signup-des">
 	                                <div class="row">
-	                                    <div class="col-md-2 col"><img src="http://localhost/wordpress/wp-content/uploads/2019/10/envelope.png" alt=""></div>
+	                                    <div class="col-md-2 col"><img src="<?php echo get_template_directory_uri(); ?>/img/envelope.png" alt=""></div>
 	                                    <div class="col-md-10 col">
 	                                        <h5 class="font-weight-bold">SUBSCRIBE TO KNOW OUR NEW <br> PRODUCTS LAUNCH $ SPECIAL OFFERS</h5>
 	                                    </div>

@@ -618,9 +618,9 @@ a {
 	color: royalblue;
 }
 
-a:visited {
+/*a:visited {
 	color: purple;
-}
+}*/
 
 a:hover, a:focus, a:active {
 	color: midnightblue;
@@ -1074,6 +1074,7 @@ ul{
 	background-color: #08295e;
 }
 /*nav area*/
+.mtt-nav-right li.menu-item a,
 .mtt-nav-right li.nav-item a {
     padding-left: 0px !important;
 }
@@ -1105,6 +1106,7 @@ a.nav-link .fa {
 .mtt-nav-area a{
 	color:#f9f9f9;
 }
+.menu-item,
 .nav-item {
 	overflow: hidden;
 	padding-bottom: 15px;
@@ -1120,9 +1122,11 @@ a.nav-link .fa {
 	height: 0;
 	visibility: hidden;
 }
+.menu-item:hover,
 .nav-item:hover{
 	overflow: visible;
 }
+.menu-item:hover > .mtt-megamenu,
 .nav-item:hover > .mtt-megamenu {
 	height: auto;
     transition: all 0.7s ease-in-out;
@@ -1155,13 +1159,8 @@ a.nav-link .fa {
 }
 
 .mtt-hero-slider{
-	background-image: url(img/slider.jpg);
-	background-repeat: none;
-	background-position: center center;
-	-webkit-background-size: cover cover;
-	background-size: 100% 100%;
 	width: 100%;
-	height: 600px;
+	margin-top: -10px;
 }
 
 /*mtt bestseller section*/

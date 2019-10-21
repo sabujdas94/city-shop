@@ -31,6 +31,14 @@
                     <div class="col-md-5">
                         <div class="mtt-nav-left">
                             <nav class="mtt-nav">
+<!-- 							<?php
+								// wp_nav_menu( array(
+								//     'menu'          => 'header_left_menu',
+                                //      'menu_class'    => 'nav',
+                                //      'walker'        => walker_class()
+								// ) );
+                                ?>
+-->
                                 <ul class="nav">
                                     <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#">Products</a>
@@ -39,7 +47,7 @@
                                                 <div class="row">
                                                     <div class="col">
                                                         <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="img/11.jpg" alt=""></a>
+                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
                                                                 <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
                                                             </a>
@@ -47,7 +55,7 @@
                                                     </div>
                                                     <div class="col">
                                                         <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="img/11.jpg" alt=""></a>
+                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
                                                                 <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
                                                             </a>
@@ -55,7 +63,7 @@
                                                     </div>
                                                     <div class="col">
                                                         <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="img/11.jpg" alt=""></a>
+                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
                                                                 <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
                                                             </a>
@@ -63,7 +71,7 @@
                                                     </div>
                                                     <div class="col">
                                                         <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="img/11.jpg" alt=""></a>
+                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
                                                                 <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
                                                             </a>
@@ -71,7 +79,7 @@
                                                     </div>
                                                     <div class="col">
                                                         <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="img/11.jpg" alt=""></a>
+                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
                                                                 <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
                                                             </a>
@@ -79,7 +87,7 @@
                                                     </div>
                                                     <div class="col">
                                                         <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="img/11.jpg" alt=""></a>
+                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
                                                                 <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
                                                             </a>
@@ -87,7 +95,7 @@
                                                     </div>
                                                     <div class="col">
                                                         <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="img/11.jpg" alt=""></a>
+                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
                                                                 <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
                                                             </a>
@@ -97,7 +105,7 @@
                                                 <div class="row">
                                                     <div class="col">
                                                         <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="img/11.jpg" alt=""></a>
+                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
                                                                 <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
                                                             </a>
@@ -105,7 +113,7 @@
                                                     </div>
                                                     <div class="col">
                                                         <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="img/11.jpg" alt=""></a>
+                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
                                                                 <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
                                                             </a>
@@ -113,7 +121,7 @@
                                                     </div>
                                                     <div class="col">
                                                         <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="img/11.jpg" alt=""></a>
+                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
                                                                 <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
                                                             </a>
@@ -121,7 +129,7 @@
                                                     </div>
                                                     <div class="col">
                                                         <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="img/11.jpg" alt=""></a>
+                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
                                                                 <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
                                                             </a>
@@ -129,7 +137,7 @@
                                                     </div>
                                                     <div class="col">
                                                         <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="img/11.jpg" alt=""></a>
+                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
                                                                 <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
                                                             </a>
@@ -137,7 +145,7 @@
                                                     </div>
                                                     <div class="col">
                                                         <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="img/11.jpg" alt=""></a>
+                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
                                                                 <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
                                                             </a>

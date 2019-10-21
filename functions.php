@@ -44,7 +44,8 @@ if ( ! function_exists( 'city_shop_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'city-shop' ),
+			'header_left_menu' => esc_html__( 'Header Left Menu', 'city-shop' ),
+			'header_right_menu' => esc_html__( 'Header Right Menu', 'city-shop' ),
 		) );
 
 		/*
