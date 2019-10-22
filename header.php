@@ -25,7 +25,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'city-shop' ); ?></a>
 
 	<header id="masthead" class="header mtt-header site-header">
-		<div class="mtt-nav-area">
+		<div class="mtt-nav-area <?php// if(is_home()): echo 'mtt-transparent-nav-area'; endif; ?>">
 			<div class="container-fluid">
 				<div class="row">
                     <div class="col-md-5">
@@ -40,8 +40,8 @@
                                 ?>
 -->
                                 <ul class="nav">
-                                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Products</a>
+                                    <li class="nav-item"><a class="nav-link active" href="<?php echo home_url();?>">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="http://localhost/finesscity/shop/">Products</a>
                                         <ul class="mtt-megamenu">
                                             <div class="mtt-megamenu-content">
                                                 <div class="row">
@@ -49,7 +49,7 @@
                                                         <li class="mtt-megamenu-item">
                                                             <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
+                                                                <h6 class="mtt-megamenu-item-title text-center">Titanium Chopistics</h6>
                                                             </a>
                                                         </li>
                                                     </div>
@@ -57,7 +57,7 @@
                                                         <li class="mtt-megamenu-item">
                                                             <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
+                                                                <h6 class="mtt-megamenu-item-title text-center">Titanium Chopistics</h6>
                                                             </a>
                                                         </li>
                                                     </div>
@@ -65,7 +65,7 @@
                                                         <li class="mtt-megamenu-item">
                                                             <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
+                                                                <h6 class="mtt-megamenu-item-title text-center">Titanium Chopistics</h6>
                                                             </a>
                                                         </li>
                                                     </div>
@@ -73,7 +73,7 @@
                                                         <li class="mtt-megamenu-item">
                                                             <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
+                                                                <h6 class="mtt-megamenu-item-title text-center">Titanium Chopistics</h6>
                                                             </a>
                                                         </li>
                                                     </div>
@@ -81,7 +81,7 @@
                                                         <li class="mtt-megamenu-item">
                                                             <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
+                                                                <h6 class="mtt-megamenu-item-title text-center">Titanium Chopistics</h6>
                                                             </a>
                                                         </li>
                                                     </div>
@@ -89,7 +89,7 @@
                                                         <li class="mtt-megamenu-item">
                                                             <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
+                                                                <h6 class="mtt-megamenu-item-title text-center">Titanium Chopistics</h6>
                                                             </a>
                                                         </li>
                                                     </div>
@@ -97,7 +97,7 @@
                                                         <li class="mtt-megamenu-item">
                                                             <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
+                                                                <h6 class="mtt-megamenu-item-title text-center">Titanium Chopistics</h6>
                                                             </a>
                                                         </li>
                                                     </div>
@@ -107,7 +107,7 @@
                                                         <li class="mtt-megamenu-item">
                                                             <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
+                                                                <h6 class="mtt-megamenu-item-title text-center">Titanium Chopistics</h6>
                                                             </a>
                                                         </li>
                                                     </div>
@@ -115,7 +115,7 @@
                                                         <li class="mtt-megamenu-item">
                                                             <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
+                                                                <h6 class="mtt-megamenu-item-title text-center">Titanium Chopistics</h6>
                                                             </a>
                                                         </li>
                                                     </div>
@@ -123,7 +123,7 @@
                                                         <li class="mtt-megamenu-item">
                                                             <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
+                                                                <h6 class="mtt-megamenu-item-title text-center">Titanium Chopistics</h6>
                                                             </a>
                                                         </li>
                                                     </div>
@@ -131,7 +131,7 @@
                                                         <li class="mtt-megamenu-item">
                                                             <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
+                                                                <h6 class="mtt-megamenu-item-title text-center">Titanium Chopistics</h6>
                                                             </a>
                                                         </li>
                                                     </div>
@@ -139,7 +139,7 @@
                                                         <li class="mtt-megamenu-item">
                                                             <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
+                                                                <h6 class="mtt-megamenu-item-title text-center">Titanium Chopistics</h6>
                                                             </a>
                                                         </li>
                                                     </div>
@@ -147,7 +147,7 @@
                                                         <li class="mtt-megamenu-item">
                                                             <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
                                                             <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">This is title</h6>
+                                                                <h6 class="mtt-megamenu-item-title text-center">Titanium Chopistics</h6>
                                                             </a>
                                                         </li>
                                                     </div>
@@ -166,9 +166,9 @@
                                             </div>
                                         </ul>
                                     </li>
-                                    <li class="nav-item"><a class="nav-link" href="accessories.html">Accesories</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="wholesale.html">Wholesale</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Customerce</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>/accessories/">Accesories</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>/wholesale">Wholesale</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>/why-titanium">Why Titanium</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -182,11 +182,11 @@
                         <div class="mtt-nav-right">
                             <nav class="mtt-nav">
                                 <ul class="nav">
-                                    <li class="nav-item"><a class="nav-link active" href="#">Our Story</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-heart-o"></i> 2-Wishlist</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Cart .0,00$ <i class="fa fa-shopping-bag"></i></a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">USD</a></li>
+                                    <li class="nav-item"><a class="nav-link active" href="<?php echo home_url(); ?>/why-titanium">Our Story</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>"><i class="fa fa-heart-o"></i> 2-Wishlist</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>/my-account">Login</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>/cart">Cart .0,00$ <i class="fa fa-shopping-bag"></i></a></li>
+                                    <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>">USD</a></li>
                                 </ul>
                             </nav>
                         </div>

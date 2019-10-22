@@ -5,8 +5,8 @@
 **@Since Version 1.0.0
 **
 **/
-	get_header(); ?>
-
+	get_header();
+?>
 
 		<main>
 			<section class="section mtt-hero-area-section">
@@ -15,7 +15,9 @@
 						<div class="col-md-12 p-0">
 							<div class="mtt-hero-area">
 								<div class="mtt-hero-slider">
-									<?php add_revslider('slider-1'); ?>
+									<?php if('revslider'){
+										//add_revslider('slider-1');
+									}; ?>
 								</div>
 							</div><!-- .mtt-hero-area -->
 						</div>

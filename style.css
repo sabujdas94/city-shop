@@ -1116,6 +1116,7 @@ a.nav-link .fa {
 	position: absolute;
 	top:100%;
 	left: 0;
+	margin-left: 0px;
 	background-color: #fff;
 	transition: opacity 0.7s ease-in-out;
 	opacity: 0;
