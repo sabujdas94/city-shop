@@ -1344,6 +1344,7 @@ a.nav-link .fa {
 .mtt-footer-right a{
 	color:#000;
 	font-size: 12px;
+	text-transform: uppercase;
 }
 .mtt-footer-bottom{
 	font-size: 12px;
@@ -1354,8 +1355,11 @@ a.nav-link .fa {
 }
 .mtt-footer-bottom .nav a{
 	color:#000;
-	padding-top: 0;
-    padding-bottom: 0;
+	padding: 0px;
+	padding-left: 10px;
+}
+.mtt-footer-bottom .nav li:first-child a{
+	padding-left: 0px;
 }
 
 /*==========================

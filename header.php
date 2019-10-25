@@ -32,10 +32,10 @@
                         <div class="mtt-nav-left">
 
                             <!-- The mobile menu -->
-                            <div class="mtt-mobile-menu">
+                            <!-- <div class="mtt-mobile-menu">
                                 <a href="#menu"></a>
                                 <!-- The mobile menu -->
-                                <nav id="menu">
+                                <!-- <nav id="menu">
                                     <ul>
                                         <li><a href="/">Home</a></li>
                                         <li><a href="/work">Our work</a></li>
@@ -60,8 +60,8 @@
                                         </li>
                                         <li><a href="/contact">Contact</a></li>
                                     </ul>
-                                </nav>
-                            </div>
+                                </nav> -->
+                            <!-- </div>  -->
 
                             <nav class="mtt-nav">
 <!-- 							<?php
