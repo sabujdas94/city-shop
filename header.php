@@ -176,7 +176,7 @@
                     <div class="col-md-2">
                         <div class="mtt-logo site-branding">
                             <?php
-                                if( the_custom_logo() != '' ){
+                                if( get_custom_logo() != '' ){
                                     the_custom_logo();
                                 }else {
                                     $home_url = home_url();
@@ -208,28 +208,28 @@
                                  <!-- The mobile menu -->
                                 <nav id="mtt-mmenu">
                                     <ul>
-                                        <li><a href="/">Home</a></li>
-                                        <li><a href="/work">Our work</a></li>
-                                        <li><span>About us</span>
+                                        <li><a href="<?php echo home_url();?>">Home</a></li>
+                                        <li><a href="<?php echo home_url();?>/wholesale">Home</a></li>
+                                        <li><span>Products</span>
                                             <ul>
-                                                <li><a href="/about/history">History</a></li>
-                                                <li><span>The team</span>
+                                                <li><a href="<?php echo home_url(); ?>/accessories/">History</a></li>
+                                                <li><span>More Products</span>
                                                     <ul>
-                                                        <li><a href="/about/team/management">Management</a></li>
-                                                        <li><a href="/about/team/sales">Sales</a></li>
-                                                        <li><a href="/about/team/development">Development</a></li>
+                                                        <li><a href="<?php echo home_url(); ?>/accessories/">Management</a></li>
+                                                        <li><a href="<?php echo home_url(); ?>/accessories/">Sales</a></li>
+                                                        <li><a href="<?php echo home_url(); ?>/accessories/">Development</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li><span>Services</span>
+                                        <li><span>Account</span>
                                             <ul>
-                                                <li><a href="/services/design">Design</a></li>
-                                                <li><a href="/services/development">Development</a></li>
-                                                <li><a href="/services/marketing">Marketing</a></li>
+                                                <li><a href="<?php echo home_url(); ?>/my-account/">Design</a></li>
+                                                <li><a href="<?php echo home_url(); ?>/cart/">Development</a></li>
+                                                <li><a href="<?php echo home_url(); ?>/checkout/">Marketing</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="/contact">Contact</a></li>
+                                        <li><a href="<?php echo home_url(); ?>/why-titanium/">Why Titanium</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -237,7 +237,7 @@
                     <div class="col-4">
                         <div class="mtt-logo site-branding">
                             <?php
-                                if( the_custom_logo() != '' ){
+                                if( get_custom_logo() != '' ){
                                     the_custom_logo();
                                 }else {
                                     $home_url = home_url();

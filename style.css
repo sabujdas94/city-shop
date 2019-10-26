@@ -1174,6 +1174,9 @@ a.nav-link .fa {
 }
 
 /*mtt site main logo*/
+.mtt-logo a {
+	text-decoration: none;
+}
 .mtt-logo h2 {
 	color: #fff;
 	padding: 10px 0px;
