@@ -18,21 +18,21 @@
 	            <div class="container">
 	                <div class="mtt-footer-signup">
 	                    <div class="row">
-	                        <div class="col">
+	                        <div class="col-md-6 col-sm-12">
 	                            <div class="mtt-footer-signup-des">
 	                                <div class="row">
-	                                    <div class="col-md-2 col"><img src="<?php echo get_template_directory_uri(); ?>/img/envelope.png" alt=""></div>
-	                                    <div class="col-md-10 col">
+	                                    <div class="col-md-2 col-sm-2 col-xs-2"><img src="<?php echo get_template_directory_uri(); ?>/img/envelope.png" alt=""></div>
+	                                    <div class="col-md-10 col-sm-10 col-xs-10">
 	                                        <h5 class="font-weight-bold">SUBSCRIBE TO KNOW OUR NEW <br> PRODUCTS LAUNCH $ SPECIAL OFFERS</h5>
 	                                    </div>
 	                                </div>
 	                            </div>
 	                        </div>
-	                        <div class="col">
+	                        <div class="col-md-6 col-sm-12">
 	                            <div class="mtt-footer-signup-form">
 	                                <form action="#">
 	                                    <input type="email" placeholder="Your Email">
-	                                    <a class="btn rounded-0 mtt-btn text-uppercase px-5" href="#">sign up</a>
+	                                    <a class="btn rounded-0 mtt-btn text-uppercase px-xs-1" href="#">sign up</a>
 	                                </form>
 	                            </div>
 	                        </div>
@@ -103,12 +103,12 @@
                     <div class="col-md-12">
                         <div class="mtt-footer-bottom">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-12">
                                     <div class="mtt-copywrite">
                                         <span>&copy; FINESCITY 2019, ALL RIGHTS RESERVED</span>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-sm-12">
                                     <ul class="nav">
                                         <li class="nav-item"><a class="nav-link" href="#">TERMS & CONDITIONS</a></li>
                                         <li class="nav-item"><a class="nav-link" href="#">PRIVACY POLICY</a></li>

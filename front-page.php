@@ -16,7 +16,7 @@
 							<div class="mtt-hero-area">
 								<div class="mtt-hero-slider">
 									<?php if('revslider'){
-										//add_revslider('slider-1');
+										add_revslider('slider-1');
 									}; ?>
 								</div>
 							</div><!-- .mtt-hero-area -->
@@ -34,7 +34,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-3 col-sm-12">
+						<div class="col-md-3 col-sm-6">
 							<article class="mtt-product text-center">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/p1.jpg" alt="">
 								<h6>Titanium Chopistics With Color Case</h6>
@@ -42,7 +42,7 @@
 								<a class="btn rounded-0 mtt-product-btn" href="#">More Details</a>
 							</article>
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-3 col-sm-6">
 							<article class="mtt-product text-center">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/p2.jpg" alt="">
 								<h6>3 Piece Titenium Cutlery Set</h6>
@@ -50,7 +50,7 @@
 								<a class="btn rounded-0 mtt-product-btn" href="#">More Details</a>
 							</article>
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-3 col-sm-6">
 							<article class="mtt-product text-center">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/p3.jpg" alt="">
 								<h6>Titenium Camping CookWare Set 3-Piece</h6>
@@ -58,7 +58,7 @@
 								<a class="btn rounded-0 mtt-product-btn" href="#">More Details</a>
 							</article>
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-3 col-sm-6">
 							<article class="mtt-product text-center">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/p4.jpg" alt="">
 								<h6>Titenium Mug With Lid</h6>
@@ -195,12 +195,12 @@
 			<section class="section mtt-finess-story-section">
 				<div class="container">
 					<div class="row mtt-finess-story-row">
-						<div class="col-md-6">
+						<div class="col-md-6 col-sm-12">
 							<div class="mtt-finess-story-img">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/5.jpg" alt="">
 							</div>
 						</div>
-						<div class="col-md-6">
+						<div class="col-md-6 col-sm-12">
 							<div class="mtt-finess-story text-center">
 								<h6 class="text-primary">FINESCITY STORY</h6>
 								<h5 class="font-weight-bold mb-3">FINEST IN TITENIUM PRODUCTS</h5>

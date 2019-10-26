@@ -108,7 +108,7 @@
 							<div class="row">
 								<div class="col-2">
 									<div class="mtt-charecteristic-img">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon1.png" alt="">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon6.png" alt="">
 									</div>
 								</div>
 								<div class="col-10">
@@ -121,7 +121,7 @@
 							<div class="row">
 								<div class="col-2">
 									<div class="mtt-charecteristic-img">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon1.png" alt="">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon7.png" alt="">
 									</div>
 								</div>
 								<div class="col-10">
@@ -134,7 +134,7 @@
 							<div class="row">
 								<div class="col-2">
 									<div class="mtt-charecteristic-img">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon1.png" alt="">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon8.png" alt="">
 									</div>
 								</div>
 								<div class="col-10">
@@ -147,7 +147,7 @@
 							<div class="row">
 								<div class="col-2">
 									<div class="mtt-charecteristic-img">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon1.png" alt="">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon9.png" alt="">
 									</div>
 								</div>
 								<div class="col-10">
@@ -162,7 +162,7 @@
 							<div class="row">
 								<div class="col-2">
 									<div class="mtt-charecteristic-img">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon1.png" alt="">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon4.png" alt="">
 									</div>
 								</div>
 								<div class="col-10">
@@ -175,7 +175,7 @@
 							<div class="row">
 								<div class="col-2">
 									<div class="mtt-charecteristic-img">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon1.png" alt="">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon3.png" alt="">
 									</div>
 								</div>
 								<div class="col-10">
@@ -188,7 +188,7 @@
 							<div class="row">
 								<div class="col-2">
 									<div class="mtt-charecteristic-img">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon1.png" alt="">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon5.png" alt="">
 									</div>
 								</div>
 								<div class="col-10">
@@ -201,7 +201,7 @@
 							<div class="row">
 								<div class="col-2">
 									<div class="mtt-charecteristic-img">
-										<img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon1.png" alt="">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon2.png" alt="">
 									</div>
 								</div>
 								<div class="col-10">

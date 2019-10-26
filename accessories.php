@@ -1,6 +1,6 @@
 <?php
 
-/* Template Name: Accesssories Template
+/* Template Name: Accessories Template
 **
 **@Since Version 1.0.0
 **
@@ -23,7 +23,7 @@
 						<div class="col-md-12">
 							<div class="mtt-categories text-center">
 								<div class="row">
-									<div class="col">
+									<div class="col-md-3 col-sm-6 col-xs-12">
 										<div class="mtt-category">
 											<div class="row">
 												<div class="col p-0">
@@ -35,7 +35,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col">
+									<div class="col-md-3 col-sm-6 col-xs-12">
 										<div class="mtt-category">
 											<div class="row">
 												<div class="col p-0">
@@ -47,7 +47,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col">
+									<div class="col-md-3 col-sm-6 col-xs-12">
 										<div class="mtt-category">
 											<div class="row">
 												<div class="col p-0">
@@ -59,7 +59,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col">
+									<div class="col-md-3 col-sm-6 col-xs-12">
 										<div class="mtt-category">
 											<div class="row">
 												<div class="col p-0">
