@@ -47,53 +47,13 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="mtt-footer-left">
-                            <img src="http://localhost/wordpress/wp-content/uploads/2019/10/logo-black.png" alt="">
-                            <h6 class="mtt-footer-title">GET IN TOUCH</h6>
-                            <span class="mtt-mail">SUPPORTS@FINESCITY.COM</span>
-                            <ul class="mtt-footer-social-icon">
-                                <li><i class="fa fa-facebook"></i></li>
-                                <li><i class="fa fa-twitter"></i></li>
-                                <li><i class="fa fa-youtube"></i></li>
-                                <li><i class="fa fa-instagram"></i></li>
-                            </ul>
+                            <?php dynamic_sidebar('footer-top-description-sidebar'); ?>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="mtt-footer-right">
                             <div class="row">
-                                <div class="col-md-4">
-                                    <div class="mtt-footer-finescity">
-                                        <h6 class="mtt-footer-title">FINESCITY</h6>
-                                        <ul>
-                                            <li><a href="#">SHOP</a></li>
-                                            <li><a href="#">WHOLESALEs</a></li>
-                                            <li><a href="#">CUSTOMERS</a></li>
-                                            <li><a href="#">OUR STORY</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="mtt-footer-c-service">
-                                        <h6 class="mtt-footer-title">CUSTOMER SERVICESS</h6>
-                                        <ul>
-                                            <li><a href="#">SHOP</a></li>
-                                            <li><a href="#">WHOLESALEs</a></li>
-                                            <li><a href="#">CUSTOMERS</a></li>
-                                            <li><a href="#">OUR STORY</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="mtt-footer-ac">
-                                        <h6 class="mtt-footer-title">MY ACCOUNT</h6>
-                                        <ul>
-                                            <li><a href="#">SHOP</a></li>
-                                            <li><a href="#">WHOLESALEs</a></li>
-                                            <li><a href="#">CUSTOMERS</a></li>
-                                            <li><a href="#">OUR STORY</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <?php dynamic_sidebar('footer-top-sidebar'); ?>
                             </div>
                         </div>
                     </div>
@@ -105,14 +65,25 @@
                             <div class="row">
                                 <div class="col-md-6 col-sm-12">
                                     <div class="mtt-copywrite">
-                                        <span>&copy; FINESCITY 2019, ALL RIGHTS RESERVED</span>
+                                        <span>
+                                        <?php 
+                                            if(get_theme_mod('copyright_text')!=''){
+                                                echo get_theme_mod('copyright_text');
+                                            }else{
+                                                echo "&copy; FINESCITY 2019, ALL RIGHTS RESERVED";
+                                            }
+                                        ?>
+                                        </span>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-sm-12">
-                                    <ul class="nav">
-                                        <li class="nav-item"><a class="nav-link" href="#">TERMS & CONDITIONS</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="#">PRIVACY POLICY</a></li>
-                                    </ul>
+                                <div class="col-md-6">
+                                <!-- mtt footer menu -->
+                                <?php
+                                    wp_nav_menu( array(
+                                         'menu'          => 'footer_menu',
+                                          'menu_class'    => 'nav'
+                                    ) );
+                                ?>
                                 </div>
                             </div>
                         </div>
@@ -120,7 +91,7 @@
                 </div>
             </div>
         </div>
-    </footer><!-- #colophon -->
+    </footer><!-- #footer -->
 
 <?php wp_footer(); ?>
 

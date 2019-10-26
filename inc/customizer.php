@@ -25,6 +25,26 @@ function city_shop_customize_register( $wp_customize ) {
 			'render_callback' => 'city_shop_customize_partial_blogdescription',
 		) );
 	}
+
+
+	/* --------- MTT Footer Options Register ------------ */
+	
+	$wp_customize->add_section('footer_section', array(
+		'title' => __('Footer Options', 'city-shop'),
+		'priority' => 10
+	));
+	// Footer Copyright Text Customization
+	$wp_customize->add_setting('copyright_text', array(
+		'default' => __('&copy; FINESCITY 2019, ALL RIGHTS RESERVED', 'city-shop'),
+		'transport' => 'postMessage'
+	));
+	$wp_customize->add_control('copyright_text', array(
+		'section' => 'footer_section',
+		'label' => __('Enter Footer Copyright Text:', 'city-shop'),
+		'type' => 'text'
+	));
+
+
 }
 add_action( 'customize_register', 'city_shop_customize_register' );
 
@@ -45,6 +65,7 @@ function city_shop_customize_partial_blogname() {
 function city_shop_customize_partial_blogdescription() {
 	bloginfo( 'description' );
 }
+
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.

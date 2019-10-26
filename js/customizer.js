@@ -39,4 +39,13 @@
 			}
 		} );
 	} );
+
+	// user customize scripts for copyright text
+	wp.customize('copyright_text', function(value){
+		value.bind(function(to){
+			$('.mtt-copywrite').text(to);
+		})
+	});
+
+
 } )( jQuery );

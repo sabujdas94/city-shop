@@ -46,6 +46,7 @@ if ( ! function_exists( 'city_shop_setup' ) ) :
 		register_nav_menus( array(
 			'header_left_menu' => esc_html__( 'Header Left Menu', 'city-shop' ),
 			'header_right_menu' => esc_html__( 'Header Right Menu', 'city-shop' ),
+			'footer_menu' => esc_html__( 'Footer Menu', 'city-shop' ),
 		) );
 
 		/*
@@ -113,6 +114,24 @@ function city_shop_widgets_init() {
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Top Sidebar Description', 'city-shop' ),
+		'id'            => 'footer-top-description-sidebar',
+		'description'   => esc_html__( 'Add widgets here.', 'city-shop' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h6 class="mtt-footer-title">',
+		'after_title'   => '</h6>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Top Sidebar', 'city-shop' ),
+		'id'            => 'footer-top-sidebar',
+		'description'   => esc_html__( 'Add widgets here.', 'city-shop' ),
+		'before_widget' => '<div class="col-md-4"><section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section></div>',
+		'before_title'  => '<h6 class="mtt-footer-title">',
+		'after_title'   => '</h6>',
 	) );
 }
 add_action( 'widgets_init', 'city_shop_widgets_init' );
