@@ -1012,6 +1012,14 @@ Custom Style
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'brandon_grotesquebold_italic';
+    src: url('brandon-grotesque-bold-italic-58a8a48221563-webfont.woff2') format('woff2'),
+         url('brandon-grotesque-bold-italic-58a8a48221563-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /*global css style*/
 *{
@@ -1162,7 +1170,7 @@ a.nav-link .fa {
 
 .mtt-hero-slider{
 	width: 100%;
-	margin-top: -10px;
+	margin-top: -15px;
 }
 
 /*mtt site main logo*/
@@ -1347,6 +1355,7 @@ a.nav-link .fa {
 	padding: 10px;
 	border: 1px solid #ccc;
 	border-radius: 100%;
+	color: #000;
 }
 .mtt-footer-title{
 	color:#999;
@@ -1601,5 +1610,30 @@ a.nav-link .fa {
 	.mtt-accessories-section .mtt-categories,
 	.mtt-category-section .mtt-categories {
 		padding: 0px;
+	}
+	.mtt-footer-signup-form input{
+		width: 200px;
+	}
+	.mtt-footer-signup-des{
+		text-align: center;
+	}
+	.mtt-copywrite{
+		text-align: center;
+	}
+	.mtt-footer-bottom .nav {
+    	float: none;
+    	width: 80%;
+    	margin: 0px auto;
+    	margin-top: 15px;
+	}
+	.mtt-category{
+		padding: 10px 0px;
+	}
+	.mtt-product:hover .mtt-product-btn{
+		top:230px;
+	}
+	.mtt-footer-signup-form form {
+    	float: none;
+    	text-align: center;
 	}
 }
