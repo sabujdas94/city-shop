@@ -35,9 +35,10 @@ function city_shop_scripts() {
 	wp_enqueue_script( 'city-shop-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'city-shop-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	
+	wp_enqueue_script( 'mmenu-js-polyfills', get_template_directory_uri() . '/mmenu/dist/mmenu.polyfills.js', array(), '20202', true );
 
 	wp_enqueue_script( 'mmenu-js', get_template_directory_uri() . '/mmenu/dist/mmenu.js', array(), '20201', true );
-	wp_enqueue_script( 'mmenu-js-polyfills', get_template_directory_uri() . '/mmenu/dist/mmenu.polyfills.js', array(), '20202', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

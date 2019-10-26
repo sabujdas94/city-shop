@@ -27,51 +27,19 @@
 	<header id="masthead" class="header mtt-header site-header">
 		<div class="mtt-nav-area <?php// if(is_home()): echo 'mtt-transparent-nav-area'; endif; ?>">
 			<div class="container-fluid">
-				<div class="row">
+				<div class=" mtt-nav-area-row row">
                     <div class="col-md-5">
                         <div class="mtt-nav-left">
-
-                            <!-- The mobile menu -->
-                            <!-- <div class="mtt-mobile-menu">
-                                <a href="#menu"></a>
-                                <!-- The mobile menu -->
-                                <!-- <nav id="menu">
-                                    <ul>
-                                        <li><a href="/">Home</a></li>
-                                        <li><a href="/work">Our work</a></li>
-                                        <li><span>About us</span>
-                                            <ul>
-                                                <li><a href="/about/history">History</a></li>
-                                                <li><span>The team</span>
-                                                    <ul>
-                                                        <li><a href="/about/team/management">Management</a></li>
-                                                        <li><a href="/about/team/sales">Sales</a></li>
-                                                        <li><a href="/about/team/development">Development</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><span>Services</span>
-                                            <ul>
-                                                <li><a href="/services/design">Design</a></li>
-                                                <li><a href="/services/development">Development</a></li>
-                                                <li><a href="/services/marketing">Marketing</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="/contact">Contact</a></li>
-                                    </ul>
-                                </nav> -->
-                            <!-- </div>  -->
-
                             <nav class="mtt-nav">
-<!-- 							<?php
+                                <!--
+							     <?php
 								// wp_nav_menu( array(
 								//     'menu'          => 'header_left_menu',
                                 //      'menu_class'    => 'nav',
                                 //      'walker'        => walker_class()
 								// ) );
                                 ?>
--->
+                                -->
                                 <ul class="nav">
                                     <li class="nav-item"><a class="nav-link active" href="<?php echo home_url();?>">Home</a></li>
                                     <li class="nav-item"><a class="nav-link" href="http://localhost/finesscity/shop/">Products</a>
@@ -208,7 +176,14 @@
                     </div><!-- .col-md-5 -->
                     <div class="col-md-2">
                         <div class="mtt-logo site-branding">
-                            <?php the_custom_logo(); ?>
+                            <?php
+                                if( the_custom_logo() != '' ){
+                                    the_custom_logo();
+                                }else {
+                                    $home_url = home_url();
+                                    echo '<a href=' . $home_url . '><h2>' . get_bloginfo('name') . '</h2></a>';
+                                };
+                            ?>
                         </div>
                     </div><!--.col-md-2 -->
                     <div class="col-md-5">
@@ -225,6 +200,65 @@
                         </div>
                     </div><!-- .col-md-5 -->
                 </div><!-- .row -->
+                <!-- for mobile menu only -->
+                <div class="row mtt-mobile-menu-row">
+                    <div class="col-4">
+                            <!-- The mobile menu -->
+                            <div class="mtt-mobile-menu">
+                                <a class="mtt-mmenu-collaps-btn" href="#mtt-mmenu"><i class="fa fa-bars"></i></a>
+                                 <!-- The mobile menu -->
+                                <nav id="mtt-mmenu">
+                                    <ul>
+                                        <li><a href="/">Home</a></li>
+                                        <li><a href="/work">Our work</a></li>
+                                        <li><span>About us</span>
+                                            <ul>
+                                                <li><a href="/about/history">History</a></li>
+                                                <li><span>The team</span>
+                                                    <ul>
+                                                        <li><a href="/about/team/management">Management</a></li>
+                                                        <li><a href="/about/team/sales">Sales</a></li>
+                                                        <li><a href="/about/team/development">Development</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><span>Services</span>
+                                            <ul>
+                                                <li><a href="/services/design">Design</a></li>
+                                                <li><a href="/services/development">Development</a></li>
+                                                <li><a href="/services/marketing">Marketing</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="/contact">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mtt-logo site-branding">
+                            <?php
+                                if( the_custom_logo() != '' ){
+                                    the_custom_logo();
+                                }else {
+                                    $home_url = home_url();
+                                    echo '<a href=' . $home_url . '><h2>' . get_bloginfo('name') . '</h2></a>';
+                                };
+                            ?>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mtt-nav-right">
+                            <nav class="mtt-nav">
+                                <ul class="nav">
+                                    <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>"><i class="fa fa-heart-o"></i></a></li>
+                                    <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>/cart"><i class="fa fa-shopping-bag"></i></a></li>
+                                    <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>/my-account">Login</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
 			</div><!-- #container-fluid -->
 		</div><!-- .mtt-nav-area -->
 	</header><!-- #masthead -->

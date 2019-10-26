@@ -93,6 +93,19 @@
         </div>
     </footer><!-- #footer -->
 
+    <script>
+        document.addEventListener(
+            "DOMContentLoaded", () => {
+                new Mmenu( "#mtt-mmenu", {
+                   "extensions": [
+                      "pagedim-black"
+                   ],
+                   "counters": true
+                });
+            }
+        );
+    </script>
+
 <?php wp_footer(); ?>
 
 </body>

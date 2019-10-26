@@ -1073,6 +1073,7 @@ ul{
 .mtt-nav-popup i{
 	background-color: #08295e;
 }
+
 /*nav area*/
 .mtt-nav-right li.menu-item a,
 .mtt-nav-right li.nav-item a {
@@ -1162,6 +1163,17 @@ a.nav-link .fa {
 .mtt-hero-slider{
 	width: 100%;
 	margin-top: -10px;
+}
+
+/*mtt site main logo*/
+.mtt-logo h2 {
+	color: #fff;
+	padding: 10px 0px;
+	text-align: center;
+}
+.mtt-logo img{
+	max-width: 100%;
+	max-height: 100%;
 }
 
 /*mtt bestseller section*/
@@ -1534,12 +1546,50 @@ a.nav-link .fa {
 	border-bottom: 1px solid #ccc;
 }
 
+
+/*mtt Mobile menu by mmenu*/
+
+.mtt-mobile-menu .mtt-mmenu-collaps-btn {
+	z-index: 999;
+}
+.mtt-mobile-menu .mtt-mmenu-collaps-btn i{
+	font-size: 30px;
+	color: #000;
+	padding: 12px 0px;
+}
+.mtt-mobile-menu .mtt-mmenu-collaps-btn:before,
+.mtt-mobile-menu .mtt-mmenu-collaps-btn:after{
+	content: '';
+	display: none;
+	background: #000;
+	height: 5px;
+}
+.mtt-mobile-menu-row {
+	display: none;
+}
+.mtt-mobile-menu-row .col-4 {
+	float: left;
+}
+.mtt-mobile-menu-row h2{
+	color: #000;
+}
+.mtt-mobile-menu-row .mtt-nav a{
+	color:#000;
+	text-decoration: none;
+}
 /*==========================================
 	Responsive css for better mobile view
 ===========================================*/
 @media (max-width: 768px) {
-	.mtt-nav-area{
+	/*nav-row*/
+	.mtt-nav-area-row {
 		display: none;
+	}
+	.mtt-mobile-menu-row {
+		display: block;
+	}
+	.mtt-mobile-menu-row h2{
+		/*font-size: 25px*/
 	}
 	.mtt-finess-story-img{
 		position: relative;
