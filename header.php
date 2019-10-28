@@ -41,7 +41,7 @@
                                 -->
                                 <ul class="nav">
                                     <li class="nav-item"><a class="nav-link active" href="<?php echo home_url();?>">Home</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>/products/">Products</a>
+                                    <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>/shop/">Products</a>
                                         <ul class="mtt-megamenu">
                                             <div class="mtt-megamenu-content">
                                                 <div class="row">

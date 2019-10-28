@@ -32,6 +32,8 @@ add_action( 'wp_enqueue_scripts', 'city_shop_styles' );
 
 function city_shop_scripts() {
 
+	wp_enqueue_script( 'bs4-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', array(), '20203', true );
+
 	wp_enqueue_script( 'city-shop-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'city-shop-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );

@@ -268,3 +268,12 @@ if ( ! function_exists( 'city_shop_woocommerce_header_cart' ) ) {
 		<?php
 	}
 }
+
+
+/**
+ * Remove the breadcrumbs 
+ */
+add_action( 'init', 'mtt_woo_remove_wc_breadcrumbs' );
+function mtt_woo_remove_wc_breadcrumbs() {
+    remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+}
