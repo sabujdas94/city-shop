@@ -201,35 +201,35 @@
                 </div><!-- .row -->
                 <!-- for mobile menu only -->
                 <div class="row mtt-mobile-menu-row">
-                    <div class="col-4">
+                    <div class="col-3">
                             <!-- The mobile menu -->
                             <div class="mtt-mobile-menu">
                                 <a class="mtt-mmenu-collaps-btn" href="#mtt-mmenu"><i class="fa fa-bars"></i></a>
                                  <!-- The mobile menu -->
                                 <nav id="mtt-mmenu">
                                     <ul>
-                                        <li><a href="<?php echo home_url();?>">Home</a></li>
-                                        <li><a href="<?php echo home_url();?>/wholesale">Home</a></li>
-                                        <li><span>Products</span>
+                                        <li><a href="<?php echo home_url();?>">HOME</a></li>
+                                        <li><a href="<?php echo home_url();?>/wholesale">WHOLESALE</a></li>
+                                        <li><span>PRODUCTS</span>
                                             <ul>
-                                                <li><a href="<?php echo home_url(); ?>/accessories/">History</a></li>
-                                                <li><span>More Products</span>
+                                                <li><a href="<?php echo home_url(); ?>/shop/">ALL PRODUCTS</a></li>
+                                                <li><a href="<?php echo home_url(); ?>/accessories/">ACCESSORIES</a></li>
+                                                <li><span>MORE PRODUCTS</span>
                                                     <ul>
-                                                        <li><a href="<?php echo home_url(); ?>/accessories/">Management</a></li>
-                                                        <li><a href="<?php echo home_url(); ?>/accessories/">Sales</a></li>
-                                                        <li><a href="<?php echo home_url(); ?>/accessories/">Development</a></li>
+                                                        <li><a href="<?php echo home_url(); ?>/accessories/">INDOOR PRODUCTS</a></li>
+                                                        <li><a href="<?php echo home_url(); ?>/accessories/">OUTDOOR PRODUCTS</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li><span>Account</span>
+                                        <li><span>ACCOUNT</span>
                                             <ul>
-                                                <li><a href="<?php echo home_url(); ?>/my-account/">Design</a></li>
-                                                <li><a href="<?php echo home_url(); ?>/cart/">Development</a></li>
-                                                <li><a href="<?php echo home_url(); ?>/checkout/">Marketing</a></li>
+                                                <li><a href="<?php echo home_url(); ?>/my-account/">MY ACCOUNT</a></li>
+                                                <li><a href="<?php echo home_url(); ?>/cart/">CART</a></li>
+                                                <li><a href="<?php echo home_url(); ?>/checkout/">CHECKOUT</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="<?php echo home_url(); ?>/why-titanium/">Why Titanium</a></li>
+                                        <li><a href="<?php echo home_url(); ?>/why-titanium/">WHY TITANIUM</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -246,7 +246,7 @@
                             ?>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-5">
                         <div class="mtt-nav-right">
                             <nav class="mtt-nav">
                                 <ul class="nav">

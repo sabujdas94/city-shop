@@ -990,49 +990,50 @@ Custom Style
 ==============================*/
 
 @font-face {
-    font-family: 'brandon_grotesqueRgIt';
-    src: url('font/brandon-grotesque-regular-italic-58a8a456c4724-webfont.woff2') format('woff2'),
-         url('font/brandon-grotesque-regular-italic-58a8a456c4724-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+font-family: 'Brandon Grotesque Regular Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Brandon Grotesque Regular Italic'),
+url('font/brandon-grotesque-regular-italic-58a8a456c4724.woff') format('woff');
 }
 @font-face {
-    font-family: 'brandon_grotesqueblack';
-    src: url('font/brandon-grotesque-black-58a8a3e824392-webfont.woff2') format('woff2'),
-         url('font/brandon-grotesque-black-58a8a3e824392-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+font-family: 'Brandon Grotesque Light';
+font-style: normal;
+font-weight: normal;
+src: local('font/Brandon Grotesque Light'), url('brandon-grotesque-light-58a8a4b38001d.woff') format('woff');
 }
 @font-face {
-    font-family: 'brandon_grotesquelight';
-    src: url('font/brandon-grotesque-light-58a8a4b38001d-webfont.woff2') format('woff2'),
-         url('font/brandon-grotesque-light-58a8a4b38001d-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+font-family: 'Brandon Grotesque Light Italic';
+font-style: normal;
+font-weight: normal;
+src: local('font/Brandon Grotesque Light Italic'), url('brandon-grotesque-light-italic-58a8a4ccb88be.woff') format('woff');
 }
 @font-face {
-    font-family: 'brandon_grotesquebold_italic';
-    src: url('brandon-grotesque-bold-italic-58a8a48221563-webfont.woff2') format('woff2'),
-         url('brandon-grotesque-bold-italic-58a8a48221563-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+font-family: 'Brandon Grotesque Bold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Brandon Grotesque Bold Italic'), url('brandon-grotesque-bold-italic-58a8a48221563.woff') format('woff');
+}
 
+@font-face {
+font-family: 'Brandon Grotesque Black';
+font-style: normal;
+font-weight: normal;
+src: local('Brandon Grotesque Black'), url('brandon-grotesque-black-58a8a3e824392.woff') format('woff');
 }
 
 /*global css style*/
 *{
 	margin: 0;
 	padding: 0;
-	font-family: 'brandon_grotesquelight';
+	font-family: 'Brandon Grotesque Light';
 }
 html{
 	font-size: 16px;
 }
 h5{
 	font-size: 1.2rem;
-	font-family: brandon_grotesquelight;
+	font-family: 'Brandon Grotesque Light';
 	color: #191b1c;
 }
 body{
@@ -1106,6 +1107,7 @@ a.nav-link .fa {
 	width: 100%;
     display: block;
     z-index: 999;
+    float: left;
 }
 .mtt-header .mtt-nav-area.mtt-transparent-nav-area {
 	background-color: transparent!important;
@@ -1185,6 +1187,7 @@ a.nav-link .fa {
 .mtt-logo img{
 	max-width: 100%;
 	max-height: 100%;
+	padding: 8px 0px;
 }
 
 
@@ -1196,9 +1199,9 @@ a.nav-link .fa {
 	z-index: 999;
 }
 .mtt-mobile-menu .mtt-mmenu-collaps-btn i{
-	font-size: 30px;
-	color: #000;
-	padding: 12px 0px;
+	font-size: 25px;
+	color: #fff;
+	padding: 19px 15px;
 }
 .mtt-mobile-menu .mtt-mmenu-collaps-btn:before,
 .mtt-mobile-menu .mtt-mmenu-collaps-btn:after{
@@ -1210,14 +1213,18 @@ a.nav-link .fa {
 .mtt-mobile-menu-row {
 	display: none;
 }
-.mtt-mobile-menu-row .col-4 {
+.mtt-mobile-menu-row .col-3,
+.mtt-mobile-menu-row .col-4,
+.mtt-mobile-menu-row .col-5 {
 	float: left;
+}
+.mtt-mobile-menu-row .col-4{
+	padding: 0px!important;
 }
 .mtt-mobile-menu-row h2{
 	color: #000;
 }
 .mtt-mobile-menu-row .mtt-nav a{
-	color:#000;
 	text-decoration: none;
 }
 
@@ -1359,7 +1366,6 @@ a.nav-link .fa {
 }
 
 
-
 /*mtt-subscribtion-form*/
 .mtt-footer-subscribtion{
 	padding: 25px 0;
@@ -1380,7 +1386,7 @@ a.nav-link .fa {
 	padding: 6px 15px;
 	border: 1px solid #ccc;
 	margin-right: -4px;
-	width: 280px;
+	width: 220px;
 	max-width: 100%;
 	border-right: none;
 	height: 40px;
@@ -1722,7 +1728,6 @@ a.nav-link .fa {
 .single-product .onsale {
     display: none;
 }
-
 .mtt-single-woo-product-gallery{
 	width: 60%;
 	padding: 50px;
@@ -1731,6 +1736,7 @@ a.nav-link .fa {
 
 .woocommerce .woocommerce-product-gallery{
 	float: left;
+	width: 100%;
 }
 .mtt-product-gallery-cat{
 	float: left;
@@ -1744,18 +1750,18 @@ a.nav-link .fa {
 .woocommerce .woocommerce-product-gallery .flex-control-thumbs{
 	width: 20%;
 	float: left;
+	padding-right: 10px;
 }
 .woocommerce .woocommerce-product-gallery .flex-control-thumbs li{
 	width: 100%!important;
-	border:1px solid #e5e5e5;
+	
 }
 .woocommerce .woocommerce-product-gallery .flex-control-thumbs li img{
-	/*border:1px solid #eee;*/
+	border:1px solid #e5e5e5;
 }
 .woocommerce .woocommerce-product-gallery .flex-control-thumbs li img.flex-active{
 	border:1px solid #ccc;
 }
-
 
 .woocommerce .summary{
 	width: 40%;
@@ -1803,6 +1809,10 @@ a.nav-link .fa {
     float: left;
     margin: 0 4px 0 0;
 }
+.woocommerce div.product form.cart div.quantity .input-text{
+    width: 100px;
+}
+
 .woocommerce div.product form.cart .button.single_add_to_cart_button {
     padding: 10px 40px;
     background-color: #000;
@@ -1857,7 +1867,37 @@ a.nav-link .fa {
 /*==========================================
 	Responsive css for better mobile view
 ===========================================*/
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+	.mtt-single-woo-product-gallery{
+		width: 100%;
+		padding: 50px;
+		padding-bottom: 0px;
+	}
+	.single-product .mtt-single-woo-product-gallery .mtt-product-gallery-cat,
+	.single-product .mtt-single-woo-product-gallery .mtt-categories {
+	    padding: 0px;
+	}
+	
+	.woocommerce .summary{
+		width: 100%;
+		padding: 15px;
+	}
+}
+
+
 @media (max-width: 768px) {
+	#primary.content-area{
+		width: 100%;
+	}
+	#secondary.widget-area{
+		width: 100%;
+	}
+	.woocommerce #secondary.widget-area{
+		width: 100%;
+		display: none;
+	}
 	/*nav-row*/
 	.mtt-nav-area-row {
 		display: none;
@@ -1866,8 +1906,12 @@ a.nav-link .fa {
 		display: block;
 	}
 	.mtt-mobile-menu-row h2{
-		/*font-size: 25px*/
+		font-size: 25px
 	}
+	a.nav-link .fa {
+	    color: #fff;
+	}
+	/*end nav area*/
 	.mtt-finess-story-img{
 		position: relative;
 	}
@@ -1903,5 +1947,36 @@ a.nav-link .fa {
 	.mtt-footer-signup-form form {
     	float: none;
     	text-align: center;
+	}
+}
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	.mtt-single-woo-product-gallery{
+		padding: 15px;
+		padding-top: 30px;
+		padding-bottom: 0px;
+	}
+	.woocommerce .woocommerce-tabs {
+	    padding: 15px;
+	}
+	.woocommerce .woocommerce-tabs .tabs li {
+	    width: 31%;
+	    margin-right: 10px;
+	    font-size: 12px;
+	}
+}
+
+@media (max-width: 500px) {
+	.mtt-nav-right li.menu-item a, .mtt-nav-right li.nav-item a {
+	    padding: 8px 8px;
+	}
+}
+@media (max-width: 359px) {
+	.mtt-nav-right li.menu-item a, .mtt-nav-right li.nav-item a {
+	    padding: 5px 2px;
+	}
+	.mtt-mobile-menu .mtt-mmenu-collaps-btn i{
+		font-size: 20px;
+		padding: 15px 10px;
 	}
 }
