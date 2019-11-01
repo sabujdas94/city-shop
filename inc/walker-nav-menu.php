@@ -117,7 +117,7 @@ class city_shop_Walker_Nav_Menu extends Walker {
 		$indent = ( $depth ) ? str_repeat( $t, $depth ) : '';
 
 		$classes   = empty( $item->classes ) ? array() : (array) $item->classes;
-		$classes[] = 'scroll menu-item-' . $item->ID;
+		$classes[] = 'nav-item scroll menu-item-' . $item->ID;
 
 		/**
 		 * Filters the arguments for a single nav menu item.
@@ -196,7 +196,8 @@ class city_shop_Walker_Nav_Menu extends Walker {
 		foreach ( $atts as $attr => $value ) {
 			if ( ! empty( $value ) ) {
 				$value       = ( 'href' === $attr ) ? esc_url( $value ) : esc_attr( $value );
-				$attributes .= ' ' . $attr . '="' . $value . '"';
+				// $attributes .= ' ' . $attr . '="' . $value . '"';
+				$attributes .= ' ' . $attr . '="' . $value . '"' . 'class="nav-link active"';
 			}
 		}
 
