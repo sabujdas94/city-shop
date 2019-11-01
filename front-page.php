@@ -34,43 +34,14 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-3 col-sm-6">
-							<article class="mtt-product text-center">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/p1.jpg" alt="">
-								<h6>Titanium Chopistics With Color Case</h6>
-								<p class="font-weight-bold">$16.99</p>
-								<a class="btn rounded-0 mtt-product-btn" href="#">More Details</a>
-							</article>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<article class="mtt-product text-center">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/p2.jpg" alt="">
-								<h6>3 Piece Titenium Cutlery Set</h6>
-								<p class="font-weight-bold">$27.99</p>
-								<a class="btn rounded-0 mtt-product-btn" href="#">More Details</a>
-							</article>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<article class="mtt-product text-center">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/p3.jpg" alt="">
-								<h6>Titenium Camping CookWare Set 3-Piece</h6>
-								<p class="font-weight-bold">$18.99</p>
-								<a class="btn rounded-0 mtt-product-btn" href="#">More Details</a>
-							</article>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<article class="mtt-product text-center">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/p4.jpg" alt="">
-								<h6>Titenium Mug With Lid</h6>
-								<p class="font-weight-bold">$99.00</p>
-								<a class="btn rounded-0 mtt-product-btn" href="#">More Details</a>
-							</article>
-						</div>
+						<?php
+						echo do_shortcode('[products limit="4" columns="4" orderby="popularity" class="quick-sale" on_sale="false"]');
+						?>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
 							<div class="mtt-bestseller-section-btn">
-								<a class="btn rounded-0 mtt-btn px-4" href="#">VIEW ALL PRODUCTS</a>
+								<a class="btn rounded-0 mtt-btn px-4" href="<?php echo get_permalink( woocommerce_get_page_id( 'shop' ) ); ?>">VIEW ALL PRODUCTS</a>
 							</div>
 						</div>
 					</div>
