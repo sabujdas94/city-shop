@@ -30,13 +30,24 @@
                     <div class="col-md-5">
                         <div class="mtt-nav-left">
                             <nav class="mtt-nav">
-							 <?php
-								 wp_nav_menu( array(
-                                    'menu'          => 'header_left_menu',
-                                    'menu_class'    => 'nav',
-                                    'echo'            => true,
-                                    'walker'        => new city_shop_Walker_Nav_Menu()
-								 ) );
+							<?php
+
+                                if(function_exists('wp_nav_menu')){
+                                    wp_nav_menu(array(
+                                        'theme_location' => 'header_left_menu',
+                                        'menu_class'    => 'nav',
+                                        'echo'            => true,
+                                        'fallback_cb'     => 'wp_page_menu',
+                                        'walker'        => new city_shop_Walker_Nav_Menu()
+                                    ));
+                                }
+
+								 // wp_nav_menu( array(
+         //                            'menu'          => 'header_left_menu',
+         //                            'menu_class'    => 'nav',
+         //                            'echo'            => true,
+         //                            'walker'        => new city_shop_Walker_Nav_Menu()
+								 // ) );
                             ?>
 <!-- 
         'menu'            => '',

@@ -79,10 +79,10 @@
                                 <div class="col-md-6">
                                 <!-- mtt footer menu -->
                                 <?php
-                                    wp_nav_menu( array(
-                                        'menu'          => 'footer_menu',
-                                        'menu_class'    => 'nav'
-                                    ) );
+                                    // wp_nav_menu( array(
+                                    //     'menu'          => 'footer_menu',
+                                    //     'menu_class'    => 'nav'
+                                    // ) );
                                 ?>
                                 </div>
                             </div>
