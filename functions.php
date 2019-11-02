@@ -225,6 +225,11 @@ if ( ! function_exists( 'city_shop_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
+		// if(function_exists('register_nav_menus')){
+		// register_nav_menus(array(
+		// 	'mainmenu' => __('Main Menu', 'city-shop'),
+		// ));}
+
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'header_left_menu' => esc_html__( 'Header Left Menu', 'city-shop' ),
