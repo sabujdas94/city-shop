@@ -30,146 +30,34 @@
                     <div class="col-md-5">
                         <div class="mtt-nav-left">
                             <nav class="mtt-nav">
-                                <!--
-							     <?php
-								// wp_nav_menu( array(
-								//     'menu'          => 'header_left_menu',
-                                //      'menu_class'    => 'nav',
-                                //      'walker'        => walker_class()
-								// ) );
-                                ?>
-                                -->
-                                <ul class="nav">
-                                    <li class="nav-item"><a class="nav-link active" href="<?php echo home_url();?>">Home</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>/shop/">Products</a>
-                                        <ul class="mtt-megamenu">
-                                            <div class="mtt-megamenu-content">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
-                                                            <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">Titanium Chopistics</h6>
-                                                            </a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col">
-                                                        <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/12.jpg" alt=""></a>
-                                                            <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">Long Hande Spork</h6>
-                                                            </a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col">
-                                                        <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/13.jpg" alt=""></a>
-                                                            <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">Titanium Chopistics</h6>
-                                                            </a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col">
-                                                        <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/14.jpg" alt=""></a>
-                                                            <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">Long Hande Spoon</h6>
-                                                            </a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col">
-                                                        <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/15.jpg" alt=""></a>
-                                                            <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">Titanium Chopistics</h6>
-                                                            </a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col">
-                                                        <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/16.jpg" alt=""></a>
-                                                            <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">Titanium Chopistics</h6>
-                                                            </a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col">
-                                                        <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/13.jpg" alt=""></a>
-                                                            <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">Titanium Chopistics</h6>
-                                                            </a>
-                                                        </li>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/15.jpg" alt=""></a>
-                                                            <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">Titanium Chopistics</h6>
-                                                            </a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col">
-                                                        <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
-                                                            <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">Titanium Chopistics</h6>
-                                                            </a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col">
-                                                        <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/14.jpg" alt=""></a>
-                                                            <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">Long Hande Spoon</h6>
-                                                            </a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col">
-                                                        <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/12.jpg" alt=""></a>
-                                                            <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">Titanium Chopistics</h6>
-                                                            </a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col">
-                                                        <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/16.jpg" alt=""></a>
-                                                            <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">Spork</h6>
-                                                            </a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col">
-                                                        <li class="mtt-megamenu-item">
-                                                            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/12.jpg" alt=""></a>
-                                                            <a href="#">
-                                                                <h6 class="mtt-megamenu-item-title text-center">Titanium Chopistics</h6>
-                                                            </a>
-                                                        </li>
-                                                    </div>
-                                                    <div class="col">
-                                                        <li class="mtt-megamenu-item">
-                                                        </li>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mtt-megamenu-bottom">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <p class="text-center m-0">Free Delevery On Orders $50+</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>/accessories/">Accesories</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>/wholesale">Wholesale</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>/why-titanium">Why Titanium</a></li>
-                                </ul>
+							 <?php
+								 wp_nav_menu( array(
+                                    'menu'          => 'header_left_menu',
+                                    'menu_class'    => 'nav',
+                                    'echo'            => true,
+                                    'walker'        => new city_shop_Walker_Nav_Menu()
+								 ) );
+                            ?>
+<!-- 
+        'menu'            => '',
+        'container'       => 'div',
+        'container_class' => '',
+        'container_id'    => '',
+        'menu_class'      => 'menu',
+        'menu_id'         => '',
+        'echo'            => true,
+        'fallback_cb'     => 'wp_page_menu',
+        'before'          => '',
+        'after'           => '',
+        'link_before'     => '',
+        'link_after'      => '',
+        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+        'item_spacing'    => 'preserve',
+        'depth'           => 0,
+        'walker'          => '',
+        'theme_location'  => '',
+
+ -->
                             </nav>
                         </div>
                     </div><!-- .col-md-5 -->
