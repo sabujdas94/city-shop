@@ -41,13 +41,6 @@
                                         'walker'        => new city_shop_Walker_Nav_Menu()
                                     ));
                                 }
-
-								 // wp_nav_menu( array(
-         //                            'menu'          => 'header_left_menu',
-         //                            'menu_class'    => 'nav',
-         //                            'echo'            => true,
-         //                            'walker'        => new city_shop_Walker_Nav_Menu()
-								 // ) );
                             ?>
 <!-- 
         'menu'            => '',

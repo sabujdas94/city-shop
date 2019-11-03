@@ -273,7 +273,9 @@ if ( ! function_exists( 'city_shop_woocommerce_header_cart' ) ) {
 /**
  * Remove the breadcrumbs 
  */
-add_action( 'init', 'mtt_woo_remove_wc_breadcrumbs' );
-function mtt_woo_remove_wc_breadcrumbs() {
+add_action( 'init', 'mtt_woocommerce_remove_actions' );
+function mtt_woocommerce_remove_actions() {
     remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+    remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5, 0 );
+    remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10, 0 );
 }
