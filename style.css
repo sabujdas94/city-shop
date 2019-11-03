@@ -1717,6 +1717,24 @@ a.nav-link .fa {
 	z-index: 1;
 }
 
+.woocommerce-notices-wrapper .woocommerce-message,
+.woocommerce .woocommerce-form-coupon-toggle .woocommerce-info{
+	text-align: center;
+	margin: 0px auto;
+	color: #fff;
+	padding: 5px 20px;
+	width: 100%;	
+	background-color: #2D5C84;
+}
+.woocommerce-notices-wrapper .woocommerce-message a,
+.woocommerce-form-coupon-toggle .woocommerce-info a{
+	text-align: center;
+	border: 1px solid #fff;
+	padding: 2px 5px;
+	color: #fff;
+	text-decoration: none;
+}
+
 /*single product page*/
 .single-product #primary.content-area {
     padding: 0px;
