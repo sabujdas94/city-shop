@@ -231,7 +231,7 @@ if ( ! function_exists( 'city_shop_setup' ) ) :
 		register_nav_menus(array(
 			'header_left_menu' => esc_html__( 'Header Left Menu', 'city-shop' ),
 			'header_right_menu' => esc_html__( 'Header Right Menu', 'city-shop' ),
-			'footer_bottom_menu' => esc_html__( 'Footer Botoom Menu', 'city-shop' )
+			'footer_menu' => esc_html__( 'Footer Menu', 'city-shop' )
 		));}
 
 		/*
