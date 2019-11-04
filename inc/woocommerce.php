@@ -271,7 +271,7 @@ if ( ! function_exists( 'city_shop_woocommerce_header_cart' ) ) {
 
 
 /**
- * Remove the breadcrumbs 
+ * Remove woocommerce the breadcrumbs 
  */
 add_action( 'init', 'mtt_woocommerce_remove_actions' );
 function mtt_woocommerce_remove_actions() {
@@ -279,3 +279,34 @@ function mtt_woocommerce_remove_actions() {
     remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5, 0 );
     remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10, 0 );
 }
+
+/**
+ * adding custom woocommerce field placeholder
+ */
+
+ add_filter( 'woocommerce_checkout_fields' , 'mtt_override_billing_checkout_fields', 20, 1 );
+ function mtt_override_billing_checkout_fields( $fields ) {
+
+     $fields['billing']['billing_first_name']['placeholder'] = 'First Name';
+     $fields['billing']['billing_last_name']['placeholder'] = 'Last Name';
+     $fields['billing']['billing_company']['placeholder'] = 'Company Name';
+     $fields['billing']['billing_postcode']['placeholder'] = 'Postal/ZIIP Code';
+     $fields['billing']['billing_phone']['placeholder'] = 'Phone';
+     $fields['billing']['billing_city']['placeholder'] = 'City';
+     $fields['billing']['billing_country']['placeholder'] = 'Country';
+
+     $fields['billing']['billing_email']['placeholder'] = 'Email';
+
+
+     $fields['shipping']['shipping_first_name']['placeholder'] = 'First Name';
+     $fields['shipping']['shipping_last_name']['placeholder'] = 'Last Name';
+     $fields['shipping']['shipping_company']['placeholder'] = 'Company Name';
+     $fields['shipping']['shipping_postcode']['placeholder'] = 'Postal/ZIIP Code';
+     $fields['shipping']['shipping_phone']['placeholder'] = 'Phone';
+     $fields['shipping']['shipping_city']['placeholder'] = 'City';
+     $fields['shipping']['billing_country']['placeholder'] = 'Country';
+
+     $fields['shipping']['billing_email']['placeholder'] = 'Email';
+
+     return $fields;
+ }

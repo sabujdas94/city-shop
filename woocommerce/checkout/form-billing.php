@@ -1,6 +1,15 @@
 <?php
 /**
  * Checkout billing information form
+
+
+
+
+					Edited By MTT
+
+
+
+
  *
  * This template can be overridden by copying it to yourtheme/woocommerce/checkout/form-billing.php.
  *
@@ -25,7 +34,7 @@ defined( 'ABSPATH' ) || exit;
 
 	<?php else : ?>
 
-		<h3><?php esc_html_e( 'Billing details', 'woocommerce' ); ?></h3>
+		<h3 class="font-weight-bold"><?php esc_html_e( '01 BILLING DETAILS', 'woocommerce' ); ?></h3>
 
 	<?php endif; ?>
 
