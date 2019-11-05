@@ -42,26 +42,6 @@
                                     ));
                                 }
                             ?>
-<!-- 
-        'menu'            => '',
-        'container'       => 'div',
-        'container_class' => '',
-        'container_id'    => '',
-        'menu_class'      => 'menu',
-        'menu_id'         => '',
-        'echo'            => true,
-        'fallback_cb'     => 'wp_page_menu',
-        'before'          => '',
-        'after'           => '',
-        'link_before'     => '',
-        'link_after'      => '',
-        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-        'item_spacing'    => 'preserve',
-        'depth'           => 0,
-        'walker'          => '',
-        'theme_location'  => '',
-
- -->
                             </nav>
                         </div>
                     </div><!-- .col-md-5 -->
@@ -91,6 +71,26 @@
                         </div>
                     </div><!-- .col-md-5 -->
                 </div><!-- .row -->
+<!-- 
+        'menu'            => '',
+        'container'       => 'div',
+        'container_class' => '',
+        'container_id'    => '',
+        'menu_class'      => 'menu',
+        'menu_id'         => '',
+        'echo'            => true,
+        'fallback_cb'     => 'wp_page_menu',
+        'before'          => '',
+        'after'           => '',
+        'link_before'     => '',
+        'link_after'      => '',
+        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+        'item_spacing'    => 'preserve',
+        'depth'           => 0,
+        'walker'          => '',
+        'theme_location'  => '',
+
+ -->
                 <!-- for mobile menu only -->
                 <div class="row mtt-mobile-menu-row">
                     <div class="col-3">
@@ -104,7 +104,7 @@
                                         <li><a href="<?php echo home_url();?>/wholesale">WHOLESALE</a></li>
                                         <li><span>PRODUCTS</span>
                                             <ul>
-                                                <li><a href="<?php echo home_url(); ?>/shop/">ALL PRODUCTS</a></li>
+                                                <li><a href="<?php echo home_url(); ?>/products/">ALL PRODUCTS</a></li>
                                                 <li><a href="<?php echo home_url(); ?>/accessories/">ACCESSORIES</a></li>
                                                 <li><span>MORE PRODUCTS</span>
                                                     <ul>

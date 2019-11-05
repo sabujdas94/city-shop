@@ -1724,7 +1724,7 @@ a.nav-link .fa {
 	color: #fff;
 	padding: 5px 20px;
 	width: 100%;	
-	background-color: #2D5C84;
+	background-color: #000;
 }
 .woocommerce-notices-wrapper .woocommerce-message a,
 .woocommerce-form-coupon-toggle .woocommerce-info a{
@@ -1838,7 +1838,6 @@ a.nav-link .fa {
     text-transform: uppercase;
 }
 
-
 .woocommerce .woocommerce-tabs{
 	width: 100%;
 	float: left;
@@ -1883,11 +1882,71 @@ a.nav-link .fa {
 	padding-top: 0px;
 }
 
-
-/*Woocommerce checkout page css*/
+/*Woocommerce cart and checkout page css*/
 .full-width-content-area .entry-content{
 	margin:0px;
 }
+/*Woocommerce cart page css*/
+.woocommerce .woocommerce-cart-form,
+.woocommerce .cart-collaterals{
+	background-color: #F9F9F9;
+	padding: 15px;
+}
+.woocommerce-cart-form .cart_item {
+	padding: 15px 0px;
+	border-bottom: 1px solid #ccc;
+}
+.woocommerce-cart-form .product-thumbnail{
+	width:15%;
+	padding: 10px;
+}
+.woocommerce-cart-form .product-remove a{
+	font-size: 30px;
+	text-decoration: none;
+	color: #ff0000;
+}
+.woocommerce-cart-form .coupon{
+	padding: 15px 0px;
+}
+.woocommerce .woocommerce-cart-form .coupon input[type="text"]{
+	padding: 8px 15px;
+}
+
+.woocommerce .woocommerce-cart-form .button,
+.woocommerce .wc-proceed-to-checkout .button,
+.woocommerce .woocommerce-cart-form .coupon .button{
+	background-color: #000;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	word-spacing: 5px;
+	font-weight: bold;
+	width: 40%;
+	padding: 15px 50px;
+	margin-left: auto;
+	float: right;
+}
+.woocommerce .woocommerce-cart-form .coupon .button{
+	width: 30%;
+}
+.woocommerce .wc-proceed-to-checkout .button{
+	padding: 15px 150px;
+	margin-left: auto;
+	float: none;
+	text-decoration: none;
+}
+.woocommerce .cart-collaterals{
+	border-top:1px solid #ccc;
+}
+.woocommerce .cart-collaterals .woocommerce-Price-amount {
+	float: right;
+}
+.woocommerce .wc-proceed-to-checkout{
+	padding: 15px 0px;
+	text-align: right;
+}
+
+/*Woocommerce checkout page css*/
 
 .mtt-checkout-page-content{
 	padding: 15px 0px;
@@ -1995,9 +2054,6 @@ a.nav-link .fa {
 .mtt-woo-checkout-subtotal .woocommerce-Price-amount{
 	float: right;
 }
-
-
-
 
 /*==========================================
 	Responsive css for better mobile view
