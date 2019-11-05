@@ -294,7 +294,7 @@ function mtt_woocommerce_remove_actions() {
      $fields['billing']['billing_phone']['placeholder'] = 'Phone';
      $fields['billing']['billing_city']['placeholder'] = 'City';
      $fields['billing']['billing_country']['placeholder'] = 'Country';
-
+     $fields['billing']['billing_state']['placeholder'] = 'State';
      $fields['billing']['billing_email']['placeholder'] = 'Email';
 
 
@@ -304,8 +304,8 @@ function mtt_woocommerce_remove_actions() {
      $fields['shipping']['shipping_postcode']['placeholder'] = 'Postal/ZIIP Code';
      $fields['shipping']['shipping_phone']['placeholder'] = 'Phone';
      $fields['shipping']['shipping_city']['placeholder'] = 'City';
-     $fields['shipping']['billing_country']['placeholder'] = 'Country';
-
+     $fields['shipping']['shipping_country']['placeholder'] = 'Country';
+     $fields['shipping']['shipping_state']['placeholder'] = 'State';
      $fields['shipping']['billing_email']['placeholder'] = 'Email';
 
      return $fields;

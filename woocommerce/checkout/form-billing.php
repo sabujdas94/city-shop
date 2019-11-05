@@ -34,7 +34,7 @@ defined( 'ABSPATH' ) || exit;
 
 	<?php else : ?>
 
-		<h3 class="font-weight-bold"><?php esc_html_e( '01 BILLING DETAILS', 'woocommerce' ); ?></h3>
+		<h3 class="font-weight-bold"><?php esc_html_e( '01 SHIPPING DETAILS', 'woocommerce' ); ?></h3>
 
 	<?php endif; ?>
 

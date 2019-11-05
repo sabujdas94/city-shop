@@ -1882,6 +1882,123 @@ a.nav-link .fa {
 	padding: 50px;
 	padding-top: 0px;
 }
+
+
+/*Woocommerce checkout page css*/
+.full-width-content-area .entry-content{
+	margin:0px;
+}
+
+.mtt-checkout-page-content{
+	padding: 15px 0px;
+}
+.woocommerce .woocommerce-checkout{
+	padding: 15px 0px;
+}
+.woocommerce .form-row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.woocommerce #billing_city_field.form-row,
+.woocommerce #shipping_city_field.form-row,
+.woocommerce #billing_state_field.form-row,
+.woocommerce #shipping_state_field.form-row,
+.woocommerce #billing_postcode_field.form-row,
+.woocommerce #shipping_postcode_field.form-row {
+    width: 29%;
+    float: left;
+    margin-right: 10px;
+}
+.woocommerce #billing_company_field,
+.woocommerce #shipping_company_field,
+.woocommerce #billing_phone_field,
+.woocommerce #shipping_phone_field {
+	width: 100%;
+}
+.woocommerce form.checkout label {
+    display: none;
+}
+.woocommerce form.checkout .woocommerce-checkout-review-order label,
+.woocommerce form.checkout #billing_country_field label,
+.woocommerce form.checkout #shipping_country_field label,
+.woocommerce form.checkout #billing_postcode_field.form-row,
+.woocommerce form.checkout #shipping_postcode_field.form-row,
+.woocommerce #ship-to-different-address label {
+	display: block!important;
+}
+ label{
+	display: block;
+}
+.woocommerce-input-wrapper{
+	width: 100%;
+}
+.woocommerce .woocommerce-checkout input[type="text"], .woocommerce .woocommerce-checkout input[type="email"],
+.woocommerce .woocommerce-checkout input[type="url"], .woocommerce .woocommerce-checkout input[type="password"],
+.woocommerce .woocommerce-checkout input[type="search"], .woocommerce .woocommerce-checkout input[type="number"],
+.woocommerce .woocommerce-checkout input[type="tel"], .woocommerce .woocommerce-checkout input[type="range"],
+.woocommerce .woocommerce-checkout input[type="date"], .woocommerce .woocommerce-checkout input[type="month"],
+.woocommerce .woocommerce-checkout input[type="week"], .woocommerce .woocommerce-checkout input[type="time"],
+.woocommerce .woocommerce-checkout input[type="datetime"], .woocommerce .woocommerce-checkout input[type="datetime-local"],
+.woocommerce .woocommerce-checkout input[type="color"], .woocommerce .woocommerce-checkout textarea {
+	width: 100%;
+	padding: 15px;
+}
+.woocommerce .woocommerce-checkout-payment .wc_payment_methods {
+	overflow: hidden;
+}
+
+.woocommerce .woocommerce-checkout-payment .wc_payment_methods .wc_payment_method{
+	border: 1px solid #ccc;
+	margin-bottom: 15px;
+}
+.woocommerce .woocommerce-checkout-payment .wc_payment_methods 
+.wc_payment_method .input-radio{
+	float: left;
+	margin: 20px;
+}
+.woocommerce .woocommerce-checkout-payment .wc_payment_methods .wc_payment_method label{
+	padding: 15px;
+}
+.woocommerce .woocommerce-checkout-payment .wc_payment_methods 
+.wc_payment_method .payment_box {
+	width: 100%;
+	padding: 15px;
+	background-color: #F0F0F0;
+}
+.woocommerce .woocommerce-checkout-payment #place_order.button{
+	background-color: #000;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	word-spacing: 5px;
+	font-weight: bold;
+	width: 60%;
+	padding: 15px 50px;
+	margin-left: auto;
+}
+.mtt-checkout-right-sidear{
+	background-color: #F0F0F0;
+	height: 100%;
+	padding: 80px 50px;
+}
+.mtt-checkout-right-sidear .product-thumbnail{
+	width: 100px;
+	padding: 10px 10px 0px 0px;
+}
+.mtt-checkout-right-sidear .product-thumbnail img{
+	border: 1px solid #ccc;
+}
+.mtt-woo-checkout-subtotal{
+	border-top: 1px solid #ccc;
+	padding: 15px 0px;
+}
+.mtt-woo-checkout-subtotal .woocommerce-Price-amount{
+	float: right;
+}
+
+
+
+
 /*==========================================
 	Responsive css for better mobile view
 ===========================================*/
