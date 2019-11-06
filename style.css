@@ -1055,19 +1055,19 @@ ul{
 .mtt-section-title h1 {
 	font-size: 25px;
 }
-
-
 /*nav popup area*/
 .mtt-header ul,
 .mtt-header ul li{
 	list-style: none;
 }
 .mtt-nav-popup{
-	background-color: #121313;
+	background-color: #000;
 	color: #fff;
+    position: relative;
+	z-index: 999;
 }
 .mtt-nav-popup-content{
-	padding: 5px 0px;
+	padding: 7px 0px;
 }
 .mtt-nav-popup ul{
 	padding: 0;
@@ -1075,14 +1075,29 @@ ul{
 }
 .mtt-nav-popup ul li{
 	display: inline-block;
+	padding-right:10px;
 }
 .mtt-nav-popup ul li:last-child{
 	float: right;
 }
-.mtt-nav-popup i{
-	background-color: #08295e;
+.mtt-nav-popup ul li i{
+	background-color: #2e5c84;
+	padding: 5px;
+	font-size: 14px;
+	height: 25px;
+	width: 25px;
+	text-align: center;
+	color: #000;
+	border-radius: 100%;
 }
-
+.mtt-nav-popup ul li:last-child i{
+	color: #fff;
+	background-color: transparent;
+	font-size: 20px;
+}
+.mtt-header .mtt-nav-popup-dismissed{
+	display: none;	
+}
 /*nav area*/
 .mtt-nav-right li.menu-item a,
 .mtt-nav-right li.nav-item a {
@@ -1112,7 +1127,7 @@ a.nav-link .fa {
 .mtt-header .mtt-nav-area.mtt-transparent-nav-area {
 	background-color: transparent!important;
 	position: absolute;
-	top: 40px;
+	top: 50px;
 }
 .mtt-nav-area a{
 	color:#f9f9f9;
@@ -1318,6 +1333,12 @@ a.nav-link .fa {
 .mtt-fitness-p-section{
 	padding: 50px 0px;
 }
+.mtt-bestseller-title h3,
+.mtt-indoor-product-info h4,
+.mtt-outdoor-product-info h4,
+.mtt-fitness-p-title h4{
+	color: #000;
+}
 .mtt-categories {
 	padding: 50px 0px;
 }
@@ -1354,9 +1375,22 @@ a.nav-link .fa {
 .mtt-finess-story{
 	padding: 55px 25px;
 }
+.mtt-finess-story .mtt-finess-story-title{
+	color: #2F5C85;
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+
 .mtt-instagram-title{
 	padding: 50px 0px;
 }
+.mtt-instagram-title .mtt-instagram-title-sub {
+	color: #666666;
+}
+.mtt-instagram-title .mtt-instagram-title-span {
+	color: #2F5C85;
+}
+
 .mtt-instagram img{
 	width: 100%;
 	height: 100%;
@@ -1392,8 +1426,8 @@ a.nav-link .fa {
 	height: 40px;
 }
 .mtt-footer-signup-form .btn{
-	margin-top: -7px;
-	height: 40px;
+	margin-top: -4px;
+	height: 38px;
 }
 
 
@@ -1888,9 +1922,9 @@ a.nav-link .fa {
 }
 /*Woocommerce cart page css*/
 .woocommerce .woocommerce-cart-form,
-.woocommerce .cart-collaterals{
+.woocommerce .cart-collaterals,
+.woocommerce .woocommerce-notices-wrapper {
 	background-color: #F9F9F9;
-	padding: 15px;
 }
 .woocommerce-cart-form .cart_item {
 	padding: 15px 0px;
@@ -2054,6 +2088,9 @@ a.nav-link .fa {
 .mtt-woo-checkout-subtotal .woocommerce-Price-amount{
 	float: right;
 }
+
+
+
 
 /*==========================================
 	Responsive css for better mobile view

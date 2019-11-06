@@ -64,7 +64,7 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php if ( ! WC()->cart->needs_shipping() || wc_ship_to_billing_address_only() ) : ?>
 
-			<h3 class="font-weight-bold"><?php esc_html_e( 'Additional information', 'woocommerce' ); ?></h3>
+			<h3 class="font-weight-bold"><?php esc_html_e( '03 ADDITIONAL INFORMATION', 'woocommerce' ); ?></h3>
 
 		<?php endif; ?>
 

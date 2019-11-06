@@ -24,6 +24,21 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'city-shop' ); ?></a>
 	<header id="masthead" class="header mtt-header site-header">
+
+        <div class="mtt-nav-popup">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mtt-nav-popup-content text-center">
+                            <?php
+                                echo do_shortcode('[mtt_popup_offer]');
+                            ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 		<div class="mtt-nav-area <?php if(is_front_page()): echo 'mtt-transparent-nav-area'; endif; ?>">
 			<div class="container-fluid">
 				<div class=" mtt-nav-area-row row">

@@ -3,11 +3,7 @@
  * Checkout Payment Section
  *
 
-
-
 				edited by MTT
-
-
 
 
  * This template can be overridden by copying it to yourtheme/woocommerce/checkout/payment.php.
@@ -31,7 +27,7 @@ if ( ! is_ajax() ) {
 ?>
 <div id="payment" class="woocommerce-checkout-payment">
 	<?php if ( WC()->cart->needs_payment() ) : ?>
-		<h3 id="checkout_payment_title" class="font-weight-bold"><?php esc_html_e( '04 PAYMENT', 'woocommerce' ); ?></h3>
+		<h3 id="checkout_payment_title" class="font-weight-bold"><?php esc_html_e( '05 PAYMENT', 'woocommerce' ); ?></h3>
 		<ul class="wc_payment_methods payment_methods methods">
 			<?php
 			if ( ! empty( $available_gateways ) ) {
