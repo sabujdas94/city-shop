@@ -77,9 +77,9 @@
                             <nav class="mtt-nav">
                                 <ul class="nav">
                                     <li class="nav-item"><a class="nav-link active" href="<?php echo home_url(); ?>/why-titanium">Our Story</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>"><i class="fa fa-heart-o"></i> 2-Wishlist</a></li>
+                                    <li class="nav-item"><a class="nav-link wishlist-link" href="<?php echo home_url(); ?>"><i class="fa fa-heart-o"></i> 2-Wishlist</a></li>
                                     <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>/my-account">Login</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>/cart">Cart .0,00$ <i class="fa fa-shopping-bag"></i></a></li>
+                                    <?php city_shop_woocommerce_header_cart(); ?>
                                     <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>">USD</a></li>
                                 </ul>
                             </nav>
@@ -158,7 +158,8 @@
                             <nav class="mtt-nav">
                                 <ul class="nav">
                                     <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>"><i class="fa fa-heart-o"></i></a></li>
-                                    <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>/cart"><i class="fa fa-shopping-bag"></i></a></li>
+                                    <!-- <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>/cart"><i class="fa fa-shopping-bag"></i></a></li> -->
+                                    <?php city_shop_woocommerce_header_cart(); ?>
                                     <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>/my-account">Login</a></li>
                                 </ul>
                             </nav>

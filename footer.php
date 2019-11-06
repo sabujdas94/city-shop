@@ -107,6 +107,15 @@
                 });
             }
         );
+        jQuery("#close-cart-widget").on('click', function(e){
+            e.preventDefault();
+            jQuery("#site-header-cart").removeClass('open');
+        });
+        jQuery(".menu-cart-link").on('click', function(e){
+            e.preventDefault();
+            console.log(jQuery("#site-header-cart").attr('class'));
+            jQuery("#site-header-cart").addClass('open');
+        });
     </script>
 
 <?php wp_footer(); ?>
