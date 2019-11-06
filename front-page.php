@@ -60,7 +60,7 @@
 								<div class="mtt-indoor-product-info text-center">
 									<h4 class="font-weight-bold">INDOOR</h4>
 									<h6 class="font-weight-bold">TITANIUM PRODUCTS</h6>
-									<a class="btn rounded-0 mtt-btn" href="#">SHOP NOW</a>
+									<a class="btn rounded-0 mtt-btn" href="<?php echo home_url();?>/product-category/indoor-titanium-products/">SHOP NOW</a>
 								</div>
 							</div>
 						</div>
@@ -82,7 +82,7 @@
 								<div class="mtt-outdoor-product-info text-center">
 									<h4 class="font-weight-bold">OUTDOOR</h4>
 									<h6 class="font-weight-bold">TITANIUM PRODUCTS</h6>
-									<a class="btn rounded-0 mtt-btn" href="#">SHOP NOW</a>
+									<a class="btn rounded-0 mtt-btn" href="<?php echo home_url();?>/product-category/outdoor-titanium-products/">SHOP NOW</a>
 								</div>
 							</div>
 						</div>
@@ -156,7 +156,7 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="mtt-fitness-p-section-btn">
-								<a class="btn rounded-0 mtt-btn px-5" href="#">WHY YOU SHOULD BUY TITENIUM PRODUCTS?</a>
+								<a class="btn rounded-0 mtt-btn px-5" href="<?php echo home_url();?>/why-titanium/">WHY YOU SHOULD BUY TITENIUM PRODUCTS?</a>
 							</div>
 						</div>
 					</div>
@@ -177,7 +177,7 @@
 								<h5 class="font-weight-bold mb-3">FINEST IN TITENIUM PRODUCTS</h5>
 								<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using...</p>
 								<br>
-								<a class="btn rounded-0 mtt-btn text-uppercase" href="#">read more</a>
+								<a class="btn rounded-0 mtt-btn text-uppercase" href="<?php echo home_url();?>/why-titanium/">read more</a>
 							</div>
 						</div>
 					</div>
@@ -198,14 +198,30 @@
 						<div class="col-md-12">
 							<div class="mtt-instagram">
 								<div class="row">
-									<div class="col-md-3 p-0"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></div>
-									<div class="col-md-3 p-0"><img src="<?php echo get_template_directory_uri(); ?>/img/12.jpg" alt=""></div>
-									<div class="col-md-3 p-0"><img src="<?php echo get_template_directory_uri(); ?>/img/13.jpg" alt=""></div>
-									<div class="col-md-3 p-0"><img src="<?php echo get_template_directory_uri(); ?>/img/14.jpg" alt=""></div>
-									<div class="col-md-3 p-0"><img src="<?php echo get_template_directory_uri(); ?>/img/13.jpg" alt=""></div>
-									<div class="col-md-3 p-0"><img src="<?php echo get_template_directory_uri(); ?>/img/16.jpg" alt=""></div>
-									<div class="col-md-3 p-0"><img src="<?php echo get_template_directory_uri(); ?>/img/12.jpg" alt=""></div>
-									<div class="col-md-3 p-0"><img src="<?php echo get_template_directory_uri(); ?>/img/15.jpg" alt=""></div>
+									<div class="col-md-3 p-0">
+										<a href="https://instagram.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/11.jpg" alt=""></a>
+									</div>
+									<div class="col-md-3 p-0">
+										<a href="https://instagram.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/12.jpg" alt=""></a>
+									</div>
+									<div class="col-md-3 p-0">
+										<a href="https://instagram.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/13.jpg" alt=""></a>
+									</div>
+									<div class="col-md-3 p-0">
+										<a href="https://instagram.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/14.jpg" alt=""></a>
+									</div>
+									<div class="col-md-3 p-0">
+										<a href="https://instagram.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/13.jpg" alt=""></a>
+									</div>
+									<div class="col-md-3 p-0">
+										<a href="https://instagram.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/16.jpg" alt=""></a>
+									</div>
+									<div class="col-md-3 p-0">
+										<a href="https://instagram.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/12.jpg" alt=""></a>
+									</div>
+									<div class="col-md-3 p-0">
+										<a href="https://instagram.com/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/15.jpg" alt=""></a>
+									</div>
 								</div>
 							</div>
 						</div>
