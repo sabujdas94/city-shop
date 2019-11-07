@@ -22,7 +22,7 @@
     // Dom Ready
     $(function() {
         //removePreloader();
-        //scrollTopFunction();
+        scrollTopFunction();
         popupNotice();
     });
 })(jQuery);
@@ -30,15 +30,19 @@
 
 /* JavaScript Code Without $ Sign Veriable */
 /* When the user scrolls down 150px from the top of the document, show the Go to top Button button */
-// window.onscroll = function() { scrollFunction() };
+window.onscroll = function() { scrollFunction() };
 
-// function scrollFunction() {
-//     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-//         document.getElementById("gototop").style.display = "block";
-//     } else {
-//         document.getElementById("gototop").style.display = "none";
-//     }
-// }
+function scrollFunction() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        // document.getElementById("gototop").style.display = "block";
+        var element = document.getElementById("gototop");
+        element.classList.add("active-gototop");
+    } else {
+        // document.getElementById("gototop").style.display = "none";
+        var element = document.getElementById("gototop");
+        element.classList.remove("active-gototop");
+    }
+}
 
 /*
  * The End ! Theme created by https://maxtoptec.com
