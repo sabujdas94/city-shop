@@ -1013,8 +1013,8 @@
      height: 38px;
 }
  .mtt-footer-signup-form .btn {
-     margin-top: -7px;
-     height: 40px;
+     margin-top: -5px;
+	 height: 39.3px;
 }
 /*mtt-footer*/
  .mtt-footer {
@@ -1036,11 +1036,14 @@
  .mtt-footer-left ul li {
      display: inline-block;
 }
- .mtt-footer-left i {
-     padding: 10px;
-     border: 1px solid #ccc;
+ .mtt-footer-left .mtt-footer-social-icon i {
+     height: 40px;
+	 width: 40px;
+     padding: 12px;
+     text-align: center;
+     border: 1px solid #999;
      border-radius: 100%;
-     color: #000;
+     color: #999;
 }
  .mtt-footer-title {
      color: #999;
@@ -1603,7 +1606,8 @@
  .mtt-woo-checkout-subtotal .woocommerce-Price-amount {
      float: right;
 }
-/*========================================== Responsive css for better mobile view ===========================================*/
+
+
 /*Woocommerce*/
  .menu-cart-link .amount {
      margin-left: 5px;
@@ -1672,6 +1676,45 @@
      font-size: 18px;
      cursor: pointer;
 }
+
+
+/*===============================================
+	Extra futures (like: goto top btn) CSS Style
+=================================================*/
+#gototop {
+	position: fixed;
+	bottom: 15px;
+	right: -200px;
+	z-index: 999;
+	border: 1px solid#ffffff;
+	border-radius: 100%;
+	outline: none;
+	background-color:rgba(47, 92, 133, 0.5);
+	opacity: 0.8;
+	color:white;
+	cursor: pointer;
+	padding: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	height: 70px;
+	width: 70px;
+	transition: .7s;
+}
+#gototop i{
+	color:#ffffff;
+	font-weight: bold;
+	font-size: 25px;
+}
+#gototop:hover{
+    background-color: rgba(47, 92, 133, 1);
+  	opacity:0.8;
+}
+#gototop.active-gototop{
+	right: 15px
+}
+/*=========================================
+	Responsive css for better mobile view
+===========================================*/
 /* Medium devices (tablets, less than 992px) */
  @media (max-width: 991.98px) {
      .mtt-single-woo-product-gallery {

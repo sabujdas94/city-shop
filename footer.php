@@ -88,6 +88,8 @@
                                     }
                                 ?>
                                 </div>
+                                <!-- MTT Go to top Button -->
+                                <button  id="gototop" title="Go to top"><i class="fa fa-angle-double-up text-center"></i></button>
                             </div>
                         </div>
                     </div>
