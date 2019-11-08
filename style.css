@@ -761,10 +761,12 @@
  	 padding: .5rem 1rem;
  	 font-size: 12px;
  	 text-transform: uppercase;
- 	 overflow: visible;
+ 	 text-decoration: none;
 }
 a.wishlist_products_counter.top_wishlist-heart::before{
 	line-height: 0;
+	font-size: 17px;
+	margin-right: 0px;
 }
 
 
@@ -1140,14 +1142,11 @@ a.wishlist_products_counter.top_wishlist-heart::before{
      float: right;
 }
  .mtt-footer-bottom .nav a {
-<<<<<<< HEAD
      color: #404040;
      padding: 0px;
      padding-left: 10px;
      text-decoration: none;
-=======
      padding:0 0 0 10px;
->>>>>>> ebf070252aa8eb0d9249efbf3b3ce088d1e86d73
 }
  .mtt-footer-bottom .nav li:first-child a {
      padding-left: 0px;
