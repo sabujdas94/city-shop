@@ -19,6 +19,10 @@
         })
     }
 
+    $(document).scroll(function() {
+      $('body').toggleClass('fixed-header', $(this).scrollTop() >= 50);
+    });
+
     // Dom Ready
     $(function() {
         //removePreloader();
@@ -45,5 +49,5 @@ function scrollFunction() {
 }
 
 /*
- * The End ! Theme created by https://maxtoptec.com
+ * The End ! Theme created by https://maxtoptech.com
  */

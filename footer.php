@@ -31,8 +31,8 @@
 	                        <div class="col-md-6 col-sm-12">
 	                            <div class="mtt-footer-signup-form">
 	                                <form action="#">
-	                                    <input type="email" placeholder="Your Email">
-	                                    <a class="btn rounded-0 mtt-btn text-uppercase px-xs-1" href="#">sign up</a>
+	                                    <input type="email" placeholder="Enter email address">
+	                                    <input type='submit' class="btn rounded-0 mtt-btn text-uppercase px-xs-1" value="Sign Up">
 	                                </form>
 	                            </div>
 	                        </div>
