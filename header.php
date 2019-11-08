@@ -74,8 +74,13 @@
                         <div class="mtt-nav-right">
                             <nav class="mtt-nav">
                                 <ul class="nav">
-                                    <li class="nav-item"><a class="nav-link active" href="<?php echo home_url(); ?>/why-titanium">Our Story</a></li>
-                                    <li class="nav-item"><a class="nav-link wishlist-link" href="<?php echo home_url(); ?>"><i class="fa fa-heart-o"></i> 2-Wishlist</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>/why-titanium">Our Story</a></li>
+                                    <li class="nav-item">
+                                    <?php if(shortcode_exists(ti_wishlist_products_counter)):
+                                        echo do_shortcode("[ti_wishlist_products_counter]");
+                                        endif;
+                                    ?>
+                                    </li>
                                     <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>/my-account">Login</a></li>
                                     <?php city_shop_woocommerce_header_cart(); ?>
                                     <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>">USD</a></li>

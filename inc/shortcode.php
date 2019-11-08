@@ -69,7 +69,7 @@ function mtt_best_seller_shortcode() {
 			<div class="row">
 				<div class="col-md-12">
 					<div class="mtt-bestseller-title text-center">
-						<h3 class="font-weight-bold">BEST SELLERS</h3>
+						<h3>BEST SELLERS</h3>
 					</div>
 				</div>
 			</div>
@@ -110,7 +110,7 @@ function mtt_indoor_outdoor_shortcode() {
 							<img src="<?php echo get_template_directory_uri(); ?>/img/1.jpg" alt="">
 						</div>
 						<div class="mtt-indoor-product-info text-center">
-							<h4 class="font-weight-bold">INDOOR</h4>
+							<h4>INDOOR</h4>
 							<h6 class="font-weight-bold">TITANIUM PRODUCTS</h6>
 							<a class="btn rounded-0 mtt-btn" href="<?php echo home_url();?>/product-category/indoor-titanium-products/">SHOP NOW</a>
 						</div>
@@ -132,7 +132,7 @@ function mtt_indoor_outdoor_shortcode() {
 							<img src="<?php echo get_template_directory_uri(); ?>/img/4.jpg" alt="">
 						</div>
 						<div class="mtt-outdoor-product-info text-center">
-							<h4 class="font-weight-bold">OUTDOOR</h4>
+							<h4>OUTDOOR</h4>
 							<h6 class="font-weight-bold">TITANIUM PRODUCTS</h6>
 							<a class="btn rounded-0 mtt-btn" href="<?php echo home_url();?>/product-category/outdoor-titanium-products/">SHOP NOW</a>
 						</div>
@@ -147,8 +147,6 @@ function mtt_indoor_outdoor_shortcode() {
 add_shortcode( 'mtt_indoor_outdoor', 'mtt_indoor_outdoor_shortcode' );
 
 
-
-
 /**
  * @return MTT Front page mtt_products_categories HTML content to display the shortcode.
  */
@@ -160,7 +158,7 @@ function mtt_products_categories_shortcode() {
 			<div class="row">
 				<div class="col-md-12">
 					<div class="mtt-fitness-p-title text-center">
-						<h4 class="font-weight-bold">ALL FITNESS PRODUCTS ARE...</h4>
+						<h4>ALL FITNESS PRODUCTS ARE...</h4>
 					</div>
 				</div>
 			</div>
@@ -170,48 +168,47 @@ function mtt_products_categories_shortcode() {
 						<div class="row">
 							<div class="col">
 								<div class="mtt-category">
-									<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icon1.png" alt=""></a>
-									<h6>HEALTHY</h6>
+									<img src="<?php echo get_template_directory_uri(); ?>/img/icon1.png" alt=""><h6>HEALTHY</h6>
 								</div>
 							</div>
 							<div class="col">
 								<div class="mtt-fitness-product mtt-category">
-									<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icon2.png" alt=""></a><h6>STRONG</h6>
+									<img src="<?php echo get_template_directory_uri(); ?>/img/icon2.png" alt=""><h6>STRONG</h6>
 								</div>
 							</div>
 							<div class="col">
 								<div class="mtt-fitness-product mtt-category">
-									<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icon3.png" alt=""></a><h6>LIGHWEIGHT</h6>
+									<img src="<?php echo get_template_directory_uri(); ?>/img/icon3.png" alt=""><h6>LIGHWEIGHT</h6>
 								</div>
 							</div>
 							<div class="col">
 								<div class="mtt-fitness-product mtt-category">
-									<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icon4.png" alt=""></a><h6>ECO-FRIENDLY</h6>
+									<img src="<?php echo get_template_directory_uri(); ?>/img/icon4.png" alt=""><h6>ECO-FRIENDLY</h6>
 								</div>
 							</div>
 							<div class="col">
 								<div class="mtt-fitness-product mtt-category">
-									<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icon5.png" alt=""></a><h6>CORROSION RESISTANT</h6>
+									<img src="<?php echo get_template_directory_uri(); ?>/img/icon5.png" alt=""><h6>CORROSION RESISTANT</h6>
 								</div>
 							</div>
 							<div class="col">
 								<div class="mtt-fitness-product mtt-category">
-									<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icon6.png" alt=""></a><h6>BACTERIA INHIBITATION</h6>
+									<img src="<?php echo get_template_directory_uri(); ?>/img/icon6.png" alt=""><h6>BACTERIA INHIBITATION</h6>
 								</div>
 							</div>
 							<div class="col">
 								<div class="mtt-fitness-product mtt-category">
-									<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icon7.png" alt=""></a><h6>HIGH TEMPERATURE RESISTANT</h6>
+									<img src="<?php echo get_template_directory_uri(); ?>/img/icon7.png" alt=""><h6>HIGH TEMPERATURE RESISTANT</h6>
 								</div>
 							</div>
 							<div class="col">
 								<div class="mtt-fitness-product mtt-category">
-									<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icon8.png" alt=""></a><h6>LOW TEMPERATURE RESISTANT</h6>
+									<img src="<?php echo get_template_directory_uri(); ?>/img/icon8.png" alt=""><h6>LOW TEMPERATURE RESISTANT</h6>
 								</div>
 							</div>
 							<div class="col">
 								<div class="mtt-fitness-product mtt-category">
-									<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icon9.png" alt=""></a><h6>GOOD HEATING</h6>
+									<img src="<?php echo get_template_directory_uri(); ?>/img/icon9.png" alt=""><h6>GOOD HEATING</h6>
 								</div>
 							</div>
 						</div>
@@ -252,7 +249,7 @@ function mtt_finess_story_shortcode() {
 				<div class="col-md-6 col-sm-12">
 					<div class="mtt-finess-story text-center">
 						<h6 class="mtt-finess-story-title">FINESCITY STORY</h6>
-						<h5 class="font-weight-bold mb-3">FINEST IN TITENIUM PRODUCTS</h5>
+						<h4 class="mtt-finess-story-title2 mb-3">FINEST IN TITENIUM PRODUCTS</h4>
 						<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using...</p>
 						<br>
 						<a class="btn rounded-0 mtt-btn text-uppercase" href="<?php echo home_url();?>/why-titanium/">read more</a>
@@ -273,7 +270,7 @@ add_shortcode( 'mtt_finess_story', 'mtt_finess_story_shortcode' );
 /**
  * @return MTT Front page mtt_instragram HTML content to display the shortcode.
  */
-function mtt_instragram_shortcode() {
+function mtt_instragram_shortcode($args = array(), $instragram_url = "") {
 	ob_start();
 ?>
 	<section class="section mtt-instagram-section">
@@ -282,7 +279,8 @@ function mtt_instragram_shortcode() {
 				<div class="col-md-12">
 					<div class="mtt-instagram-title text-center">
 						<h6 class="mtt-instagram-title-sub pb-3 font-weight-bold">COMMUNITY</h6>
-						<h3 class="font-weight-bold">SHOP OUR INSTAGRAM <span class="mtt-instagram-title-span">@FITNESSCITY</span></h3>
+						<h3>SHOP OUR INSTAGRAM <span class="mtt-instagram-title-span">
+							<a href="<?php echo esc_url($instragram_url); ?>" target="_blank">@FITNESSCITY</a></span></h3>
 					</div>
 				</div>
 			</div>

@@ -23,7 +23,7 @@
 	                                <div class="row">
 	                                    <div class="col-md-2 col-sm-2 col-xs-2"><img src="<?php echo get_template_directory_uri(); ?>/img/envelope.png" alt=""></div>
 	                                    <div class="col-md-10 col-sm-10 col-xs-10">
-	                                        <h5 class="font-weight-bold">SUBSCRIBE TO KNOW OUR NEW <br> PRODUCTS LAUNCH $ SPECIAL OFFERS</h5>
+	                                        <h5 class="font-weight-bold">SUBSCRIBE TO KNOW ABOUT NEW <br> PRODUCT LAUNCH & SPECIAL OFFERS</h5>
 	                                    </div>
 	                                </div>
 	                            </div>
@@ -31,7 +31,7 @@
 	                        <div class="col-md-6 col-sm-12">
 	                            <div class="mtt-footer-signup-form">
 	                                <form action="#">
-	                                    <input type="email" placeholder="Your Email">
+	                                    <input type="email" placeholder="Enter email address">
 	                                    <a class="btn rounded-0 mtt-btn text-uppercase px-xs-1" href="#">sign up</a>
 	                                </form>
 	                            </div>

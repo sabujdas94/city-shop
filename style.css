@@ -343,7 +343,7 @@
      color: midnightblue;
 }
  a:focus {
-     outline: thin dotted;
+     outline: none;
 }
  a:hover, a:active {
      outline: 0;
@@ -752,7 +752,17 @@
  .mtt-nav-left .menu-item,  .mtt-nav-left .nav-item {
      padding-bottom: 20px;
 }
- 
+ .mtt-nav-right a.wishlist_products_counter {
+ 	 padding: .5rem 1rem;
+ 	 font-size: 12px;
+ 	 text-transform: uppercase;
+ 	 overflow: visible;
+}
+a.wishlist_products_counter.top_wishlist-heart::before{
+	line-height: 0;
+}
+
+
 /*MTT Mega menu (WP MEGA MENU Plugin) css style*/
 
 .wpmm-nav-wrap{
@@ -940,6 +950,7 @@
  .mtt-indoor-product-info, .mtt-outdoor-product-info {
      padding: 28px 0px;
      margin-top: 15px;
+     background: #f0f0f0;
 }
  .mtt-indoor-product-info h4, .mtt-outdoor-product-info h4 {
      letter-spacing: 2.5px;
@@ -951,8 +962,11 @@
  .mtt-fitness-p-section {
      padding: 50px 0px;
 }
- .mtt-bestseller-title h3, .mtt-indoor-product-info h4, .mtt-outdoor-product-info h4, .mtt-fitness-p-title h4 {
+ .mtt-bestseller-title h3, .mtt-indoor-product-info h4, 
+ .mtt-outdoor-product-info h4, .mtt-fitness-p-title h4 {
      color: #000;
+     font-family: "Brandon Grotesque Black";
+     font-weight: 200;
 }
  .mtt-categories {
      padding: 50px 0px;
@@ -990,16 +1004,24 @@
  .mtt-finess-story .mtt-finess-story-title {
      color: #2F5C85;
      padding-bottom: 10px;
-     font-weight: bold;
+     font-family: "Brandon Grotesque Black";
 }
- .mtt-instagram-title {
-     padding: 50px 0px;
+ .mtt-finess-story .mtt-finess-story-title2 {
+     font-family: "Brandon Grotesque Black";
 }
+
  .mtt-instagram-title .mtt-instagram-title-sub {
      color: #666666;
 }
- .mtt-instagram-title .mtt-instagram-title-span {
+ .mtt-instagram-title h3 {
+     font-family: "Brandon Grotesque Black";
+     font-weight:300;
+}
+ .mtt-instagram-title .mtt-instagram-title-span a{
      color: #2F5C85;
+     font-family: "Brandon Grotesque Black";
+     font-weight:300;
+     text-decoration: none;
 }
  .mtt-instagram img {
      width: 100%;
@@ -1007,6 +1029,9 @@
 }
  .mtt-finess-story {
      padding: 55px 25px;
+}
+ .mtt-finess-story p {
+     color: #555;
 }
  .mtt-instagram-title {
      padding: 50px 0px;
@@ -1097,9 +1122,10 @@
      float: right;
 }
  .mtt-footer-bottom .nav a {
-     color: #000;
+     color: #404040;
      padding: 0px;
      padding-left: 10px;
+     text-decoration: none;
 }
  .mtt-footer-bottom .nav li:first-child a {
      padding-left: 0px;
