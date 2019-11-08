@@ -32,7 +32,11 @@
 	                            <div class="mtt-footer-signup-form">
 	                                <form action="#">
 	                                    <input type="email" placeholder="Enter email address">
+<<<<<<< HEAD
 	                                    <a class="btn rounded-0 mtt-btn text-uppercase px-xs-1" href="#">sign up</a>
+=======
+	                                    <input type='submit' class="btn rounded-0 mtt-btn text-uppercase px-xs-1" value="Sign Up">
+>>>>>>> ebf070252aa8eb0d9249efbf3b3ce088d1e86d73
 	                                </form>
 	                            </div>
 	                        </div>
