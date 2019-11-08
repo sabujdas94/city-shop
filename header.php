@@ -44,7 +44,6 @@
 				<div class=" mtt-nav-area-row row">
                     <div class="col-md-5">
                         <div class="mtt-nav-left">
-                            <nav class="mtt-nav">
 							<?php
 
                                 if(function_exists('wp_nav_menu')){
@@ -57,7 +56,6 @@
                                     ));
                                 }
                             ?>
-                            </nav>
                         </div>
                     </div><!-- .col-md-5 -->
                     <div class="col-md-2">

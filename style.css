@@ -749,48 +749,82 @@
      overflow: hidden;
      padding-bottom: 15px;
 }
- .mtt-megamenu {
-     width: 100vw;
+ .mtt-nav-left .menu-item,  .mtt-nav-left .nav-item {
+     padding-bottom: 20px;
+}
+ 
+/*MTT Mega menu (WP MEGA MENU Plugin) css style*/
+
+.wpmm-nav-wrap{
+	/*no need*/
+}
+.wpmm-nav-wrap .wp-megamenu{
+	margin: 0px;
+}
+
+.wpmm-nav-wrap .wp-megamenu .menu-item{
+	display: inline-block;
+	overflow: visible;
+	margin-top:5px;
+}
+.wpmm-nav-wrap .wp-megamenu .menu-item > a {
+    padding: .5rem 1rem;
+    padding-left: 0px !important;
+    text-transform: uppercase;
+    text-align: center;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.wp-megamenu .wp-megamenu-sub-menu{
+	 width: 100vw;
      position: absolute;
      top: 100%;
+     margin-top: -0.5px;
      left: 0;
      margin-left: 0px;
      background-color: #fff;
      transition: opacity 0.7s ease-in-out;
      opacity: 0;
-     height: 0;
      visibility: hidden;
 }
- .menu-item:hover, .nav-item:hover {
-     overflow: visible;
-}
- .menu-item:hover>.mtt-megamenu, .nav-item:hover>.mtt-megamenu {
-     height: auto;
+ .wp-megamenu .menu-item:hover .wp-megamenu-sub-menu {
      transition: all 0.7s ease-in-out;
-     display: block;
      opacity: 1;
-     z-index: 9;
+     z-index: 999;
      visibility: visible;
 }
- .mtt-megamenu-content {
-     padding: 50px 200px;
-     padding-bottom: 0px;
+.wp-megamenu .wp-megamenu-sub-menu .wp-megamenu-sub-menu .wp-megamenu-sub-menu{
+	padding: 25px 15% 0px 15%;
 }
- .mtt-megamenu-item img {
-     height: 100%;
-     width: 100%;
+.wp-megamenu .wp-megamenu-sub-menu .wp-megamenu-sub-menu .wp-megamenu-sub-menu .menu-item{
+	width: 100%;
+	padding-bottom: 0px;
 }
- .mtt-megamenu-item-title {
-     margin: 15px auto;
+.wp-megamenu .wp-megamenu-sub-menu .wp-megamenu-sub-menu .wp-megamenu-sub-menu .textwidget {
+	text-align:center;
+	padding: 5px 0px;
+	background-color: #F0F0F0;
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }
- .mtt-megamenu a {
-     color: #000;
-     text-decoration: none;
+.wp-megamenu .wp-megamenu-sub-menu .wp-megamenu-sub-menu .wp-megamenu-sub-menu .textwidget p{
+	padding: 0px;
+	margin: 0px;
 }
- .mtt-megamenu-bottom {
-     background-color: #f0f0f0;
-     padding: 10px 0px;
+.wp-megamenu-sub-menu .gallery{
+	margin-bottom: 20px;
 }
+.wp-megamenu-sub-menu figure.gallery-item{
+	margin-bottom: 0px;
+}
+.wp-megamenu-sub-menu figure.gallery-item .gallery-caption{
+	margin-top: 10px;
+}
+/* end mega menu css */
  .mtt-nav-right ul {
      float: right;
 }
@@ -839,7 +873,7 @@
  .mtt-mobile-menu-row h2 {
      color: #000;
 }
- .mtt-mobile-menu-row .mtt-nav a {
+ .mtt-mobile-menu-row a {
      text-decoration: none;
 }
 /*========================================= mtt blog layout design ===========================================*/
@@ -1385,6 +1419,10 @@
      float: left;
      color: #404040;
 }
+ .single-product .product .summary .product_title{
+	font-size: 25px;
+ }
+
  .single-product .summary .price {
      width: 100%;
      float: left;
@@ -1686,10 +1724,10 @@
 	bottom: 15px;
 	right: -200px;
 	z-index: 999;
-	border: 1px solid#ffffff;
+	border: 5px solid rgba(47, 92, 133, 1);
 	border-radius: 100%;
 	outline: none;
-	background-color:rgba(47, 92, 133, 0.5);
+	background-color:rgba(47, 92, 133, 0.8);
 	opacity: 0.8;
 	color:white;
 	cursor: pointer;
@@ -1707,7 +1745,7 @@
 }
 #gototop:hover{
     background-color: rgba(47, 92, 133, 1);
-  	opacity:0.8;
+  	opacity:1;
 }
 #gototop.active-gototop{
 	right: 15px
