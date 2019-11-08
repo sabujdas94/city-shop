@@ -1761,11 +1761,34 @@ a.wishlist_products_counter.top_wishlist-heart::before{
      cursor: pointer;
 }
 
+/*tinv-wishlist css style */
+.tinv-wishlist .wishlist_item {
+	border-top: 1px solid #F0F0F0;
+}
+.tinv-wishlist .wishlist_item:last-child {
+	border-bottom: 1px solid #F0F0F0;
+}
+.tinv-wishlist button.button {
+	background-color: #000;
+	padding: 12px 15px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.tinv-wishlist .product-action button.button {
+	padding: 6px 10px;
+}
+.tinv-wishlist .product-remove button {
+
+    background-color:#000;
+    color: #fff;
+    padding-left: 1px;
+    x: ;
+}
+
 /*===================Subscription Form===========*/
 .btn-subscribe{
     max-width: 200px;
 }
-
 
 /*===============================================
 	Extra futures (like: goto top btn) CSS Style
