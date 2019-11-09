@@ -539,7 +539,9 @@
  .custom-logo-link {
      display: inline-block;
 }
-/*-------------------------------------------------------------- ## Captions --------------------------------------------------------------*/
+/*---------------------
+## Captions
+------------------------*/
  .wp-caption {
      margin-bottom: 1.5em;
      max-width: 100%;
@@ -555,7 +557,9 @@
  .wp-caption-text {
      text-align: center;
 }
-/*-------------------------------------------------------------- ## Galleries --------------------------------------------------------------*/
+/*----------------------
+## Galleries 
+------------------------*/
  .gallery {
      margin-bottom: 1.5em;
 }
@@ -592,7 +596,9 @@
  .gallery-caption {
      display: block;
 }
-/*============================ Custom Style ==============================*/
+/*============================
+	Custom Style 
+==============================*/
  @font-face {
      font-family: 'Brandon Grotesque Regular Italic';
      font-style: normal;
@@ -666,7 +672,7 @@
      background-color: #000;
      color: #fff;
      position: relative;
-     z-index: 999;
+     z-index: 9;
 }
  .mtt-nav-popup-content {
      padding: 7px 0px;
@@ -1884,7 +1890,12 @@ a.wishlist_products_counter.top_wishlist-heart::before{
      a.nav-link .fa {
          color: #fff;
     }
-    /*end nav area*/
+	/* mtt-indoor-product */
+	.mtt-indoor-product-col1, .mtt-indoor-product-col2, 
+	.mtt-outdoor-product-col1, .mtt-outdoor-product-col2 {
+		width: 50%;
+		float: left;
+	}
      .mtt-finess-story-img {
          position: relative;
     }
@@ -1942,11 +1953,38 @@ a.wishlist_products_counter.top_wishlist-heart::before{
          margin-right: 10px;
          font-size: 12px;
     }
+    /* mtt-indoor-product */
+    .mtt-indoor-product-col1, .mtt-outdoor-product-col1{
+		    padding-right: 8px;
+    }
+    .mtt-indoor-product-col2, .mtt-outdoor-product-col2{
+    	padding-left: 8px;
+    }
+    .mtt-indoor-product-col1, .mtt-outdoor-product-col2 {
+		width: 55%;
+    } 
+	.mtt-indoor-product-col2, .mtt-outdoor-product-col1 {
+		width: 45%;
+	}
+	.mtt-indoor-product-info, .mtt-outdoor-product-info {
+	    padding: 10px 0px;
+	}
+	.mtt-indoor-product-info .btn, .mtt-outdoor-product-info .btn {
+    	margin-top: 0px;
+	    font-size: 12px;
+	    padding: 5px 25px!important;
+	}
 }
  @media (max-width: 500px) {
      .mtt-nav-right li.menu-item a, .mtt-nav-right li.nav-item a {
          padding: 8px 8px;
     }
+    .mtt-indoor-product-col1, .mtt-outdoor-product-col2 {
+		width: 50%;
+    } 
+	.mtt-indoor-product-col2, .mtt-outdoor-product-col1 {
+		width: 50%;
+	}
 }
  @media (max-width: 359px) {
      .mtt-nav-right li.menu-item a, .mtt-nav-right li.nav-item a {
