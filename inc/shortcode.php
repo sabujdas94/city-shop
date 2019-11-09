@@ -104,7 +104,7 @@ function mtt_indoor_outdoor_shortcode() {
 		<div class="container">
 			<hr class="mtt-in-outdoor-section-hr">
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-3 mtt-indoor-product-col1 ">
 					<div class="mtt-product mtt-indoor-product">
 						<div class="mtt-indoor-product-img">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/1.jpg" alt="">
@@ -116,17 +116,18 @@ function mtt_indoor_outdoor_shortcode() {
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 mtt-indoor-product-col2">
 					<div class="mtt-product mtt-in-outdoor-product">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/2.jpg" alt="">
 					</div>
 				</div>
-				<div class="col-md-3">
+
+				<div class="col-md-3 mtt-outdoor-product-col1">
 					<div class="mtt-product mtt-in-outdoor-product">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/3.jpg" alt="">
 					</div>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 mtt-outdoor-product-col2">
 					<div class="mtt-outdoor-product">
 						<div class="mtt-product mtt-outdoor-product-img">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/4.jpg" alt="">
