@@ -69,7 +69,7 @@ function mtt_best_seller_shortcode() {
 			<div class="row">
 				<div class="col-md-12">
 					<div class="mtt-bestseller-title text-center">
-						<h3>BEST SELLERS</h3>
+						<h4>BEST SELLERS</h4>
 					</div>
 				</div>
 			</div>
@@ -112,7 +112,7 @@ function mtt_indoor_outdoor_shortcode() {
 						<div class="mtt-indoor-product-info text-center">
 							<h4>INDOOR</h4>
 							<h6 class="font-weight-bold">TITANIUM PRODUCTS</h6>
-							<a class="btn rounded-0 mtt-btn" href="<?php echo home_url();?>/product-category/indoor-titanium-products/">SHOP NOW</a>
+							<a class="btn rounded-0 mtt-btn px-5" href="<?php echo home_url();?>/product-category/indoor-titanium-products/">SHOP NOW</a>
 						</div>
 					</div>
 				</div>
@@ -134,7 +134,7 @@ function mtt_indoor_outdoor_shortcode() {
 						<div class="mtt-outdoor-product-info text-center">
 							<h4>OUTDOOR</h4>
 							<h6 class="font-weight-bold">TITANIUM PRODUCTS</h6>
-							<a class="btn rounded-0 mtt-btn" href="<?php echo home_url();?>/product-category/outdoor-titanium-products/">SHOP NOW</a>
+							<a class="btn rounded-0 mtt-btn px-5" href="<?php echo home_url();?>/product-category/outdoor-titanium-products/">SHOP NOW</a>
 						</div>
 					</div>
 				</div>
@@ -248,11 +248,11 @@ function mtt_finess_story_shortcode() {
 				</div>
 				<div class="col-md-6 col-sm-12">
 					<div class="mtt-finess-story text-center">
-						<h6 class="mtt-finess-story-title">FINESCITY STORY</h6>
-						<h4 class="mtt-finess-story-title2 mb-3">FINEST IN TITENIUM PRODUCTS</h4>
+						<h6 class="mtt-finess-story-title">FINESSCITY STORY</h6>
+						<h4 class="mtt-finess-story-title2 mb-3">FINEST IN TITANIUM PRODUCTS</h4>
 						<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using...</p>
 						<br>
-						<a class="btn rounded-0 mtt-btn text-uppercase" href="<?php echo home_url();?>/why-titanium/">read more</a>
+						<a class="btn rounded-0 mtt-btn text-uppercase px-5" href="<?php echo home_url();?>/why-titanium/">Read More</a>
 					</div>
 				</div>
 			</div>
@@ -279,8 +279,8 @@ function mtt_instragram_shortcode($args = array(), $instragram_url = "") {
 				<div class="col-md-12">
 					<div class="mtt-instagram-title text-center">
 						<h6 class="mtt-instagram-title-sub pb-3 font-weight-bold">COMMUNITY</h6>
-						<h3>SHOP OUR INSTAGRAM <span class="mtt-instagram-title-span">
-							<a href="<?php echo esc_url($instragram_url); ?>" target="_blank">@FITNESSCITY</a></span></h3>
+						<h4>SHOP OUR INSTAGRAM <span class="mtt-instagram-title-span">
+							<a href="<?php echo esc_url($instragram_url); ?>" target="_blank">@FITNESSCITY</a></span></h4>
 					</div>
 				</div>
 			</div>

@@ -645,7 +645,9 @@
 }
 .mtt-btn {
      background-color: #2F5C85 !important;
-     color: #fff;
+     color: #f0f0f0;
+     font-size: 14px;
+     font-family: "Brandon Grotesque Black";
 }
  .mtt-btn:hover {
      color: #f9f9f9;
@@ -969,8 +971,9 @@ a.wishlist_products_counter.top_wishlist-heart::before{
  .mtt-fitness-p-section {
      padding: 50px 0px;
 }
- .mtt-bestseller-title h3, .mtt-indoor-product-info h4, 
- .mtt-outdoor-product-info h4, .mtt-fitness-p-title h4 {
+ .mtt-bestseller-title h4, .mtt-indoor-product-info h4, 
+ .mtt-outdoor-product-info h4, .mtt-fitness-p-title h4, 
+ .mtt-instagram-title h4 {
      color: #000;
      font-family: "Brandon Grotesque Black";
      font-weight: 200;
@@ -1019,10 +1022,6 @@ a.wishlist_products_counter.top_wishlist-heart::before{
 
  .mtt-instagram-title .mtt-instagram-title-sub {
      color: #666666;
-}
- .mtt-instagram-title h3 {
-     font-family: "Brandon Grotesque Black";
-     font-weight:300;
 }
  .mtt-instagram-title .mtt-instagram-title-span a{
      color: #2F5C85;
