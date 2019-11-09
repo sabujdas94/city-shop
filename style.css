@@ -974,7 +974,7 @@ a.wishlist_products_counter.top_wishlist-heart::before{
  .mtt-bestseller-title h4, .mtt-indoor-product-info h4, 
  .mtt-outdoor-product-info h4, .mtt-fitness-p-title h4, 
  .mtt-instagram-title h4 {
-     color: #000;
+     color: #333333;
      font-family: "Brandon Grotesque Black";
      font-weight: 200;
 }
@@ -1848,9 +1848,22 @@ a.wishlist_products_counter.top_wishlist-heart::before{
      #secondary.widget-area {
          width: 100%;
     }
+    /*woocommerce mobile view css*/
      .woocommerce #secondary.widget-area {
          width: 100%;
          display: none;
+    }
+    .woocommerce .products{
+    	clear: both;
+    	/*display: flex;*/
+    }
+    .woocommerce .products .product {
+		width: 50%;
+    	float: left;
+    	/*flex-grow: 1;*/
+	    display: flex;
+	    flex-direction: column;
+	    border: 1px solid red;
     }
     /*nav-row*/
      .mtt-nav-area-row {
