@@ -81,7 +81,7 @@ function mtt_best_seller_shortcode() {
 			<div class="row">
 				<div class="col-md-12">
 					<div class="mtt-bestseller-section-btn">
-						<a class="btn rounded-0 mtt-btn px-4" href="<?php echo get_permalink( woocommerce_get_page_id( 'shop' ) ); ?>">VIEW ALL PRODUCTS</a>
+						<a class="btn rounded-0 mtt-btn px-5" href="<?php echo get_permalink( woocommerce_get_page_id( 'shop' ) ); ?>">VIEW ALL PRODUCTS</a>
 					</div>
 				</div>
 			</div>
