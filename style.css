@@ -1,4 +1,4 @@
- 
+
 /*! Theme Name: CitySHop Theme URI: http://underscores.me/ Author: iam00 Author URI: https://profiles.wordpress.org/iam00/ Description: City Shop is WordPress eCommerce theme based on WooCommerce. Version: 1.0.0 License: GNU General Public License v2 or later License URI: LICENSE Text Domain: city-shop Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready This theme, like WordPress, is licensed under the GPL. Use it to make something cool, have fun, and share what you've learned with others. CitySHop is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc. Underscores is distributed under the terms of the GNU GPL v2 or later. Normalizing styles have been helped along thanks to the fine work of Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/ */
 /*-------------------------------------------------------------- >>> TABLE OF CONTENTS: ---------------------------------------------------------------- # Normalize # Typography # Elements # Forms # Navigation ## Links ## Menus # Accessibility # Alignments # Clearings # Widgets # Content ## Posts and pages ## Comments # Infinite scroll # Media ## Captions ## Galleries --------------------------------------------------------------*/
 /*-------------------------------------------------------------- # Normalize --------------------------------------------------------------*/
@@ -1744,14 +1744,82 @@ a.wishlist_products_counter.top_wishlist-heart::before{
  .site-header-cart li.woocommerce-mini-cart-item.mini_cart_item {
      margin-bottom: 10px;
      margin-top: 15px;
-     border-bottom: 1px solid;
+     border-bottom: 1px solid #d8d8d8;
      padding-bottom: 15px;
 }
- .site-header-cart a img {
-     width: 80px;
+.mtt-mini-cart-input-qty{
+    width: 120px;
+    position: relative;
+}
+.mtt-mini-cart-product-quantity {
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.mtt-mini-cart-input-qty input.form-control{
+    text-align: center;
+}
+
+.mtt-mini-cart-input-qty .form-control,
+.mtt-mini-cart-input-qty .input-group-prepend .input-group-text,
+.mtt-mini-cart-input-qty .input-group-append .input-group-text{
+    background-color: #ffffff;
+    border: 2px solid #d8d8d8;
+    height: 40px;
+    border-radius: 0;
+}
+.mtt-mini-cart-input-qty .form-control,
+.mtt-mini-cart-input-qty .input-group-prepend .input-group-text{
+    border-right: 0;
+}
+.mtt-mini-cart-input-qty .form-control,
+.mtt-mini-cart-input-qty .input-group-append .input-group-text{
+    border-left: 0;
+}
+.mtt-mini-cart-product-name.float-left{
+    max-width: 180px
+}
+
+.site-header-cart a img {
+     width: 110px;
+     margin-right: 15px;
      border: 1px solid #d8d8d8;
 }
- button.close-cart-widget {
+.mtt-mini-cart-price{
+    position: absolute;
+    top: 0;
+    left: 180px;
+    margin-top: 7px;
+    color: #000;
+    font-weight: 600;
+}
+a.remove.remove_from_cart_button {
+    position: absolute;
+    right: 25px;
+}
+.widget.woocommerce.widget_shopping_cart a.button {
+    background: #191b1c;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.widget.woocommerce.widget_shopping_cart {
+    box-shadow: none;
+}
+.widget.woocommerce.widget_shopping_cart span.woocommerce-Price-amount.amount {
+    float: right;
+}
+p.woocommerce-mini-cart__buttons.buttons {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+button.close-cart-widget {
      background: transparent;
      border: none;
      color: #fff;

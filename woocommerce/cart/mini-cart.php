@@ -22,7 +22,7 @@ defined( 'ABSPATH' ) || exit;
 do_action( 'woocommerce_before_mini_cart' ); ?>
 
 <?php if ( ! WC()->cart->is_empty() ) : ?>
-	<ul class="woocommerce-mini-cart check cart_list product_list_widget <?php echo esc_attr( $args['list_class'] ); ?>">
+	<ul class="woocommerce-mini-cart check cart_list product_list_widget float-none p-3 <?php echo esc_attr( $args['list_class'] ); ?>">
 		<?php
 		do_action( 'woocommerce_before_mini_cart_contents' );
 
@@ -36,30 +36,51 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 				$product_price     = apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
 				$product_permalink = apply_filters( 'woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink( $cart_item ) : '', $cart_item, $cart_item_key );
 				?>
-				<li class="woocommerce-mini-cart-item <?php echo esc_attr( apply_filters( 'woocommerce_mini_cart_item_class', 'mini_cart_item', $cart_item, $cart_item_key ) ); ?>">
-					<?php
-					echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-						'woocommerce_cart_item_remove_link',
-						sprintf(
-							'<a href="%s" class="remove remove_from_cart_button" aria-label="%s" data-product_id="%s" data-cart_item_key="%s" data-product_sku="%s">&times;</a>',
-							esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
-							esc_attr__( 'Remove this item', 'woocommerce' ),
-							esc_attr( $product_id ),
-							esc_attr( $cart_item_key ),
-							esc_attr( $_product->get_sku() )
-						),
-						$cart_item_key
-					);
-					?>
+				<li class="woocommerce-mini-cart-item clearfix <?php echo esc_attr( apply_filters( 'woocommerce_mini_cart_item_class', 'mini_cart_item', $cart_item, $cart_item_key ) ); ?>">
 					<?php if ( empty( $product_permalink ) ) : ?>
 						<?php echo $thumbnail . $product_name; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 					<?php else : ?>
-						<a href="<?php echo esc_url( $product_permalink ); ?>">
-							<?php echo $thumbnail . $product_name; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-						</a>
+						<div class="mtt-min-cart-product-thumb float-left">
+							<a href="<?php echo esc_url( $product_permalink ); ?>">
+								<?php echo $thumbnail ; // phpcs WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+							</a>
+						</div>
+						<div class="mtt-mini-cart-product-name float-left">
+							<a href="<?php echo esc_url( $product_permalink ); ?>"><?php echo $product_name ; // phpcs WordPress.Security.EscapeOutput.OutputNotEscaped ?></a>
+							<?php echo wc_get_formatted_cart_item_data( $cart_item ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+							<?php echo apply_filters( 'woocommerce_widget_cart_item_quantity', '<div class="mtt-mini-cart-product-quantity">' . sprintf( 'Pieces: %s', $cart_item['quantity'] ) . '</div>', $cart_item, $cart_item_key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+							<div class="mtt-mini-cart-input-qty">
+								<div class="input-group mb-3">
+								  	<div class="input-group-prepend">
+								    	<span class="input-group-text">-</span>
+								  	</div>
+								  	<input type="text" class="form-control" aria-label="quantity" value="<?php echo $cart_item['quantity']; ?>">
+								  	<div class="input-group-append">
+								    	<span class="input-group-text">+</span>
+								  	</div>
+								</div>
+								<div class="mtt-mini-cart-price">
+									<?php 
+										$price  = $cart_item['quantity'] * floatval($_product->get_price());
+									 	echo get_woocommerce_currency_symbol() . number_format($price, 2); ?>
+								</div>
+							</div>
+						</div>
+						<?php
+						echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+							'woocommerce_cart_item_remove_link',
+							sprintf(
+								'<a href="%s" class="remove remove_from_cart_button" aria-label="%s" data-product_id="%s" data-cart_item_key="%s" data-product_sku="%s"><i class="fa fa-times-circle" aria-hidden="true"></i></a>',
+								esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
+								esc_attr__( 'Remove this item', 'woocommerce' ),
+								esc_attr( $product_id ),
+								esc_attr( $cart_item_key ),
+								esc_attr( $_product->get_sku() )
+							),
+							$cart_item_key
+						);
+						?>
 					<?php endif; ?>
-					<?php echo wc_get_formatted_cart_item_data( $cart_item ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-					<?php echo apply_filters( 'woocommerce_widget_cart_item_quantity', '<span class="quantity">' . sprintf( '%s &times; %s', $cart_item['quantity'], $product_price ) . '</span>', $cart_item, $cart_item_key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 				</li>
 				<?php
 			}
@@ -69,7 +90,7 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 		?>
 	</ul>
 
-	<p class="woocommerce-mini-cart__total total">
+	<p class="woocommerce-mini-cart__total total px-3">
 		<?php
 		/**
 		 * Hook: woocommerce_widget_shopping_cart_total.
