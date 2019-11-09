@@ -1765,6 +1765,15 @@ a.wishlist_products_counter.top_wishlist-heart::before{
      font-size: 18px;
      cursor: pointer;
 }
+.site-header-cart .widget_shopping_cart {
+	padding: 15px;
+    box-shadow: none;
+}
+
+
+
+
+
 
 /*tinv-wishlist css style */
 .tinv-wishlist .wishlist_item {
