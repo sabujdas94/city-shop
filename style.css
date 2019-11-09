@@ -1853,18 +1853,24 @@ a.wishlist_products_counter.top_wishlist-heart::before{
          width: 100%;
          display: none;
     }
-    .woocommerce .products{
-    	clear: both;
-    	/*display: flex;*/
-    }
-    .woocommerce .products .product {
-		width: 50%;
-    	float: left;
-    	/*flex-grow: 1;*/
-	    display: flex;
-	    flex-direction: column;
-	    border: 1px solid red;
-    }
+    /* Flexbox on WooCommerce archive products */
+	.woocommerce .products ul,
+	.woocommerce ul.products {
+		 display: flex;
+		 flex-flow: row wrap;
+	}
+	.woocommerce ul.products li.product,
+	.woocommerce-page ul.products li.product {
+		 display: flex;
+		 flex-flow: column nowrap;
+		 width: 46%;
+		 margin-left: 2%;
+		 margin-right: 2%;
+	}
+	.woocommerce ul.products li.product .button {
+		 margin-top: auto;
+		 display: table;
+	}
     /*nav-row*/
      .mtt-nav-area-row {
          display: none;
