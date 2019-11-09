@@ -248,7 +248,7 @@ if ( ! function_exists( 'city_shop_woocommerce_header_cart' ) ) {
 				<div id="site-header-cart" class="site-header-cart">
 					<div class="position-relative">
 						<div class="cart-popup-title">
-							<h4>Your Cart 2 Items</h4>
+							<h4>Your Cart <?php echo WC()->cart->get_cart_contents_count(); ?> Items</h4>
 							<button class="close-cart-widget" id="close-cart-widget">X</button>
 						</div>
 						<?php

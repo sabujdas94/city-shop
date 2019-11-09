@@ -1,15 +1,7 @@
 <?php
 /**
  * Checkout Form
-
-
-
-
-					Edited by MTT
-
-
-
-
+ * Edited by MTT
  *
  * This template can be overridden by copying it to yourtheme/woocommerce/checkout/form-checkout.php.
  *
@@ -168,7 +160,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 				</div>
 				<div class="row">
 					<div class="col-6">
-						<?php esc_html_e( 'Total', 'woocommerce' ); ?>
+						<?php esc_html_e( 'Estimated Total', 'woocommerce' ); ?>
 					</div>
 					<div class="col-6">
 						<?php wc_cart_totals_order_total_html(); ?>
