@@ -1,7 +1,8 @@
 <?php
 /**
  * Checkout Form
- * Edited by MTT
+ *
+ * ================ Edited by MTT ==================
  *
  * This template can be overridden by copying it to yourtheme/woocommerce/checkout/form-checkout.php.
  *
@@ -42,6 +43,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 						<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
 						<div class="col2-set" id="customer_details">
 							<div class="col-12 p-0">
+								<h4 class="mtt-checkout-form-title mt-4 mb-5"><?php esc_html_e( '01 CONTACT INFORMATION', 'woocommerce' ); ?></h4>
 								<?php do_action( 'woocommerce_checkout_billing' ); ?>
 							</div>
 
@@ -56,7 +58,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 					
 					<?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
 					
-					<h3 id="order_review_heading" class="font-weight-bold"><?php esc_html_e( '04 ORDER SUMMARY', 'woocommerce' ); ?></h3>
+					<h4 id="order_review_heading" class="mtt-checkout-form-title"><?php esc_html_e( '04 ORDER SUMMARY', 'woocommerce' ); ?></h4>
 					
 					<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 
