@@ -45,16 +45,16 @@
         <div class="mtt-footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="mtt-footer-left">
-                            <?php dynamic_sidebar('footer-top-description-sidebar'); ?>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 order-md-2">
                         <div class="mtt-footer-right">
                             <div class="row">
                                 <?php dynamic_sidebar('footer-top-sidebar'); ?>
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <div class="mtt-footer-left">
+                            <?php dynamic_sidebar('footer-top-description-sidebar'); ?>
                         </div>
                     </div>
                 </div>
@@ -115,7 +115,6 @@
         });
         jQuery(".menu-cart-link").on('click', function(e){
             e.preventDefault();
-            console.log(jQuery("#site-header-cart").attr('class'));
             jQuery("#site-header-cart").addClass('open');
         });
     </script>
