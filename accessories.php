@@ -27,7 +27,7 @@
 										<div class="mtt-category">
 											<div class="row">
 												<div class="col p-0">
-													<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon1.png" alt=""></a>
+													<img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon1.png" alt="">
 												</div>
 												<div class="col p-0">
 													<h6 class="text-left mt-4">100% <br>HEALTHY</h6>
@@ -39,7 +39,7 @@
 										<div class="mtt-category">
 											<div class="row">
 												<div class="col p-0">
-													<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon2.png" alt=""></a>
+													<img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon2.png" alt="">
 												</div>
 												<div class="col p-0">
 													<h6 class="text-left mt-4">EXTRA <br>STRONG</h6>
@@ -51,7 +51,7 @@
 										<div class="mtt-category">
 											<div class="row">
 												<div class="col p-0">
-													<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon3.png" alt=""></a>
+													<img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon3.png" alt="">
 												</div>
 												<div class="col p-0">
 													<h6 class="text-left mt-4">ULTRA <br>LIGHWEIGHT</h6>
@@ -63,7 +63,7 @@
 										<div class="mtt-category">
 											<div class="row">
 												<div class="col p-0">
-													<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon4.png" alt=""></a>
+													<img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon4.png" alt="">
 												</div>
 												<div class="col p-0">
 													<h6 class="text-left mt-4">ECO <br>FRIENDLY</h6>
@@ -79,7 +79,7 @@
 			</section><!-- .mtt-accessories-section -->
 
 			<section class="section mtt-accessories-p-section">
-				<div class="container-fluid">
+				<div class="container">
 					<div class="row">
 						<?php
 						echo do_shortcode('[products columns="4"]');

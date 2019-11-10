@@ -1390,9 +1390,11 @@ a.wishlist_products_counter.top_wishlist-heart::before{
      color: #f9f9f9;
 }
  .woocommerce .mtt-product-btn {
+ 	 font-size: 12px;
      background-color: #fff;
+     border: 2px solid #ddd;
      position: absolute;
-     top: 0;
+     top: 5%;
      left: 50%;
      transform: translateX(-50%) translateY(-50%);
      width: 70%;

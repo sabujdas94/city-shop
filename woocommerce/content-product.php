@@ -64,5 +64,5 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 */
 	do_action( 'woocommerce_after_shop_loop_item' );
 	?>
-	<a class="btn rounded-0 mtt-product-btn" href="<?php echo get_permalink();?>">More Details</a>
+	<a class="btn rounded-0 mtt-product-btn font-weight-bold" href="<?php echo get_permalink();?>">MORE DETAILS</a>
 </li>
