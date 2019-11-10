@@ -2010,12 +2010,13 @@ button.close-cart-widget {
     .mtt-hide-sm{
         display: none;
     }
-     .mtt-single-woo-product-gallery {
+    .fixed-header.admin-bar .mtt-header .mtt-nav-area{
+        top: 0;
+    }
+    .mtt-single-woo-product-gallery {
          width: 100%;
          padding: 50px;
          padding-bottom: 0px;
-    }
-    }
     }
      .single-product .mtt-single-woo-product-gallery .mtt-product-gallery-cat, .single-product .mtt-single-woo-product-gallery .mtt-categories {
          padding: 0px;
@@ -2056,9 +2057,9 @@ button.close-cart-widget {
 		 display: table;
 	}
     /*nav-row*/
-     .mtt-nav-area-row {
+    /* .mtt-nav-area-row {
          display: none;
-    }
+    }*/
      .mtt-mobile-menu-row {
          display: block;
     }

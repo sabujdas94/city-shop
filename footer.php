@@ -35,7 +35,7 @@
                         <div class="col-md-6 col-sm-12">
                             <div class="mtt-footer-signup-form">
                                 <form action="#">
-                                    <input type="email" placeholder="Enter email address">
+                                    <input type="email" class="text-center text-sm-left" placeholder="Enter email address">
                                     <input type='submit' class="btn rounded-0 mtt-btn text-uppercase px-xs-1"
                                         value="Sign Up">
                                 </form>
@@ -105,16 +105,16 @@
 </footer><!-- #footer -->
 
 <script>
-document.addEventListener(
-    "DOMContentLoaded", () => {
-        new Mmenu("#mtt-mmenu", {
-            "extensions": [
-                "pagedim-black"
-            ],
-            "counters": true
-        });
-    }
-);
+// document.addEventListener(
+//     "DOMContentLoaded", () => {
+//         new Mmenu("#mtt-mmenu", {
+//             "extensions": [
+//                 "pagedim-black"
+//             ],
+//             "counters": true
+//         });
+//     }
+// );
 jQuery("#close-cart-widget").on('click', function(e) {
     e.preventDefault();
     jQuery("#site-header-cart").removeClass('open');

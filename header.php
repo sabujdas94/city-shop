@@ -41,14 +41,12 @@
             </div>
         </div>
         <header id="masthead" class="header mtt-header site-header">
-            <div class="mtt-nav-area <?php if (is_front_page()) : echo 'mtt-transparent-nav-area';
-                                        endif; ?>">
+            <div class="mtt-nav-area <?php if (is_front_page()) : echo 'mtt-transparent-nav-area'; endif ?>">
                 <div class="container-fluid">
                     <div class=" mtt-nav-area-row row">
                         <div class="col-md-5">
-                            <div class="mtt-nav-left">
+                            <div class="mtt-nav-left mtt-hide-sm">
                                 <?php
-
                                 if (function_exists('wp_nav_menu')) {
                                     wp_nav_menu(array(
                                         'theme_location' => 'header_left_menu',
@@ -61,7 +59,7 @@
                                 ?>
                             </div>
                         </div><!-- .col-md-5 -->
-                        <div class="col-md-2">
+                        <div class="col-md-2 text-center text-sm-left">
                             <div class="mtt-logo site-branding">
                                 <?php
                                 if (get_custom_logo() != '') {
