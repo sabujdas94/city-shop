@@ -161,10 +161,8 @@
                         <div class="mtt-nav-right">
                             <nav class="mtt-nav">
                                 <ul class="nav">
-                                    <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>"><i class="fa fa-heart-o"></i></a></li>
-                                    <!-- <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>/cart"><i class="fa fa-shopping-bag"></i></a></li> -->
+                                    <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>/wishlist"><i class="fa fa-heart-o"></i></a></li>
                                     <?php city_shop_woocommerce_header_cart(); ?>
-                                    <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>/my-account">Login</a></li>
                                 </ul>
                             </nav>
                         </div>

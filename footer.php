@@ -45,12 +45,12 @@
         <div class="mtt-footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 mtt-footer-left-col">
                         <div class="mtt-footer-left">
                             <?php dynamic_sidebar('footer-top-description-sidebar'); ?>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mtt-footer-right-col">
                         <div class="mtt-footer-right">
                             <div class="row">
                                 <?php dynamic_sidebar('footer-top-sidebar'); ?>
