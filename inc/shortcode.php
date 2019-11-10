@@ -6,6 +6,123 @@
  */
 
 /**
+ * @return MTT login form shortcode.
+ */
+function mtt_login_form_shortcode() {
+	ob_start();
+
+	// if (is_user_logged_in()):
+	// 	$my_account = home_url();
+	// 	$my_account .= "/my-account";
+	// 	header('Location: ' . $my_account);
+	// endif;
+?>
+	<section class="section mtt-login-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="mtt-section-title text-center">
+						<h1 class="font-weight-bold"><?php esc_html_e("WELCOME BACK", "city-shop");?></h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- .mtt-login-section -->
+
+	<section class="section mtt-login-form-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 offset-md-4">
+					<div class="mtt-login">
+						<p class="text-center py-2"><?php esc_html_e("Sign into your existing finessCity account", "city-shop");?></p>
+						<form class="woocommerce-form woocommerce-form-login login" method="post">
+							<div class="form-group">
+								<label for="username" class="font-weight-bold"><?php esc_html_e( 'Email', 'woocommerce' ); ?> <span class="required">*</span></label>
+								<input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="username" id="username" placeholder="JOHN.SMIT@EXAMPLE.COM" autocomplete="username" value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( wp_unslash( $_POST['username'] ) ) : ''; ?>" />
+								<?php // @codingStandardsIgnoreLine ?>
+							</div>
+							<div class="form-group">
+								<label for="password" class="font-weight-bold"><?php esc_html_e( 'Password', 'woocommerce' ); ?> <span class="required">*</span></label>
+								<input class="woocommerce-Input woocommerce-Input--text input-text form-control" type="password" name="password" id="password" placeholder="PASSWORD" autocomplete="current-password" />
+							</div>
+							<div class="form-group text-right">
+								<a href="<?php echo esc_url( wp_lostpassword_url() ); ?>" class="font-weight-bold"><?php esc_html_e( 'Forgot Password?', 'woocommerce' ); ?></a>
+							</div>
+							<?php wp_nonce_field( 'woocommerce-login', 'woocommerce-login-nonce' ); ?>
+							<button type="submit" class="woocommerce-button button woocommerce-form-login__submit btn mtt-btn rounded-0 btn-block" name="login" value="<?php esc_attr_e( 'SIGN IN', 'woocommerce' ); ?>"><?php esc_html_e( 'SIGN IN', 'woocommerce' ); ?></button>
+							<div class="form-group text-center">
+								<input class="woocommerce-form__input woocommerce-form__input-checkbox mt-3" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span><?php esc_html_e( 'Remember me', 'woocommerce' ); ?></span>
+								<p class="text-center py-3">New to finessCity? <a href="<?php echo home_url();?>/register" class="font-weight-bold">Create an account</a></p>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- .mtt-login-form-section -->
+<?php
+
+	return ob_get_clean();
+}
+add_shortcode( 'mtt_login_form', 'mtt_login_form_shortcode' );
+
+/**
+ * @return MTT Register form shortcode.
+ */
+function mtt_register_form_shortcode() {
+	ob_start();
+?>
+	<section class="section mtt-login-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="mtt-section-title text-center">
+						<h1 class="font-weight-bold"><?php esc_html_e("WELCOME BACK", "city-shop");?></h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- .mtt-login-section -->
+
+	<section class="section mtt-login-form-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 offset-md-4">
+					<div class="mtt-login">
+						<p class="text-center py-2"><?php esc_html_e("Register your finessCity account", "city-shop");?></p>
+						<form method="post" class="woocommerce-form woocommerce-form-register register" <?php do_action( 'woocommerce_register_form_tag' ); ?> >
+							<div class="form-group">
+								<label for="reg_username" class="font-weight-bold"><?php esc_html_e( 'Username', 'woocommerce' ); ?> <span class="required">*</span></label>
+								<input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="username" id="reg_username" placeholder="USER NAME" autocomplete="username" value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( wp_unslash( $_POST['username'] ) ) : ''; ?>" />
+								<?php // @codingStandardsIgnoreLine ?>
+							</div>
+							<div class="form-group">
+								<label for="reg_email" class="font-weight-bold"><?php esc_html_e( 'Email', 'woocommerce' ); ?> <span class="required">*</span></label>
+								<input type="email" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="email" id="reg_email" placeholder="JOHN.SMIT@EXAMPLE.COM" autocomplete="email" value="<?php echo ( ! empty( $_POST['email'] ) ) ? esc_attr( wp_unslash( $_POST['email'] ) ) : ''; ?>" />
+								<?php // @codingStandardsIgnoreLine ?>
+							</div>
+							<div class="form-group">
+								<label for="reg_password" class="font-weight-bold"><?php esc_html_e( 'Password', 'woocommerce' ); ?> <span class="required">*</span></label>
+								<input type="password" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="password" id="reg_password" autocomplete="new-password" />
+							</div>
+							<?php wp_nonce_field( 'woocommerce-register', 'woocommerce-register-nonce' ); ?>
+							<button type="submit" class="woocommerce-Button woocommerce-button button woocommerce-form-register__submit btn mtt-btn rounded-0 btn-block" name="register" value="<?php esc_attr_e( 'REGISTER', 'woocommerce' ); ?>"><?php esc_html_e( 'REGISTER', 'woocommerce' ); ?></button>
+							<p class="text-center py-3 m-0">Already have finessCity Account? <a href="<?php echo home_url();?>/login" class="font-weight-bold">Login</a></p>
+							<?php // This action will echo Register Tearm and condition // do_action( 'woocommerce_register_form' ); ?>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- .mtt-login-form-section -->
+<?php
+
+	return ob_get_clean();
+}
+add_shortcode( 'mtt_register_form', 'mtt_register_form_shortcode' );
+
+
+/**
  * @return MTT Popup Offers HTML content to display the shortcode.
  */
 function mtt_popup_offer_shortcode() {

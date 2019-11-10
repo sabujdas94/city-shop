@@ -130,7 +130,7 @@ function city_shop_widgets_init() {
 		'name'          => esc_html__( 'Footer Top Sidebar', 'city-shop' ),
 		'id'            => 'footer-top-sidebar',
 		'description'   => esc_html__( 'Add widgets here.', 'city-shop' ),
-		'before_widget' => '<div class="col-md-4"><section id="%1$s" class="widget %2$s">',
+		'before_widget' => '<div class="col-md-4 col-6"><section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section></div>',
 		'before_title'  => '<h6 class="mtt-footer-title">',
 		'after_title'   => '</h6>',

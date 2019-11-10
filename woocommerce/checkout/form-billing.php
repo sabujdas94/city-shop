@@ -1,15 +1,8 @@
 <?php
 /**
  * Checkout billing information form
-
-
-
-
-					Edited By MTT
-
-
-
-
+ *
+ * ================= Edited By MTT =================
  *
  * This template can be overridden by copying it to yourtheme/woocommerce/checkout/form-billing.php.
  *
@@ -30,11 +23,11 @@ defined( 'ABSPATH' ) || exit;
 <div class="woocommerce-billing-fields">
 	<?php if ( wc_ship_to_billing_address_only() && WC()->cart->needs_shipping() ) : ?>
 
-		<h3><?php esc_html_e( 'Billing &amp; Shipping', 'woocommerce' ); ?></h3>
+		<h4 class="mtt-checkout-form-title"><?php esc_html_e( '02 BILLING &amp; SHIPPING DETAILS', 'woocommerce' ); ?></h4>
 
 	<?php else : ?>
 
-		<h3 class="font-weight-bold"><?php esc_html_e( '01 SHIPPING DETAILS', 'woocommerce' ); ?></h3>
+		<h4 class="mtt-checkout-form-title"><?php esc_html_e( '02 SHIPPING DETAILS', 'woocommerce' ); ?></h4>
 
 	<?php endif; ?>
 

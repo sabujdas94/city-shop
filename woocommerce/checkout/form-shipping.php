@@ -2,15 +2,8 @@
 /**
  * Checkout shipping information form
  *
-
-
-
-				Edited by MTT
-
-
-
-
-
+ * ================ Edited by MTT ==================
+ *
  * This template can be overridden by copying it to yourtheme/woocommerce/checkout/form-shipping.php.
  *
  * HOWEVER, on occasion WooCommerce will need to update template files and you
@@ -30,12 +23,12 @@ defined( 'ABSPATH' ) || exit;
 <div class="woocommerce-shipping-fields">
 	<?php if ( true === WC()->cart->needs_shipping_address() ) : ?>
 
-		<h3 id="ship-to-different-address" class="font-weight-bold">
+		<h4 id="ship-to-different-address" class="mtt-checkout-form-title">
 			<label class="woocommerce-form__label woocommerce-form__label-for-checkbox checkbox">
-				<span><?php esc_html_e( '02 DIFFRENT SHIPPING ADDRESS?', 'woocommerce' ); ?></span>
+				<span class="mtt-checkout-form-title-span"><?php esc_html_e( '03 DIFFRENT SHIPPING ADDRESS?', 'woocommerce' ); ?></span>
 				<input id="ship-to-different-address-checkbox" class="woocommerce-form__input woocommerce-form__input-checkbox input-checkbox" <?php checked( apply_filters( 'woocommerce_ship_to_different_address_checked', 'shipping' === get_option( 'woocommerce_ship_to_destination' ) ? 1 : 0 ), 1 ); ?> type="checkbox" name="ship_to_different_address" value="1" /> 
 			</label>
-		</h3>
+		</h4>
 
 		<div class="shipping_address">
 
@@ -64,7 +57,7 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php if ( ! WC()->cart->needs_shipping() || wc_ship_to_billing_address_only() ) : ?>
 
-			<h3 class="font-weight-bold"><?php esc_html_e( '03 ADDITIONAL INFORMATION', 'woocommerce' ); ?></h3>
+			<h4 class="mtt-checkout-form-title"><?php esc_html_e( 'ADDITIONAL INFORMATION', 'woocommerce' ); ?></h4>
 
 		<?php endif; ?>
 
