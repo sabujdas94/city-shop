@@ -82,7 +82,7 @@
                                         </li>
                                     <?php endif ?>
                                     
-                                    <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>/my-account">Login</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>/login">Login</a></li>
                                     <?php city_shop_woocommerce_header_cart(); ?>
                                     <li class="nav-item"><a class="nav-link" href="<?php echo home_url(); ?>">USD</a></li>
                                 </ul>

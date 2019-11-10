@@ -44,7 +44,7 @@
 						</div>
 					</div>
 				</div>
-			</section><!-- .mtt-login-section -->
+			</section><!-- .mtt-login-form-section -->
 		</main>
 
 <?php get_footer(); ?>
