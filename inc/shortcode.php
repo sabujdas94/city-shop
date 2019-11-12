@@ -229,7 +229,7 @@ function mtt_indoor_outdoor_shortcode() {
 						<div class="mtt-indoor-product-info text-center">
 							<h4>INDOOR</h4>
 							<h6 class="font-weight-bold">TITANIUM PRODUCTS</h6>
-							<a class="btn rounded-0 mtt-btn mx-4 mx-md-0 px-4 py-2" href="<?php echo home_url();?>/product-category/indoor-titanium-products/">SHOP NOW</a>
+							<a class="btn rounded-0 mtt-btn mx-4 mx-md-0 px-4 py-2" href="<?php echo home_url();?>/indoor">SHOP NOW</a>
 						</div>
 					</div>
 				</div>
@@ -504,11 +504,51 @@ function mtt_div_shortcode( $atts = array(), $content = '' ) {
 }
 add_shortcode( 'mtt_div', 'mtt_div_shortcode' );
 
+function mtt_htag_shortcode( $atts = array() ) {
+	$atts = shortcode_atts( array(
+		'id' => '',
+		'class' => '',
+		'tag' => 'h3',
+		'text' => 'Sample Heading',
+	), $atts, 'mtt_htag' );
+
+	$idclass = !empty($atts['id']) ? ' id="'.$atts['id'].'"' : '';
+	$idclass .= !empty($atts['class']) ? ' class="'.$atts['class'].'"' : '';
+
+	// do shortcode actions here
+	ob_start();
+	?>
+	<<?php echo $atts['tag'] ?> <?php echo $idclass; ?>><?php echo $atts['text']; ?></<?php echo $atts['tag'] ?>>
+	<?php
+	return ob_get_clean();
+}
+add_shortcode( 'mtt_htag', 'mtt_htag_shortcode' );
+
+function mtt_link_shortcode( $atts = array() ) {
+	$atts = shortcode_atts( array(
+		'id' => '',
+		'class' => '',
+		'link' => '#',
+		'text' => 'Sample Link',
+	), $atts, 'mtt_link' );
+
+	$idclass = !empty($atts['id']) ? ' id="'.$atts['id'].'"' : '';
+	$idclass .= !empty($atts['class']) ? ' class="'.$atts['class'].'"' : '';
+
+	// do shortcode actions here
+	ob_start();
+	?>
+	<a href="<?php echo $atts['link']; ?>" <?php echo $idclass; ?>><?php echo $atts['text'] ?></a>
+	<?php
+	return ob_get_clean();
+}
+add_shortcode( 'mtt_link', 'mtt_link_shortcode' );
+
 function mtt_page_title_shortcode( $atts = array() ) {
 	$atts = shortcode_atts( array(
 		'title' => 'value',
 		'class' => '',
-	), $atts, 'shortcode-id' );
+	), $atts, 'mtt_page_title' );
 
 	// do shortcode actions here
 	ob_start(); ?>

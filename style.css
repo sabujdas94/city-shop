@@ -950,6 +950,7 @@ h2.woocommerce-loop-product__title {
     padding-left: 40px;
     padding-right: 40px;
     line-height: 1.4;
+    margin-bottom: 0;
 }
 .mtt-product .mtt-product-btn {
      background-color: #fff;
@@ -969,6 +970,7 @@ h2.woocommerce-loop-product__title {
      left: 50%;
      transform: translateX(-50%) translateY(-50%);
 }
+
 /* mtt-in-outdoor-section*/
 .mtt-indoor-product-info h6,
 .mtt-outdoor-product-info h6 {
@@ -1352,6 +1354,23 @@ h2.woocommerce-loop-product__title {
      color: #2D5C84;
 }
 /*========================================== woocommerce style ===========================================*/
+ul.products li.product {
+    overflow-x: hidden;
+}
+ul.products li.product a.woocommerce-LoopProduct-link.woocommerce-loop-product__link::after{
+    content: "";
+    width: 300px;
+    height: 246px;
+    background: #94949459;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+ul.products li.product:hover a.woocommerce-LoopProduct-link.woocommerce-loop-product__link::after{
+    visibility: visible;
+}
  .woocommerce .products {
      width: 100%;
 }
@@ -1399,6 +1418,7 @@ h2.woocommerce-loop-product__title {
  .woocommerce .product .add_to_cart_button:hover {
      color: #f9f9f9;
 }
+
  .woocommerce .mtt-product-btn {
  	 font-size: 12px;
      background-color: #fff;
@@ -1415,7 +1435,7 @@ h2.woocommerce-loop-product__title {
  .woocommerce .products .product:hover .mtt-product-btn {
      display: block;
      top: 40%;
-     z-index: 1;
+     z-index: 99999;
 }
  .woocommerce .products .product .tinv-wraper.tinv-wishlist {
      position: absolute;
@@ -1433,6 +1453,7 @@ h2.woocommerce-loop-product__title {
      display: block;
      z-index: 1;
      top: 48%;
+     display: none; /*TODO: make visible;*/
 }
 
 

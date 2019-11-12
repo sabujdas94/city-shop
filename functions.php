@@ -189,3 +189,7 @@ if ( class_exists( 'WooCommerce' ) ) {
  * City shop Shortcode.
  */
 require get_template_directory() . '/inc/shortcode.php';
+require get_template_directory() . '/inc/wc-shortcode.php';
+
+remove_filter('the_content', 'wpautop');
+add_filter('the_content', 'wpautop', 12);
