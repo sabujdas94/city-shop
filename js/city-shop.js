@@ -8,16 +8,31 @@
     var scrollTopFunction = function() {
         jQuery('#gototop').on("click", function() {
             jQuery('html, body').animate({ scrollTop: 0 }, 'slow');
-        })
+        });
     }
 
     var popupNotice = function() {
         jQuery('#popupNoticeTimes').on("click", function() {
-
-            jQuery('.mtt-nav-popup').addClass('mtt-nav-popup-dismissed');
-
-        })
+            jQuery('.mtt-nav-popup').fadeOut();
+        });
     }
+    jQuery('#mtt-categories').slick({
+        infinite: true,
+        slidesToShow: 9,
+        slidesToScroll: 3,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            }
+        ]
+    });
 
     jQuery(document).scroll(function() {
       jQuery('body').toggleClass('fixed-header', jQuery(this).scrollTop() >= 50);

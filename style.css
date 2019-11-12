@@ -634,6 +634,7 @@
      margin: 0;
      padding: 0;
      font-family: 'Brandon Grotesque Light';
+     font-weight: 600 !important;
 }
  html {
      font-size: 16px;
@@ -649,11 +650,14 @@
  ul {
      margin-left: 0;
 }
+.text-dark{
+    color: #000 !important;
+}
 .mtt-btn {
     background-color: #2F5C85 !important;
     color: #f0f0f0;
     font-size: 14px;
-    font-family: "Brandon Grotesque Black";
+    font-family: "Brandon Grotesque Light";
     letter-spacing: 2px;
     font-weight: 700;
     padding: 10px 15px;
@@ -938,14 +942,16 @@ a.wishlist_products_counter.top_wishlist-heart::before{
      text-align: center;
 }
 /* mtt-product css */
- .mtt-product {
-     margin: 15px auto;
-}
- .mtt-product img {
+.mtt-product img {
      width: 100%;
      height: 100%;
 }
- .mtt-product .mtt-product-btn {
+h2.woocommerce-loop-product__title {
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 1.4;
+}
+.mtt-product .mtt-product-btn {
      background-color: #fff;
      position: absolute;
      top: 0;
@@ -1022,8 +1028,6 @@ a.wishlist_products_counter.top_wishlist-heart::before{
  .mtt-finess-story-row {
      background-color: #f9f9f9;
      padding-top: 30px;
-     padding-left: 30px;
-     padding-right: 30px;
 }
  .mtt-finess-story-img {
      position: absolute;
@@ -1061,7 +1065,7 @@ a.wishlist_products_counter.top_wishlist-heart::before{
      color: #555;
 }
  .mtt-instagram-title {
-     padding: 50px 0px;
+     padding: 0 0 50px;
 }
  .mtt-instagram img {
      width: 100%;
@@ -1814,7 +1818,7 @@ a.wishlist_products_counter.top_wishlist-heart::before{
      right: -110% !important;
      transition: all 500ms;
 }
- .open.site-header-cart {
+.open.site-header-cart {
      background: #f0f0f0;
      width: 400px;
      height: 100vh;
@@ -1822,6 +1826,7 @@ a.wishlist_products_counter.top_wishlist-heart::before{
      top: 0;
      display: block !important;
      transition: all 500ms;
+     z-index: 999;
 }
  .admin-bar .site-header-cart {
      top: 30px;
@@ -2037,10 +2042,16 @@ button.close-cart-widget {
     }
 }
  @media (max-width: 768px) {
-     #primary.content-area {
+    .mtt-finess-story-row {
+        background-color: transparent;
+    }
+    .slick-dots li button:before{
+        font-size: 20px;
+    }
+    #primary.content-area {
          width: 100%;
     }
-     #secondary.widget-area {
+    #secondary.widget-area {
          width: 100%;
     }
     /*woocommerce mobile view css*/
@@ -2123,9 +2134,6 @@ button.close-cart-widget {
     }
      .mtt-footer-bottom .nav {
          float: none;
-         width: 235px;
-         margin: 0px auto;
-         margin-top: 15px;
     }
      .mtt-category {
          padding: 10px 0px;

@@ -22,10 +22,10 @@
                         <div class="col-md-6 col-sm-12">
                             <div class="mtt-footer-signup-des">
                                 <div class="row">
-                                    <div class="col-md-2 col-sm-2 col-xs-2"><img
+                                    <div class="col-md-2 col-sm-2 col-xs-2 mb-4 mb-md-0"><img
                                             src="<?php echo get_template_directory_uri(); ?>/img/envelope.png" alt="">
                                     </div>
-                                    <div class="col-md-10 col-sm-10 col-xs-10">
+                                    <div class="col-md-10 col-sm-10 col-xs-10 mb-4 mb-md-0">
                                         <h5 class="font-weight-bold">SUBSCRIBE TO KNOW ABOUT NEW <br> PRODUCT LAUNCH &
                                             SPECIAL OFFERS</h5>
                                     </div>
@@ -35,8 +35,8 @@
                         <div class="col-md-6 col-sm-12">
                             <div class="mtt-footer-signup-form">
                                 <form action="#">
-                                    <input type="email" class="text-center text-sm-left" placeholder="Enter email address">
-                                    <input type='submit' class="btn rounded-0 mtt-btn text-uppercase px-xs-1"
+                                    <input type="email" class="text-center text-sm-left mb-3 mb-md-0" placeholder="Enter email address">
+                                    <input type='submit' class="btn rounded-0 mtt-btn text-uppercase px-xs-1 mb-3 mb-md-0"
                                         value="Sign Up">
                                 </form>
                             </div>
@@ -68,8 +68,21 @@
                 <div class="col-md-12">
                     <div class="mtt-footer-bottom">
                         <div class="row">
-                            <div class="col-md-6 col-sm-12">
-                                <div class="mtt-copywrite">
+                            <div class="col-md-6 text-center order-md-2 d-table mx-auto">
+                                <!-- mtt footer menu -->
+                                <?php
+                                if (function_exists('wp_nav_menu')) {
+                                    wp_nav_menu(array(
+                                        'theme_location' => 'footer_menu',
+                                        'container_class' => 'd-table ml-auto mr-md-0 mr-auto',
+                                        'menu_class'    => 'nav float-none float-md-right',
+                                        'echo'            => true,
+                                    ));
+                                }
+                                ?>
+                            </div>
+                            <div class="col-md-6 col-sm-12 order-md-1">
+                                <div class="mtt-copywrite text-center text-sm-left">
                                     <span>
                                         <?php
                                         if (get_theme_mod('copyright_text') != '') {
@@ -80,18 +93,6 @@
                                         ?>
                                     </span>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
-                                <!-- mtt footer menu -->
-                                <?php
-                                if (function_exists('wp_nav_menu')) {
-                                    wp_nav_menu(array(
-                                        'theme_location' => 'footer_menu',
-                                        'menu_class'    => 'nav',
-                                        'echo'            => true,
-                                    ));
-                                }
-                                ?>
                             </div>
                             <!-- MTT Go to top Button -->
                             <button id="gototop" title="Go to top"><i
@@ -123,6 +124,7 @@ jQuery(".menu-cart-link").on('click', function(e) {
     e.preventDefault();
     jQuery("#site-header-cart").addClass('open');
 });
+
 </script>
 
 <?php wp_footer(); ?>
