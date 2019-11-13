@@ -55,12 +55,15 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_after_main_content' );
 
 	?>
-
-	<?php
+	
+	<?php 
 		/**
 		 * MTT woocommerce related products
 		 */
 		echo do_shortcode('[mtt_related_products]');
+	 ?>
+
+	<?php
 		/**
 		 * MTT instagram profile with images
 		 */
