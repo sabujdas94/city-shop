@@ -1583,7 +1583,7 @@ ul.products li.product:hover .mtt_product_thumb_wrapper::after{
  .woocommerce div.product form.cart div.quantity .input-text {
      width: 100px;
 }
-.woocommerce-variation-add-to-cart label.text-uppercase.small {
+.add-to-cart label.text-uppercase.small {
     position: absolute;
     top: -20px;
     color: #000;
@@ -2326,7 +2326,7 @@ button.close-cart-widget {
 .tinv-wraper.woocommerce.tinv-wishlist.tinvwl-before-add-to-cart {
     display: none;
 }
-.woocommerce-variation-add-to-cart .input-group {
+.add-to-cart.input-group {
     position: relative;
     width: 120px !important;
     float: left;
@@ -2341,28 +2341,31 @@ button.close-cart-widget {
     position: relative;
     z-index: 1;
 }
-.woocommerce-variation-add-to-cart .input-text.qty,
-.woocommerce-variation-add-to-cart .input-group-prepend .input-group-text, 
-.woocommerce-variation-add-to-cart .input-group-append .input-group-text {
+.add-to-cart .input-text.qty,
+.add-to-cart .input-group-prepend .input-group-text, 
+.add-to-cart .input-group-append .input-group-text {
     background-color: #ffffff;
     border: 2px solid #d8d8d8;
     height: 40px;
     border-radius: 0;
 }
 
-.woocommerce-variation-add-to-cart .input-group-append {
+.add-to-cart .input-group-append {
     margin-left: -1px;
     position: absolute;
     z-index: 2;
     right: 0;
 }
-.woocommerce-variation-add-to-cart .input-group-prepend .input-group-text, 
-.woocommerce-variation-add-to-cart .input-group-append .input-group-text{
+.add-to-cart .input-group-prepend .input-group-text, 
+.add-to-cart .input-group-append .input-group-text{
     cursor: pointer;
 }
-.woocommerce-variation-add-to-cart .input-group-prepend .input-group-text{
+.add-to-cart .input-group-prepend .input-group-text{
     border-right: 0;
 }
-.woocommerce-variation-add-to-cart .input-group-append .input-group-text{
+.add-to-cart .input-group-append .input-group-text{
     border-left: 0;
+}
+.woocommerce div.product form.cart div.quantity .input-text:focus {
+    outline: 0;
 }

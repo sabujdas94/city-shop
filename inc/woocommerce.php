@@ -308,7 +308,7 @@ add_action('woocommerce_before_add_to_cart_quantity', 'mtt_woocommerce_before_ad
 function mtt_woocommerce_before_add_to_cart_quantity()
 {
 	?>
-	<div class="input-group mb-3">
+	<div class="input-group add-to-cart mb-3">
 		<label for="" class="text-uppercase small">Quantity</label>
 	  	<div class="input-group-prepend btn-number cart-area" data-type="minus" data-field="input-qty">
 	    	<span class="input-group-text">-</span>
