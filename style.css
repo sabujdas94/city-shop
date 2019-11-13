@@ -1698,10 +1698,15 @@ ul.products li.product:hover a.woocommerce-LoopProduct-link.woocommerce-loop-pro
 .single-product .mtt-bestseller-section {
 	float: left;
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
-.single-product .mtt-bestseller-section .related.products h2{
+.single-product .mtt-bestseller-section .related.products> h2{
 	display: none;
+}
+.single-product .mtt-instagram-section {
+	float: left;
+    padding-top: 50px;
+    border-top: 1px solid #eee;
 }
 
 /*Woocommerce cart and checkout page css*/

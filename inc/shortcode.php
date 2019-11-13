@@ -228,7 +228,7 @@ function mtt_related_products_shortcode() {
 			</div>
 			<div class="row">
 				<?php
-					echo do_shortcode('[related_products limit="4" columns="4"]');
+					echo do_shortcode('[related_products limit="4"]');
 				?>
 			</div>
 			<div class="row">
