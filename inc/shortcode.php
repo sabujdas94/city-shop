@@ -252,7 +252,7 @@ function mtt_indoor_outdoor_shortcode() {
 						<div class="mtt-outdoor-product-info text-center">
 							<h4>OUTDOOR</h4>
 							<h6 class="font-weight-bold">TITANIUM PRODUCTS</h6>
-							<a class="btn rounded-0 mtt-btn mx-4 mx-md-0 px-4 py-2" href="<?php echo home_url();?>/product-category/outdoor-titanium-products/">SHOP NOW</a>
+							<a class="btn rounded-0 mtt-btn mx-4 mx-md-0 px-4 py-2" href="<?php echo home_url();?>/outdoor">SHOP NOW</a>
 						</div>
 					</div>
 				</div>
