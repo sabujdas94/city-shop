@@ -53,7 +53,21 @@ get_header( 'shop' ); ?>
 		 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
 		 */
 		do_action( 'woocommerce_after_main_content' );
+
 	?>
+
+	<?php
+		/**
+		 * MTT woocommerce related products
+		 */
+		echo do_shortcode('[mtt_related_products]');
+		/**
+		 * MTT instagram profile with images
+		 */
+		echo do_shortcode('[mtt_instragram]www.instagram.com[/mtt_instragram]');
+
+	?>
+
 
 <?php get_footer( 'shop' );
 

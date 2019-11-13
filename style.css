@@ -2277,7 +2277,10 @@ ul.products li.product:hover .mtt_product_thumb_wrapper::after {
     font-size: 24px;
     margin-bottom: 15px;
 }
-
+ .single-product .summary .price .amount,
+ .single-product .summary .price .amount .woocommerce-Price-currencySymbol {
+     font-family: "Brandon Grotesque Black";
+}
 .single-product .summary .woocommerce-product-details__short-description {
     float: left;
     width: 100%;

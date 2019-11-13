@@ -295,9 +295,13 @@ add_action('woocommerce_before_shop_loop_item_title', 'mtt_woocommerce_template_
  */
 add_action( 'init', 'mtt_woocommerce_remove_actions' );
 function mtt_woocommerce_remove_actions() {
+
     remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+
     remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5, 0 );
+
     remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10, 0 );
+
 	remove_action( 'woocommerce_widget_shopping_cart_buttons', 'woocommerce_widget_shopping_cart_button_view_cart', 10 );
 	remove_theme_support( 'wc-product-gallery-zoom' );
 	remove_theme_support( 'wc-product-gallery-slider' );
@@ -356,3 +360,20 @@ function mtt_woocommerce_after_add_to_cart_quantity()
 
      return $fields;
  }
+
+
+/**
+ * Change number of related products output
+ */ 
+function woo_related_products_limit() {
+  global $product;
+	
+	$args['posts_per_page'] = 4;
+	return $args;
+}
+add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args', 20 );
+  function jk_related_products_args( $args ) {
+	$args['posts_per_page'] = 4; // 4 related products
+	$args['columns'] = 2; // arranged in 1 columns
+	return $args;
+}
