@@ -1696,12 +1696,17 @@ ul.products li.product:hover a.woocommerce-LoopProduct-link.woocommerce-loop-pro
 }
 /*Woocommerce cart and checkout page css*/
  .full-width-content-area .entry-content {
-     margin: 0px;
+ 	width: 85%;
+    margin: 0px auto;
 }
 /*Woocommerce cart page css*/
- .woocommerce .woocommerce-cart-form, .woocommerce .cart-collaterals, .woocommerce .woocommerce-notices-wrapper {
+ .woocommerce .woocommerce-cart-form__contents {
+ 	margin: 0px;
+ }
+ .woocommerce .woocommerce-cart-form, .woocommerce .cart-collaterals,
+ .woocommerce .woocommerce-notices-wrapper {
      background-color: #F9F9F9;
-     background-color: #F9F9F9;
+     padding: 15px;
 }
  .woocommerce .cart-collaterals {
      background-color: #F9F9F9;
