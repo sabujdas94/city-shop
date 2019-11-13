@@ -2381,10 +2381,12 @@ ul.products li.product:hover .mtt_product_thumb_wrapper::after {
     margin: 0px;
 }
 .woocommerce .woocommerce-cart-form,
-.woocommerce .cart-collaterals,
-.woocommerce .woocommerce-notices-wrapper {
+.woocommerce .cart-collaterals {
     background-color: #F9F9F9;
     padding: 15px;
+}
+.woocommerce .woocommerce-notices-wrapper {
+    background-color: #F9F9F9;
 }
 .woocommerce .cart-collaterals {
     background-color: #F9F9F9;
@@ -3124,4 +3126,8 @@ button.close-cart-widget {
 }
 .woocommerce div.product form.cart div.quantity .input-text:focus {
     outline: 0;
+}
+
+#productAccordion .card-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
