@@ -1694,11 +1694,16 @@ ul.products li.product:hover a.woocommerce-LoopProduct-link.woocommerce-loop-pro
 }
  .woocommerce .related {
      width: 100%;
-     float: left;
-     background-color: #ffffff;
-     padding: 50px;
-     padding-top: 0px;
 }
+.single-product .mtt-bestseller-section {
+	float: left;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.single-product .mtt-bestseller-section .related.products h2{
+	display: none;
+}
+
 /*Woocommerce cart and checkout page css*/
  .full-width-content-area .entry-content {
  	width: 85%;
@@ -1844,8 +1849,6 @@ ul.products li.product:hover a.woocommerce-LoopProduct-link.woocommerce-loop-pro
 .woocommerce .woocommerce-checkout .woocommerce-billing-fields {
 	padding-top: 35px;
 }
-
-
 
  .woocommerce .woocommerce-checkout-payment .wc_payment_methods {
      overflow: hidden;

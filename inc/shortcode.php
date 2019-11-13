@@ -212,6 +212,42 @@ add_shortcode( 'mtt_best_sellers', 'mtt_best_seller_shortcode' );
 
 
 /**
+ * @return MTT related products HTML content to display the shortcode.
+ */
+function mtt_related_products_shortcode() {
+	ob_start();
+?>
+	<section class="section mtt-bestseller-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="mtt-bestseller-title text-center">
+						<h4>YOU MIGHT BE INTERESTED</h4>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<?php
+					echo do_shortcode('[related_products limit="4" columns="4"]');
+				?>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="mtt-bestseller-section-btn">
+						<a class="btn rounded-0 mtt-btn px-5" href="<?php echo get_permalink( woocommerce_get_page_id( 'shop' ) ); ?>">DISCOVER MORE</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- .mtt-bestseller-section -->
+<?php 
+	return ob_get_clean();
+}
+add_shortcode( 'mtt_related_products', 'mtt_related_products_shortcode' );
+
+
+
+/**
  * @return MTT Front page mtt_indoor_outdoor HTML content to display the shortcode.
  */
 function mtt_indoor_outdoor_shortcode() {
