@@ -221,7 +221,7 @@ function mtt_indoor_outdoor_shortcode() {
 		<div class="container">
 			<hr class="mtt-in-outdoor-section-hr">
 			<div class="row">
-				<div class="col-md-3 mtt-indoor-product-col1 ">
+				<div class="col-md-3 mtt-indoor-product-col1 pr-0 mb-4 mb-md-0">
 					<div class="mtt-product mtt-indoor-product">
 						<div class="mtt-indoor-product-img">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/1.jpg" alt="">
@@ -229,22 +229,22 @@ function mtt_indoor_outdoor_shortcode() {
 						<div class="mtt-indoor-product-info text-center">
 							<h4>INDOOR</h4>
 							<h6 class="font-weight-bold">TITANIUM PRODUCTS</h6>
-							<a class="btn rounded-0 mtt-btn px-5" href="<?php echo home_url();?>/product-category/indoor-titanium-products/">SHOP NOW</a>
+							<a class="btn rounded-0 mtt-btn mx-4 mx-md-0 px-4 py-2" href="<?php echo home_url();?>/indoor">SHOP NOW</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 mtt-indoor-product-col2">
-					<div class="mtt-product mtt-in-outdoor-product">
+				<div class="col-md-3 mtt-indoor-product-col2 mb-4 mb-md-0">
+					<div class="mtt-product mtt-in-outdoor-product h-100">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/2.jpg" alt="">
 					</div>
 				</div>
 
 				<div class="col-md-3 mtt-outdoor-product-col1">
-					<div class="mtt-product mtt-in-outdoor-product">
+					<div class="mtt-product mtt-in-outdoor-product h-100">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/3.jpg" alt="">
 					</div>
 				</div>
-				<div class="col-md-3 mtt-outdoor-product-col2">
+				<div class="col-md-3 mtt-outdoor-product-col2 pl-0">
 					<div class="mtt-outdoor-product">
 						<div class="mtt-product mtt-outdoor-product-img">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/4.jpg" alt="">
@@ -252,7 +252,7 @@ function mtt_indoor_outdoor_shortcode() {
 						<div class="mtt-outdoor-product-info text-center">
 							<h4>OUTDOOR</h4>
 							<h6 class="font-weight-bold">TITANIUM PRODUCTS</h6>
-							<a class="btn rounded-0 mtt-btn px-5" href="<?php echo home_url();?>/product-category/outdoor-titanium-products/">SHOP NOW</a>
+							<a class="btn rounded-0 mtt-btn mx-4 mx-md-0 px-4 py-2" href="<?php echo home_url();?>/product-category/outdoor-titanium-products/">SHOP NOW</a>
 						</div>
 					</div>
 				</div>
@@ -283,50 +283,50 @@ function mtt_products_categories_shortcode() {
 			<div class="row">
 				<div class="col-md-12">
 					<div class="mtt-categories text-center">
-						<div class="row">
+						<div class="row" id="mtt-categories">
 							<div class="col">
 								<div class="mtt-category">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/icon1.png" alt=""><h6>HEALTHY</h6>
+									<img class="mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/icon1.png" alt=""><p class="small text-dark mt-2 mb-0">HEALTHY</p>
 								</div>
 							</div>
 							<div class="col">
 								<div class="mtt-fitness-product mtt-category">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/icon2.png" alt=""><h6>STRONG</h6>
+									<img class="mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/icon2.png" alt=""><p class="small text-dark mt-2 mb-0">STRONG</p>
 								</div>
 							</div>
 							<div class="col">
 								<div class="mtt-fitness-product mtt-category">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/icon3.png" alt=""><h6>LIGHWEIGHT</h6>
+									<img class="mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/icon3.png" alt=""><p class="small text-dark mt-2 mb-0">LIGHWEIGHT</p>
 								</div>
 							</div>
 							<div class="col">
 								<div class="mtt-fitness-product mtt-category">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/icon4.png" alt=""><h6>ECO-FRIENDLY</h6>
+									<img class="mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/icon4.png" alt=""><p class="small text-dark mt-2 mb-0">ECO-FRIENDLY</p>
 								</div>
 							</div>
 							<div class="col">
 								<div class="mtt-fitness-product mtt-category">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/icon5.png" alt=""><h6>CORROSION RESISTANT</h6>
+									<img class="mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/icon5.png" alt=""><p class="small text-dark mt-2 mb-0">CORROSION RESISTANT</p>
 								</div>
 							</div>
 							<div class="col">
 								<div class="mtt-fitness-product mtt-category">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/icon6.png" alt=""><h6>BACTERIA INHIBITATION</h6>
+									<img class="mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/icon6.png" alt=""><p class="small text-dark mt-2 mb-0">BACTERIA INHIBITATION</p>
 								</div>
 							</div>
 							<div class="col">
 								<div class="mtt-fitness-product mtt-category">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/icon7.png" alt=""><h6>HIGH TEMPERATURE RESISTANT</h6>
+									<img class="mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/icon7.png" alt=""><p class="small text-dark mt-2 mb-0">HIGH TEMPERATURE RESISTANT</p>
 								</div>
 							</div>
 							<div class="col">
 								<div class="mtt-fitness-product mtt-category">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/icon8.png" alt=""><h6>LOW TEMPERATURE RESISTANT</h6>
+									<img class="mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/icon8.png" alt=""><p class="small text-dark mt-2 mb-0">LOW TEMPERATURE RESISTANT</p>
 								</div>
 							</div>
 							<div class="col">
 								<div class="mtt-fitness-product mtt-category">
-									<img src="<?php echo get_template_directory_uri(); ?>/img/icon9.png" alt=""><h6>GOOD HEATING</h6>
+									<img class="mx-auto" src="<?php echo get_template_directory_uri(); ?>/img/icon9.png" alt=""><p class="small text-dark mt-2 mb-0">GOOD HEATING</p>
 								</div>
 							</div>
 						</div>
@@ -348,29 +348,37 @@ function mtt_products_categories_shortcode() {
 add_shortcode( 'mtt_products_categories', 'mtt_products_categories_shortcode' );
 
 
-
-
 /**
  * @return MTT Front page mtt_finess_story HTML content to display the shortcode.
  */
-function mtt_finess_story_shortcode() {
+function mtt_finess_story_shortcode($atts = array()) {
+	
+	$atts = shortcode_atts( array(
+		'img' => '',
+		'title' => 'FINEST IN TITANIUM PRODUCTS',
+		'sub_title' => 'FINESSCITY STORY',
+		'desc' => '....',
+		'link' => '#',
+		'link_text' => 'Read More'
+	), $atts, 'mtt_finess_story' );
+
 	ob_start();
 ?>
 	<section class="section mtt-finess-story-section">
 		<div class="container">
-			<div class="row mtt-finess-story-row">
+			<div class="row mtt-finess-story-row px-0 px-md-4">
 				<div class="col-md-6 col-sm-12">
 					<div class="mtt-finess-story-img">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/5.jpg" alt="">
+						<img src="<?php echo $atts['img']; ?>" alt="">
 					</div>
 				</div>
 				<div class="col-md-6 col-sm-12">
-					<div class="mtt-finess-story text-center">
-						<h6 class="mtt-finess-story-title">FINESSCITY STORY</h6>
-						<h4 class="mtt-finess-story-title2 mb-3">FINEST IN TITANIUM PRODUCTS</h4>
-						<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using...</p>
+					<div class="mtt-finess-story text-center mt-5 mt-md-0">
+						<h6 class="mtt-finess-story-title"><?php echo $atts['sub_title']; ?></h6>
+						<h4 class="mtt-finess-story-title2 mb-3"><?php echo $atts['title']; ?></h4>
+						<p><?php echo $atts['desc']; ?></p>
 						<br>
-						<a class="btn rounded-0 mtt-btn text-uppercase px-5" href="<?php echo home_url();?>/why-titanium/">Read More</a>
+						<a class="btn rounded-0 mtt-btn text-uppercase px-5" href="<?php echo $atts['link'] ?>"><?php echo $atts['link_text']; ?></a>
 					</div>
 				</div>
 			</div>
@@ -443,13 +451,149 @@ add_shortcode( 'mtt_instragram', 'mtt_instragram_shortcode' );
 
 
 
+function mtt_section_shortcode( $atts = array(), $content = '' ) {
+	$atts = shortcode_atts( array(
+		'id' => '',
+		'class' => '',
+	), $atts, 'mtt_section' );
+
+	// do shortcode actions here
+	ob_start()?>
+	<section class="section <?php echo $atts['class'] ?>" <?php if (!empty($atts['id'])): ?>
+		id="<?php echo $atts['id']; ?>"
+	<?php endif ?>>
+		<div class="container"><?php echo do_shortcode($content); ?></div>
+	</section>
+	<?php
+	return ob_get_clean();
+}
+add_shortcode( 'mtt_section', 'mtt_section_shortcode' );
 
 
+function mtt_row_shortcode( $atts = array(), $content = '' ) {
+	$atts = shortcode_atts( array(
+		'id' => '',
+		'class' => '',
+	), $atts, 'mtt_row' );
+
+	// do shortcode actions here
+	ob_start(); ?>
+	<div class="row <?php echo $atts['class'] ?>" <?php if (!empty($atts['id'])): ?>
+		id="<?php echo $atts['id']; ?>"
+	<?php endif ?>><?php echo  do_shortcode($content); ?></div>
+	<?php 
+	return ob_get_clean();
+}
+add_shortcode( 'mtt_row', 'mtt_row_shortcode' );
 
 
+function mtt_div_shortcode( $atts = array(), $content = '' ) {
+	$atts = shortcode_atts( array(
+		'id' => '',
+		'class' => '',
+	), $atts, 'mtt_div' );
+
+	// do shortcode actions here
+	ob_start();
+	?>
+	<div class="<?php echo $atts['class'] ?>" <?php if (!empty($atts['id'])): ?>
+		id="<?php echo $atts['id']; ?>"
+	<?php endif ?>><?php echo do_shortcode($content); ?></div>
+	<?php
+	return ob_get_clean();
+}
+add_shortcode( 'mtt_div', 'mtt_div_shortcode' );
+
+function mtt_htag_shortcode( $atts = array() ) {
+	$atts = shortcode_atts( array(
+		'id' => '',
+		'class' => '',
+		'tag' => 'h3',
+		'text' => 'Sample Heading',
+	), $atts, 'mtt_htag' );
+
+	$idclass = !empty($atts['id']) ? ' id="'.$atts['id'].'"' : '';
+	$idclass .= !empty($atts['class']) ? ' class="'.$atts['class'].'"' : '';
+
+	// do shortcode actions here
+	ob_start();
+	?>
+	<<?php echo $atts['tag'] ?> <?php echo $idclass; ?>><?php echo $atts['text']; ?></<?php echo $atts['tag'] ?>>
+	<?php
+	return ob_get_clean();
+}
+add_shortcode( 'mtt_htag', 'mtt_htag_shortcode' );
+
+function mtt_link_shortcode( $atts = array() ) {
+	$atts = shortcode_atts( array(
+		'id' => '',
+		'class' => '',
+		'link' => '#',
+		'text' => 'Sample Link',
+	), $atts, 'mtt_link' );
+
+	$idclass = !empty($atts['id']) ? ' id="'.$atts['id'].'"' : '';
+	$idclass .= !empty($atts['class']) ? ' class="'.$atts['class'].'"' : '';
+
+	// do shortcode actions here
+	ob_start();
+	?>
+	<a href="<?php echo $atts['link']; ?>" <?php echo $idclass; ?>><?php echo $atts['text'] ?></a>
+	<?php
+	return ob_get_clean();
+}
+add_shortcode( 'mtt_link', 'mtt_link_shortcode' );
+
+function mtt_page_title_shortcode( $atts = array() ) {
+	$atts = shortcode_atts( array(
+		'title' => 'value',
+		'class' => '',
+	), $atts, 'mtt_page_title' );
+
+	// do shortcode actions here
+	ob_start(); ?>
+	<div class="mtt-section-title text-center pb-1">
+		<h1 class="font-weight-bold text-uppercase"><?php echo $atts['title']; ?></h1>
+	</div>
+	<hr>
+	<?php
+	return ob_get_clean();
+}
+add_shortcode( 'mtt_page_title', 'mtt_page_title_shortcode' );
 
 
+function mtt_icon_right_text_shortcode( $atts = array(), $content = '' ) {
+	$atts = shortcode_atts( array(
+		'id' => '',
+		'items' => '',
+	), $atts, 'mtt_icon_right_text' );
 
+	$items = explode(',', $atts['items']);
 
-
-
+	// do shortcode actions here
+	ob_start(); ?>
+	<div class="mtt-categories text-center">
+		<div class="row">
+			<?php for ($i = 0; $i < sizeof($items); $i+=2): ?>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="mtt-category">
+						<div class="row">
+							<div class="col p-0">
+								<img src="<?php echo wp_get_attachment_url($items[$i]); ?>" alt="<?php echo get_post($items[$i])->post_title; ?>">
+							</div>
+							<div class="col p-0">
+								<?php 
+									$text = str_replace('/','<br>',$items[$i+1]);
+								 ?>
+								<h6 class="text-left mt-4 text-uppercase"><?php echo $text; ?></h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			<?php endfor ?>
+		</div>
+	</div>
+	<?php
+	return ob_get_clean();
+}
+add_shortcode( 'mtt_icon_right_text', 'mtt_icon_right_text_shortcode' );
