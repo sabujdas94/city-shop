@@ -268,6 +268,28 @@ if ( ! function_exists( 'city_shop_woocommerce_header_cart' ) ) {
 }
 
 
+
+/**
+ * Change number or products per row to 3
+ */
+add_filter('loop_shop_columns', 'mtt_loop_columns', 999);
+if (!function_exists('mtt_loop_columns')) {
+	function mtt_loop_columns() {
+		return 4; // 3 products per row
+	}
+}
+
+/**
+* Get the product thumbnail for the loop.
+*/
+function mtt_woocommerce_template_loop_product_thumbnail() {
+	echo '<div class="mtt_product_thumb_wrapper">';
+	echo woocommerce_get_product_thumbnail(); // WPCS: XSS ok.
+	echo '</div>';
+}
+remove_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10);
+add_action('woocommerce_before_shop_loop_item_title', 'mtt_woocommerce_template_loop_product_thumbnail', 10);
+
 /**
  * Remove woocommerce the breadcrumbs 
  */
@@ -281,11 +303,32 @@ function mtt_woocommerce_remove_actions() {
     remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10, 0 );
 
 	remove_action( 'woocommerce_widget_shopping_cart_buttons', 'woocommerce_widget_shopping_cart_button_view_cart', 10 );
-
-	remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
-
+	remove_theme_support( 'wc-product-gallery-zoom' );
+	remove_theme_support( 'wc-product-gallery-slider' );
 }
 
+
+add_action('woocommerce_before_add_to_cart_quantity', 'mtt_woocommerce_before_add_to_cart_quantity');
+function mtt_woocommerce_before_add_to_cart_quantity()
+{
+	?>
+	<div class="input-group add-to-cart mb-3">
+		<label for="" class="text-uppercase small">Quantity</label>
+	  	<div class="input-group-prepend btn-number cart-area" data-type="minus" data-field="input-qty">
+	    	<span class="input-group-text">-</span>
+	  	</div>
+	<?php
+}
+add_action('woocommerce_after_add_to_cart_quantity', 'mtt_woocommerce_after_add_to_cart_quantity');
+function mtt_woocommerce_after_add_to_cart_quantity()
+{
+	?>
+	  	<div class="input-group-append btn-number cart-area" data-type="plus" data-field="input-qty">
+	    	<span class="input-group-text">+</span>
+	  	</div>
+	</div>
+	<?php
+}
 
 /**
  * adding custom woocommerce field placeholder
