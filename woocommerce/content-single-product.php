@@ -48,23 +48,23 @@ if ( post_password_required() ) {
 							<div class="row">
 								<div class="col">
 									<div class="mtt-category">
-										<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icon1.png" alt=""></a>
+										<img src="<?php echo get_template_directory_uri(); ?>/img/icon1.png" alt="">
 										<h6>HEALTHY</h6>
 									</div>
 								</div>
 								<div class="col">
 									<div class="mtt-fitness-product mtt-category">
-										<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon2.png" alt=""></a><h6>STRONG</h6>
+										<img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon2.png" alt=""><h6>STRONG</h6>
 									</div>
 								</div>
 								<div class="col">
 									<div class="mtt-fitness-product mtt-category">
-										<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/icon3.png" alt=""></a><h6>LIGHWEIGHT</h6>
+										<img src="<?php echo get_template_directory_uri(); ?>/img/icon3.png" alt=""><h6>LIGHWEIGHT</h6>
 									</div>
 								</div>
 								<div class="col">
 									<div class="mtt-fitness-product mtt-category">
-										<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon4.png" alt=""></a><h6>ECO-FRIENDLY</h6>
+										<img src="<?php echo get_template_directory_uri(); ?>/img/accessories-icon4.png" alt=""><h6>ECO-FRIENDLY</h6>
 									</div>
 								</div>
 							</div>
@@ -89,7 +89,7 @@ if ( post_password_required() ) {
 		do_action( 'woocommerce_single_product_summary' );
 		?>
 					<div class="mtt-product-checkout">
-						<h6 class="font-weight-bold">SECURE AND TRUSTED CHECKOUT WIT:</h6>
+						<h6 class="font-weight-bold">SECURE AND TRUSTED CHECKOUT WITH:</h6>
 						<ul>
 							<li><img src="<?php echo get_template_directory_uri(); ?>/img/visa.png" alt=""></li>
 							<li><img src="<?php echo get_template_directory_uri(); ?>/img/master-card.png" alt=""></li>
@@ -103,9 +103,7 @@ if ( post_password_required() ) {
 						  <div class="card">
 						    <div class="card-header" id="headingOne">
 						      <h2 class="mb-0">
-						        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-						          FEATURES
-						        </button>
+						        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">FEATURES <span class="card-positive">+</span><span class="card-negative">-</span></button>
 						      </h2>
 						    </div>
 						    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#productAccordion">
@@ -126,9 +124,7 @@ if ( post_password_required() ) {
 						  <div class="card">
 						    <div class="card-header" id="headingTwo">
 						      <h2 class="mb-0">
-						        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-						          SPECIFICATIONS
-						        </button>
+						        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">SPECIFICATIONS <span class="card-positive">+</span><span class="card-negative">-</span></button>
 						      </h2>
 						    </div>
 						    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#productAccordion">
@@ -140,10 +136,10 @@ if ( post_password_required() ) {
 						</div>
 					</div>
 					<div class="mtt-single-product-share">
-						<span class="font-weight-bold">SHARE</span>
-						<i class="fa fa-facebook px-2"> Facebook</i>
-						<i class="fa fa-twitter px-2"> Twitter</i>
-						<i class="fa fa-instagram px-2"> Instagram</i>
+						<span class="mtt-single-product-share-span">SHARE </span>
+						<a href="#"><i class="fa fa-facebook px-2"></i> Facebook</a>
+						<a href="#"><i class="fa fa-twitter px-2"></i> Twitter</a>
+						<a href="#"><i class="fa fa-instagram px-2"></i> Instagram</a>
 					</div>
 	</div>
 

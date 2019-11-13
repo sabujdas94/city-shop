@@ -1285,18 +1285,21 @@ a.wishlist_products_counter.top_wishlist-heart::before{
      position: relative;
      float: left;
 }
+ .mtt-product-checkout h6{
+ 	font-size: 14px;
+ }
  .mtt-product-checkout ul li {
      list-style: none;
      padding: 0px 5px;
      float: left;
 }
  .mtt-product-checkout ul li img {
-     width: 60px;
+     width: 40px;
      height: auto;
 }
  .mtt-single-product-accordion {
      width: 100%;
-     margin-top: 40px;
+     margin-top: 15px;
      float: left;
 }
  .accordion>.card {
@@ -1308,21 +1311,75 @@ a.wishlist_products_counter.top_wishlist-heart::before{
      border-radius: 0px;
 }
  .accordion>.card .btn {
-     color: #000;
+     color: #555;
      text-decoration: none;
+     background-color: transparent;
      border: none;
+     width: 100%;
+     text-align: left;
+     padding-top: 0px;
+     padding-left: 0px;
+     font-size: 14px;
+     font-family: "Brandon Grotesque Black"
 }
  .accordion>.card .card-header {
      padding: 0px;
+     background-color: transparent;
 }
+.card-positive {
+	display: none;
+	float: right;
+	font-family: "Brandon Grotesque Black";
+}
+.card-negative {
+	display: block;
+	float: right;
+	font-family: "Brandon Grotesque Black";
+}
+.collapsed .card-positive {
+	display: block;
+}
+.collapsed .card-negative {
+	display: none;
+}
+.card-body {
+	font-size: 14px;
+}
+.card-body h6 {
+	font-size: 14px;
+	color: #555;
+	font-family: "Brandon Grotesque Black";
+}
+
  .mtt-single-product-share {
+ 	 width: 100%;
      margin-top: 15px;
      padding: 5px 0px;
      border-top: 1px solid #ccc;
      border-bottom: 1px solid #ccc;
      float: left;
 }
-/*========================================== mtt widget area style ===========================================*/
+ .mtt-single-product-share .mtt-single-product-share-span {
+	font-size: 14px;
+	font-family: "Brandon Grotesque Black";
+}
+ .mtt-single-product-share a{
+ 	margin-left: 15px;
+ 	color: #555;
+ }
+ .mtt-single-product-share i{
+ 	background-color: #555;
+    padding: 5px;
+    font-size: 14px;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    color: #fff;
+    border-radius: 100%;
+}
+/*==========================================
+	 mtt widget area style 
+===========================================*/
  .widget-area ul li {
      list-style: none;
 }
@@ -1470,7 +1527,7 @@ a.wishlist_products_counter.top_wishlist-heart::before{
 }
  .mtt-single-woo-product-gallery {
      width: 60%;
-     padding: 50px;
+     padding: 5% 6%;
      float: left;
 }
  .woocommerce .woocommerce-product-gallery {
@@ -1479,7 +1536,6 @@ a.wishlist_products_counter.top_wishlist-heart::before{
 }
  .mtt-product-gallery-cat {
      float: left;
-     padding: 50px;
      width: 100%;
 }
  .woocommerce .woocommerce-product-gallery .flex-viewport {
@@ -1530,15 +1586,26 @@ a.wishlist_products_counter.top_wishlist-heart::before{
      float: left;
      color: #2F5C85;
      font-weight: bold;
-     margin-top: 15px;
+     margin: 6px 0px;
+     font-size: 20px;
 }
- .woocommerce-product-details__short-description {
+ .single-product .summary .price .amount,
+ .single-product .summary .price .amount .woocommerce-Price-currencySymbol {
+     font-family: "Brandon Grotesque Black";
+}
+ .single-product .summary .woocommerce-product-details__short-description {
      float: left;
+     width: 100%;
      border-bottom: 1px solid #ccc;
+}
+ .single-product .summary .tinv-wishlist,
+ .single-product .summary .product_meta {
+	display: none;
 }
  .single-product .summary .cart {
      float: left;
      padding: 15px 0px;
+}
 }
  .single-product .summary .product_meta {
      display: none;
