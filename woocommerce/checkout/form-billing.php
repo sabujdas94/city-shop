@@ -23,11 +23,11 @@ defined( 'ABSPATH' ) || exit;
 <div class="woocommerce-billing-fields">
 	<?php if ( wc_ship_to_billing_address_only() && WC()->cart->needs_shipping() ) : ?>
 
-		<h4 class="mtt-checkout-form-title"><?php esc_html_e( '02 BILLING &amp; SHIPPING DETAILS', 'woocommerce' ); ?></h4>
+		<h4 class="mtt-checkout-form-title"><?php esc_html_e( '02 BILLING &amp; SHIPPING', 'woocommerce' ); ?></h4>
 
 	<?php else : ?>
 
-		<h4 class="mtt-checkout-form-title"><?php esc_html_e( '02 SHIPPING DETAILS', 'woocommerce' ); ?></h4>
+		<h4 class="mtt-checkout-form-title"><?php esc_html_e( '02 SHIPPING', 'woocommerce' ); ?></h4>
 
 	<?php endif; ?>
 

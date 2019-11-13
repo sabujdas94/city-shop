@@ -35,3 +35,6 @@ function city_shop_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'city_shop_pingback_header' );
+
+remove_filter( 'the_content', 'wpautop' ); 
+remove_filter( 'the_excerpt', 'wpautop' );

@@ -69,3 +69,9 @@ function city_shop_scripts()
 	}
 }
 add_action('wp_enqueue_scripts', 'city_shop_scripts');
+
+add_action('wp_enqueue_scripts', 'city_shop_remove_default_stylesheet', 20);
+function city_shop_remove_default_stylesheet()
+{
+	wp_dequeue_style('woocommerce-multi-currency');
+}
