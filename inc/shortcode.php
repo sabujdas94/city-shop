@@ -18,7 +18,7 @@ function mtt_related_products_shortcode()
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="mtt-bestseller-title text-center mt-5">
+                <div class="mtt-bestseller-title text-center mt-3 mb-5">
                     <h4>YOU MIGHT BE INTERESTED</h4>
                 </div>
             </div>
@@ -282,45 +282,6 @@ function mtt_register_form_shortcode()
 	return ob_get_clean();
 }
 add_shortcode('mtt_hero_slider', 'mtt_hero_slider_shortcode');
-
-
-/**
- * @return MTT Front page Best Sellers HTML content to display the shortcode.
- */
-function mtt_best_seller_shortcode()
-{
-	ob_start();
-	?>
-<section class="section mtt-bestseller-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="mtt-bestseller-title text-center">
-                    <h4>BEST SELLERS</h4>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <?php
-					//echo do_shortcode('[products limit="4" columns="4" orderby="popularity" class="quick-sale" on_sale="false"]');
-
-					echo do_shortcode('[products limit="4" columns="4" skus="bestSeller1, bestSeller2, bestSeller3, bestSeller4" orderby="date" order="desc"]');
-					?>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="mtt-bestseller-section-btn">
-                    <a class="btn rounded-0 mtt-btn px-5"
-                        href="<?php echo get_permalink(woocommerce_get_page_id('shop')); ?>">VIEW ALL PRODUCTS</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section><!-- .mtt-bestseller-section -->
-<?php
-	return ob_get_clean();
-}
-add_shortcode('mtt_best_sellers', 'mtt_best_seller_shortcode');
 
 
 

@@ -375,3 +375,22 @@ require get_template_directory() . '/inc/shortcode.php';
 require get_template_directory() . '/inc/wc-shortcode.php';
 
 remove_filter('the_content', 'wpautop');
+
+function get_questions_count( $product_id ) {
+	global $wpdb;
+	
+	$query = $wpdb->prepare ( "select count(que.ID)
+		from {$wpdb->prefix}posts as que left join {$wpdb->prefix}posts as pro
+		on que.post_parent = pro.ID
+		where que.post_status = 'publish'
+		and que.post_type = %s
+		and pro.post_type = 'product'
+		and pro.ID = %d",
+		YWQA_CUSTOM_POST_TYPE_NAME,
+		$product_id
+	);
+	
+	$items = $wpdb->get_row ( $query, ARRAY_N );
+	
+	return $items[0];
+}
