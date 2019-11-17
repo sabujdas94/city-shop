@@ -29,6 +29,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 
 ?>
 <div class="row">
+	<div class="col-md-1"></div>
 	<div class="col-md-7">
 		<div class="mtt-checkout-page-content">
 			<div class="mtt-checkout-page-logo">
@@ -74,7 +75,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 	</div>
 
 
-	<div class="col-md-5">
+	<div class="col-md-4">
 		<div class="mtt-checkout-right-sidear">
 			<table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
 				<tbody>
