@@ -344,24 +344,18 @@ function mtt_woocommerce_after_add_to_cart_quantity()
      $fields['billing']['billing_first_name']['label'] = 'First name ';
      $fields['billing']['billing_last_name']['placeholder'] = '';
      $fields['billing']['billing_last_name']['label'] = 'Last name ';
-     $fields['billing']['billing_company']['placeholder'] = 'Company Name';
-     $fields['billing']['billing_postcode']['placeholder'] = 'Postal/ZIIP Code';
+     $fields['billing']['billing_address_1']['placeholder'] = 'Steet address';
+     $fields['billing']['billing_postcode']['placeholder'] = 'ZIIP Code';
      $fields['billing']['billing_phone']['placeholder'] = 'Phone';
      $fields['billing']['billing_city']['placeholder'] = 'City';
-     $fields['billing']['billing_country']['placeholder'] = 'Country';
-     $fields['billing']['billing_state']['placeholder'] = 'State';
+     $fields['billing']['billing_country']['placeholder'] = 'Country ';
      $fields['billing']['billing_email']['placeholder'] = '';
      $fields['billing']['billing_email']['label'] = 'E-mail ';
 
-     $fields['shipping']['shipping_first_name']['placeholder'] = 'First Name';
-     $fields['shipping']['shipping_last_name']['placeholder'] = 'Last Name';
-     $fields['shipping']['shipping_company']['placeholder'] = 'Company Name';
-     $fields['shipping']['shipping_postcode']['placeholder'] = 'Postal/ZIIP Code';
-     $fields['shipping']['shipping_phone']['placeholder'] = 'Phone';
-     $fields['shipping']['shipping_city']['placeholder'] = 'City';
-     $fields['shipping']['shipping_country']['placeholder'] = 'Country';
-     $fields['shipping']['shipping_state']['placeholder'] = 'State';
-     $fields['shipping']['billing_email']['placeholder'] = 'Email';
+     unset($fields['billing']['billing_company']);
+     unset($fields['billing']['billing_address_2']);
+     unset($fields['billing']['billing_state']);
+
 
      return $fields;
  }

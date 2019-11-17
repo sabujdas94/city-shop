@@ -48,7 +48,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 								<?php do_action( 'woocommerce_checkout_billing' ); ?>
 							</div>
 
-							<div class="col-12 p-0">
+							<div class="col-12 p-0 mtt-shipping-tab-col">
 								<h4 id="order_review_heading" class="mtt-checkout-form-title"><?php esc_html_e( '03 DELIVERY ', 'woocommerce' ); ?></h4>
 							</div>
 						</div>
