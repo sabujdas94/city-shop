@@ -49,7 +49,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 							</div>
 
 							<div class="col-12 p-0">
-								<?php do_action( 'woocommerce_checkout_shipping' ); ?>
+								<h4 id="order_review_heading" class="mtt-checkout-form-title"><?php esc_html_e( '03 DELIVERY ', 'woocommerce' ); ?></h4>
 							</div>
 						</div>
 
@@ -58,8 +58,6 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 					<?php endif; ?>
 					
 					<?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
-					
-					<h4 id="order_review_heading" class="mtt-checkout-form-title"><?php esc_html_e( '04 ORDER SUMMARY', 'woocommerce' ); ?></h4>
 					
 					<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 
@@ -163,9 +161,17 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 				</div>
 				<div class="row">
 					<div class="col-6">
-						<?php esc_html_e( 'Estimated Total', 'woocommerce' ); ?>
+						<?php esc_html_e( 'Shipping Priority', 'woocommerce' ); ?>
 					</div>
 					<div class="col-6">
+						<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>10.00</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6 mt-3 mtt-checkout-estimated-total-txt">
+						<?php esc_html_e( 'Estimated Total', 'woocommerce' ); ?>
+					</div>
+					<div class="col-6 mt-3 mtt-checkout-estimated-total-amount">
 						<?php wc_cart_totals_order_total_html(); ?>
 					</div>
 				</div>

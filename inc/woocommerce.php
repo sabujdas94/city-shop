@@ -302,7 +302,7 @@ function mtt_woocommerce_remove_actions() {
 
     remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10, 0 );
     remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15 );
-    
+
     remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 
 	remove_action( 'woocommerce_widget_shopping_cart_buttons', 'woocommerce_widget_shopping_cart_button_view_cart', 10 );
@@ -340,16 +340,18 @@ function mtt_woocommerce_after_add_to_cart_quantity()
  add_filter( 'woocommerce_checkout_fields' , 'mtt_override_billing_checkout_fields', 20, 1 );
  function mtt_override_billing_checkout_fields( $fields ) {
 
-     $fields['billing']['billing_first_name']['placeholder'] = 'First Name';
-     $fields['billing']['billing_last_name']['placeholder'] = 'Last Name';
+     $fields['billing']['billing_first_name']['placeholder'] = '';
+     $fields['billing']['billing_first_name']['label'] = 'First name ';
+     $fields['billing']['billing_last_name']['placeholder'] = '';
+     $fields['billing']['billing_last_name']['label'] = 'Last name ';
      $fields['billing']['billing_company']['placeholder'] = 'Company Name';
      $fields['billing']['billing_postcode']['placeholder'] = 'Postal/ZIIP Code';
      $fields['billing']['billing_phone']['placeholder'] = 'Phone';
      $fields['billing']['billing_city']['placeholder'] = 'City';
      $fields['billing']['billing_country']['placeholder'] = 'Country';
      $fields['billing']['billing_state']['placeholder'] = 'State';
-     $fields['billing']['billing_email']['placeholder'] = 'Email';
-
+     $fields['billing']['billing_email']['placeholder'] = '';
+     $fields['billing']['billing_email']['label'] = 'E-mail ';
 
      $fields['shipping']['shipping_first_name']['placeholder'] = 'First Name';
      $fields['shipping']['shipping_last_name']['placeholder'] = 'Last Name';
