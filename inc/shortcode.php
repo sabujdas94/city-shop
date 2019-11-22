@@ -132,9 +132,9 @@ function mtt_popup_offer_shortcode() {
 ?>
 		<ul>
 		    <li><h6>Follow us and Enter into $100 Monthly Prize Draw.</h6></li>
-		    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-		    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-		    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+		    <li><a href="https://facebook.com/finessCity" target="_blank"><i class="fa fa-facebook"></i></a></li>
+		    <li><a href="https://twitter.com/finessCity" target="_blank"><i class="fa fa-twitter"></i></a></li>
+		    <li><a href="https://instagram.com/finesscity" target="_blank"><i class="fa fa-instagram"></i></a></li>
 		    <li><a href="#"><i id="popupNoticeTimes" class="fa fa-times"></i></a></li>
 		</ul>
 
