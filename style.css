@@ -649,6 +649,9 @@
  ul {
      margin-left: 0;
 }
+.mtt-Brandon-grotesque-black {
+     font-family: "Brandon Grotesque Black";
+}
 .text-dark{
     color: #000 !important;
 }
@@ -1222,12 +1225,18 @@ h2.woocommerce-loop-product__title {
 }
  .mtt-wholesale-form-section {
      padding: 50px 0px;
+     font-weight: 300 !important;
 }
- .mtt-wholesale {
+ .mtt-wholesale-form-section .mtt-wholesale {
      background-color: #f0f0f0;
      padding: 40px;
+     font-family: "Brandon Grotesque Black";
 }
- .mtt-wholesale-logo img {
+ .mtt-wholesale-form-section .mtt-wholesale .form-control {
+     font-weight: 100 !important;
+     padding: .375rem .75rem !important;
+}
+ .mtt-wholesale-form-section .mtt-wholesale-logo img {
      width: 140px;
      height: auto;
 }
