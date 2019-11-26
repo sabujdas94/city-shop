@@ -43,27 +43,23 @@ remove_filter( 'the_excerpt', 'wpautop' );
 
 /* MTT share icon */
 function mtt_share_this() {
+		$content = '';
     if ( is_single() || !is_single() ) {
         $title = get_the_title();
         $permalink = get_permalink();
+        $postThumbnail = get_the_post_thumbnail_url();
 
-        $facebook = 'https://www.facebook.com/sharer/sharer.php?u='.$permalink;
+        $facebook = 'https://www.facebook.com/sharer.php?u='.$permalink;
 		$twitter = 'https://twitter.com/intent/tweet?text=Hey! Read this: '.$title.'&amp;url='.$permalink;
+		$pinterest = 'https://pinterest.com/pin/create/button/?url='.$permalink.'/&amp;media='.$postThumbnail.'&amp;description='.$title;
 
 
-
-        $google = 'https://plus.google.com/share?url='.$permalink;
-
-// https://pinterest.com/pin/create/button/?url=http://dainikaloron.com/five-things-you-may-have-missed-over-the-weekend/&amp;media=http://dainikaloron.com/wp-content/uploads/2019/11/3.jpg&amp;description=Five+things+you+may+have+missed+over+the+weekend
-
-
-
-        $content .= '<ul>';
-		$content .= '<li>Share <i class="fa fa-share-alt" aria-hidden="true"></i></li>';
-        $content .= '<li><a href="'.$facebook.'" target="_blank" rel="nofollow"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a></li>';
-        $content .= '<li><a href="'.$twitter.'" target="_blank" rel="nofollow"><span><i class="fa fa-twitter" aria-hidden="true"></i></span></a></li>';
-        $content .= '<li><a href="'.$google.'" target="_blank" rel="nofollow"><span><i class="fa fa-google-plus" aria-hidden="true"></i></span></a></li>';
-        $content .= '</ul><!-- .aama-shareThis -->';
+        $content .= '<div class="mtt-single-product-share">';
+		$content .= '<span class="font-weight-bold">SHARE</span>';
+        $content .= '<a href="'.$facebook.'" target="_blank"><i class="fa fa-facebook px-2"></i> Facebook</a>';
+        $content .= '<a href="'.$twitter.'" target="_blank"><i class="fa fa-twitter px-2"></i> Twitter</a>';
+        $content .= '<a href="'.$pinterest.'" target="_blank"><i class="fa fa-pinterest px-2"></i> Pinterest</a>';
+        $content .= '</div><!-- .mtt-single-product-share -->';
 
         echo $content;
     } else {
