@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The Template for displaying all single products
  *
@@ -15,63 +16,63 @@
  * @version     1.6.4
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit; // Exit if accessed directly
 }
 
-get_header( 'shop' ); ?>
+get_header('shop'); ?>
 
-	<?php
-		/**
-		 * woocommerce_sidebar hook.
-		 *
-		 * @hooked woocommerce_get_sidebar - 10
-		 */
-		do_action( 'woocommerce_sidebar' );
-	?>
+<?php
+/**
+ * woocommerce_sidebar hook.
+ *
+ * @hooked woocommerce_get_sidebar - 10
+ */
+do_action('woocommerce_sidebar');
+?>
 
-	<?php
-		/**
-		 * woocommerce_before_main_content hook.
-		 *
-		 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
-		 * @hooked woocommerce_breadcrumb - 20
-		 */
-		do_action( 'woocommerce_before_main_content' );
-	?>
+<?php
+/**
+ * woocommerce_before_main_content hook.
+ *
+ * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
+ * @hooked woocommerce_breadcrumb - 20
+ */
+do_action('woocommerce_before_main_content');
+?>
 
-		<?php while ( have_posts() ) : the_post(); ?>
+<?php while (have_posts()) : the_post(); ?>
 
-			<?php wc_get_template_part( 'content', 'single-product' ); ?>
+<?php wc_get_template_part('content', 'single-product'); ?>
 
-		<?php endwhile; // end of the loop. ?>
+<?php endwhile; // end of the loop. 
+?>
 
-	<?php
-		/**
-		 * woocommerce_after_main_content hook.
-		 *
-		 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
-		 */
-		do_action( 'woocommerce_after_main_content' );
+<?php
+/**
+ * woocommerce_after_main_content hook.
+ *
+ * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
+ */
+do_action('woocommerce_after_main_content');
 
-	?>
-	
-	<?php 
-		/**
-		 * MTT woocommerce related products
-		 */
-		echo do_shortcode('[mtt_related_products]');
-	 ?>
+?>
 
-	<?php
-		/**
-		 * MTT instagram profile with images
-		 */
-		echo do_shortcode('[mtt_instragram]www.instagram.com[/mtt_instragram]');
+<?php
+/**
+ * MTT woocommerce related products
+ */
+echo do_shortcode('[mtt_related_products]');
+?>
 
-	?>
+<?php
+/**
+ * MTT instagram profile with images
+ */
+echo do_shortcode('[mtt_instragram]www.instagram.com[/mtt_instragram]');
 
+?>
 
-<?php get_footer( 'shop' );
+<?php get_footer('single-shop');
 
 /* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */

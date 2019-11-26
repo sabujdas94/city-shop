@@ -5,17 +5,48 @@
  * @package CitySHop
  */
 
+
+/**
+ * @return MTT related products HTML content to display the shortcode.
+ */
+function mtt_related_products_shortcode() {
+	ob_start();
+?>
+	<section class="section mtt-bestseller-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="mtt-bestseller-title text-center mt-5">
+						<h4>YOU MIGHT BE INTERESTED</h4>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<?php
+					echo do_shortcode('[related_products limit="4"]');
+				?>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="mtt-bestseller-section-btn">
+						<a class="btn rounded-0 mtt-btn px-5" href="<?php echo get_permalink( woocommerce_get_page_id( 'shop' ) ); ?>">DISCOVER MORE</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- .mtt-bestseller-section -->
+	<hr style="margin-top: 80px;">
+<?php 
+	return ob_get_clean();
+}
+add_shortcode( 'mtt_related_products', 'mtt_related_products_shortcode' );
+
+
 /**
  * @return MTT login form shortcode.
  */
 function mtt_login_form_shortcode() {
 	ob_start();
-
-	// if (is_user_logged_in()):
-	// 	$my_account = home_url();
-	// 	$my_account .= "/my-account";
-	// 	header('Location: ' . $my_account);
-	// endif;
 ?>
 	<section class="section mtt-login-section">
 		<div class="container">
