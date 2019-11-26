@@ -48,12 +48,9 @@ function mtt_login_form_shortcode() {
 			<div class="row">
 				<div class="col-md-4 offset-md-4">
 					<div class="mtt-login">
-						<p class="text-center py-2"><?php esc_html_e("Sign into your existing finessCity account", "city-shop");?></p>
-						
-<?php do_action( 'woocommerce_before_customer_login_form' ); ?>
-
-						<form class="woocommerce-form woocommerce-form-login login" method="post">
-
+						<h5 class="text-center py-2 mb-4"><?php esc_html_e("Sign into your existing finessCity account", "city-shop");?></h5>
+						<?php do_action( 'woocommerce_before_customer_login_form' ); ?>
+						<form class="woocommerce-form woocommerce-form-login login mb-5" method="post">
 							<?php do_action( 'woocommerce_login_form_start' ); ?>
 							<div class="form-group">
 								<label for="username" class="font-weight-bold"><?php esc_html_e( 'Email', 'woocommerce' ); ?> <span class="required">*</span></label>
@@ -69,15 +66,13 @@ function mtt_login_form_shortcode() {
 							</div>
 							<?php wp_nonce_field( 'woocommerce-login', 'woocommerce-login-nonce' ); ?>
 							<button type="submit" class="woocommerce-button button woocommerce-form-login__submit btn mtt-btn rounded-0 btn-block" name="login" value="<?php esc_attr_e( 'SIGN IN', 'woocommerce' ); ?>"><?php esc_html_e( 'SIGN IN', 'woocommerce' ); ?></button>
-							<div class="form-group text-center">
-								<input class="woocommerce-form__input woocommerce-form__input-checkbox mt-3" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span><?php esc_html_e( 'Remember me', 'woocommerce' ); ?></span>
-								<p class="text-center py-3">New to finessCity? <a href="<?php echo home_url();?>/register" class="font-weight-bold">Create an account</a></p>
+							<div class="form-group text-center mt-3">
+								<!--  -->
+								<h5 class="text-center py-3">New to finessCity? <a href="<?php echo home_url();?>/register" class="font-weight-bold">Create an account</a></h5>
 							</div>
 							<?php do_action( 'woocommerce_login_form_end' ); ?>
 						</form>
-<?php do_action( 'woocommerce_after_customer_login_form' ); ?>
-
-
+						<?php do_action( 'woocommerce_after_customer_login_form' ); ?>
 					</div>
 				</div>
 			</div>

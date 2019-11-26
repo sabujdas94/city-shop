@@ -197,3 +197,19 @@ require get_template_directory() . '/inc/shortcode.php';
 require get_template_directory() . '/inc/wc-shortcode.php';
 
 remove_filter('the_content', 'wpautop');
+
+function pre_process_shortcode() {
+	if (is_user_logged_in()){
+		if( is_page('Login') || is_page('Register') ){
+			wp_redirect( get_permalink( get_page_by_path('my-account') ) );
+        	die;
+		}
+	}
+	if (!is_user_logged_in()){
+		if( is_page('my-account') ){
+			wp_redirect( get_permalink( get_page_by_path('login') ) );
+        	die;
+		}
+	}
+}
+add_action('template_redirect','pre_process_shortcode',1);

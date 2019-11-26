@@ -89,8 +89,13 @@
                                         </li>
                                         <?php endif ?>
 
-                                        <li class="nav-item"><a class="nav-link"
-                                                href="<?php echo home_url(); ?>/login">Login</a></li>
+                                        <li class="nav-item">
+                                            <?php if (is_user_logged_in()): ?>
+                                                <a class="nav-link" href="<?php echo esc_url( wc_logout_url() ); ?>">Logout</a>
+                                            <?php else: ?>
+                                                <a class="nav-link" href="<?php echo home_url(); ?>/login">Login</a>
+                                            <?php endif ?>
+                                        </li>
                                         <?php city_shop_woocommerce_header_cart(); ?>
 
                                         <!-- menu currency changer -->

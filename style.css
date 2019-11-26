@@ -2728,3 +2728,21 @@ input#ywqa-submit-question {
     position: relative;
     top: -3px;
 }
+.woocommerce-multi-currency {
+    display: none;
+}
+.woocommerce-form-login input::placeholder,
+.woocommerce-form-register input::placeholder{
+    font-size: 12px;
+    color: #000 !important;
+}
+.woocommerce-form-login input,
+.woocommerce-form-register input {
+    font-family: 'Brandon Grotesque Light';
+    color: #000 !important;
+    padding: 15px;
+    height: 40px;
+    border: 2px solid #dfdfdf;
+    border-radius: 0;
+    letter-spacing: 1px;
+}
