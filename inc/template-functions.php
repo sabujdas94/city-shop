@@ -38,3 +38,35 @@ add_action( 'wp_head', 'city_shop_pingback_header' );
 
 remove_filter( 'the_content', 'wpautop' ); 
 remove_filter( 'the_excerpt', 'wpautop' );
+
+
+
+/* MTT share icon */
+function mtt_share_this() {
+    if ( is_single() || !is_single() ) {
+        $title = get_the_title();
+        $permalink = get_permalink();
+
+        $facebook = 'https://www.facebook.com/sharer/sharer.php?u='.$permalink;
+		$twitter = 'https://twitter.com/intent/tweet?text=Hey! Read this: '.$title.'&amp;url='.$permalink;
+
+
+
+        $google = 'https://plus.google.com/share?url='.$permalink;
+
+// https://pinterest.com/pin/create/button/?url=http://dainikaloron.com/five-things-you-may-have-missed-over-the-weekend/&amp;media=http://dainikaloron.com/wp-content/uploads/2019/11/3.jpg&amp;description=Five+things+you+may+have+missed+over+the+weekend
+
+
+
+        $content .= '<ul>';
+		$content .= '<li>Share <i class="fa fa-share-alt" aria-hidden="true"></i></li>';
+        $content .= '<li><a href="'.$facebook.'" target="_blank" rel="nofollow"><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a></li>';
+        $content .= '<li><a href="'.$twitter.'" target="_blank" rel="nofollow"><span><i class="fa fa-twitter" aria-hidden="true"></i></span></a></li>';
+        $content .= '<li><a href="'.$google.'" target="_blank" rel="nofollow"><span><i class="fa fa-google-plus" aria-hidden="true"></i></span></a></li>';
+        $content .= '</ul><!-- .aama-shareThis -->';
+
+        echo $content;
+    } else {
+        echo $content;
+    }
+}
