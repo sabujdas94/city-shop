@@ -51,7 +51,7 @@ function mtt_share_this() {
 
         $facebook = 'https://www.facebook.com/sharer.php?u='.$permalink;
 		$twitter = 'https://twitter.com/intent/tweet?text=Hey! Read this: '.$title.'&amp;url='.$permalink;
-		$pinterest = 'https://pinterest.com/pin/create/button/?url='.$permalink.'/&amp;media='.$postThumbnail.'&amp;description='.$title;
+		$pinterest = 'https://pinterest.com/pin/create/button/?url='.$permalink.'&amp;media='.$postThumbnail.'&amp;description='.$title;
 
 
         $content .= '<div class="mtt-single-product-share">';
