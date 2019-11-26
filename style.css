@@ -883,7 +883,39 @@ a.wishlist_products_counter.top_wishlist-heart::before{
      max-height: 100%;
      padding: 8px 0px;
 }
-/*================================================= mtt Mobile menu by mmenu ===================================================*/
+
+/*=============================
+    mtt Currency Changer css
+===============================*/
+
+.dropdown.dropdown-currency{
+    
+}
+.dropdown.dropdown-currency a {
+    font-size: 14px;
+}
+.dropdown-currency #dropdownMenuCurrency:focus,
+.dropdown-currency #dropdownMenuCurrency:hover{
+    color: #f9f9f9;
+    box-shadow: none;
+}
+.dropdown-menu.dropdown-currency-menu{
+    min-width: 0px;
+    padding: 0px;
+}
+.dropdown-currency .dropdown-currency-menu .dropdown-currency-item {
+    background-color: #ccc;
+    color: #000;
+}
+.dropdown-currency .dropdown-currency-menu .dropdown-currency-item.active,
+.dropdown-currency .dropdown-currency-menu .dropdown-currency-item:hover {
+    background-color: #2F5C85;
+    color: #f9f9f9;
+}
+
+/*=============================
+    mtt Mobile menu by mmenu 
+===============================*/
  .mtt-mobile-menu .mtt-mmenu-collaps-btn {
      z-index: 999;
 }
@@ -1233,7 +1265,8 @@ h2.woocommerce-loop-product__title {
      font-family: "Brandon Grotesque Black";
 }
  .mtt-wholesale-form-section .mtt-wholesale .form-control {
-     font-weight: 100 !important;
+     font-size: 14px;
+     font-weight: 300 !important;
      padding: .375rem .75rem !important;
 }
  .mtt-wholesale-form-section .mtt-wholesale-logo img {
@@ -2198,6 +2231,128 @@ button.close-cart-widget {
     padding-left: 1px;
     /*x: ;*/
 }
+
+
+/**
+ * My Account
+ */
+
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul li a:before {
+    margin-right: 20px;
+    opacity: .5;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul li a:hover:before {
+    opacity: 1;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--dashboard a:before {
+    font-family: 'FontAwesome';
+    content: "\f0e4";
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--orders a:before {
+    font-family: 'FontAwesome';
+    content: "\f291";
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--downloads a:before {
+    font-family: 'FontAwesome';
+    content: "\f1c6";
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--edit-address a:before {
+    font-family: 'FontAwesome';
+    content: "\f015";
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--payment-methods a:before {
+    font-family: 'FontAwesome';
+    content: "\f09d";
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--edit-account a:before {
+    font-family: 'FontAwesome';
+    content: "\f007";
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--customer-logout a:before {
+    font-family: 'FontAwesome';
+    content: "\f08b";
+}
+
+.woocommerce-account .woocommerce-MyAccount-content h2 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.woocommerce-account p.order-again {
+    text-align: right;
+}
+
+.woocommerce-account .woocommerce-EditAccountForm input[type="submit"] {
+    margin-top: 50px;
+    float: right;
+}
+
+/* Change WC Acct Page Column Widths */
+@media only screen and (min-width: 769px) {
+  .woocommerce-account .woocommerce-MyAccount-navigation {
+    width: 22%;
+    float: left;
+  }
+  .woocommerce-account .woocommerce-MyAccount-content { 
+    width: 75%;
+    float: left;
+  }
+}
+/* Style WC Account Endpoint Links */
+nav.woocommerce-MyAccount-navigation ul {
+  list-style-type: none;
+  padding-left: 0;
+  max-width:200px;
+  font-size: 17px;
+  line-height: 26px;
+}
+nav.woocommerce-MyAccount-navigation ul li {
+  padding: 8px 20px;
+  background-color: rgba(0,0,0,0.05);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+nav.woocommerce-MyAccount-navigation ul li.is-active {
+  background-color: rgba(0,0,0,0.1);
+}
+nav.woocommerce-MyAccount-navigation ul li.is-active a {
+  color: rgba(0,0,0,0.8); cursor: default;
+}
+nav.woocommerce-MyAccount-navigation ul li.is-active:after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-top: 20px solid transparent;
+  border-left: 14px solid rgba(0,0,0,0.1);
+  border-bottom: 20px solid transparent;
+  float: right;
+  margin-right: -34px;
+  margin-top: -7px;
+}
+nav.woocommerce-MyAccount-navigation ul li:not(.is-active):hover {
+  background-color: rgba(0,0,0,0.07);
+}
+nav.woocommerce-MyAccount-navigation ul li:not(.is-active):hover:after { 
+  content: "";
+  height: 0;
+  width: 0;
+  border-top: 20px solid transparent;
+  border-left: 14px solid rgba(0,0,0,0.07);
+  border-bottom: 20px solid transparent;
+  float: right;
+  margin-right: -34px;
+  margin-top: -7px;
+}
+
 
 /*===================Subscription Form===========*/
 .btn-subscribe{

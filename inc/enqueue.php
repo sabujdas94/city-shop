@@ -41,6 +41,8 @@ add_action( 'wp_enqueue_scripts', 'city_shop_styles' );
 
 function city_shop_scripts() {
 
+	wp_enqueue_script( 'bs4-popper-js', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', array('jquery'), '20205', true );
+
 	wp_enqueue_script( 'bs4-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', array('jquery'), '20203', true );
 
 	wp_enqueue_script( 'slick', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'), '20203', true );

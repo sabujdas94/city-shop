@@ -91,8 +91,16 @@
                                         <li class="nav-item"><a class="nav-link"
                                                 href="<?php echo home_url(); ?>/login">Login</a></li>
                                         <?php city_shop_woocommerce_header_cart(); ?>
-                                        <li class="nav-item"><a class="nav-link"
-                                                href="<?php echo home_url(); ?>">USD</a></li>
+
+                                        <!-- menu currency changer -->
+                                        <div class="dropdown dropdown-currency">
+                                                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuCurrency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                USD</a>
+                                            <div class="dropdown-menu dropdown-currency-menu" aria-labelledby="dropdownMenuCurrency">
+                                                <a class="dropdown-item dropdown-currency-item active" href="#">USD</a>
+                                                <a class="dropdown-item dropdown-currency-item" href="#">EUR</a>
+                                            </div>
+                                        </div>
                                     </ul>
                                 </nav>
                             </div>

@@ -49,27 +49,27 @@
 									<div class="form-row">
 									    <div class="form-group col-md-6">
 									    	<label for="FirstName" class="mtt-Brandon-grotesque-black">First Name</label>
-									    	<input type="text" class="form-control" id="FirstName" placeholder="ENTER YOUR NAME">
+									    	<input type="text" class="form-control" id="FirstName" placeholder="ENTER YOUR NAME" required>
 									    </div>
 									    <div class="form-group col-md-6">
 									    	<label for="LastName" class="mtt-Brandon-grotesque-black">Last Name</label>
-									    	<input type="text" class="form-control" id="LastName" placeholder="ENTER YOUR NAME">
+									    	<input type="text" class="form-control" id="LastName" placeholder="ENTER YOUR NAME" required>
 										</div>
 									</div>
 									<div class="form-row">
 									    <div class="form-group col-md-6">
 									    	<label for="Email" class="mtt-Brandon-grotesque-black">Email</label>
-									    	<input type="email" class="form-control" id="Email" placeholder="JOHN.SMIT@EXAMPLE.COM">
+									    	<input type="email" class="form-control" id="Email" placeholder="JOHN.SMIT@EXAMPLE.COM" required>
 									    </div>
 									    <div class="form-group col-md-6">
 									    	<label for="PhoneNumber" class="mtt-Brandon-grotesque-black">Phone Number</label>
 									    	<div class="row">
 									    		<div class="col-5">
-									    			<input type="text" class="form-control" id="PhoneNumber" placeholder="AREA CODE">
+									    			<input type="text" class="form-control" id="PhoneNumber" placeholder="AREA CODE" required>
 									    		</div>
 									    		<span>_</span>
 									    		<div class="col">
-									    			<input type="text" class="form-control" id="PhoneNumber" placeholder="PHONE NUMBER">
+									    			<input type="text" class="form-control" id="PhoneNumber" placeholder="PHONE NUMBER" required>
 									    		</div>
 									    	</div>
 										</div>
@@ -77,7 +77,7 @@
 									<div class="form-row">
 									    <div class="form-group col-md-12">
 									    	<label for="Interest" class="mtt-Brandon-grotesque-black">I'm Interested in...</label>
-											<select class="form-control" id="Interest">
+											<select class="form-control" id="Interest" required>
 												<option>TITENIUM PRODUCTS WITH CHOPISTICS</option>
 												<option>TITENIUM PRODUCTS WITH CHOPISTICS</option>
 												<option>TITENIUM PRODUCTS WITH CHOPISTICS</option>
@@ -87,7 +87,7 @@
 									</div>
 									<div class="form-row">
 									    <div class="form-group col-md-12">
-									    	<label for="Interest" class="mtt-Brandon-grotesque-black">HOw Many Units Are You Interested in?</label>
+									    	<label for="Interest" class="mtt-Brandon-grotesque-black">How Many Units Are You Interested in?</label>
 									    	<div class="row">
 									    		<div class="col-2 m-0 pr-0">
 													<a href="#" class="btn bg-white px-4 py-2">25-99</a>
