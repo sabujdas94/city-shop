@@ -132,12 +132,8 @@ if (post_password_required()) {
                 </div>
             </div>
         </div>
-        <div class="mtt-single-product-share">
-            <span class="font-weight-bold">SHARE</span>
-            <a href="https://facebook.com"><i class="fa fa-facebook px-2"></i> Facebook</a>
-            <a href="https://facebook.com"><i class="fa fa-twitter px-2"></i> Twitter</a>
-            <a href="https://facebook.com"><i class="fa fa-instagram px-2"></i> Instagram</a>
-        </div>
+        <!-- mtt share icon -->
+        <?php mtt_share_this(); ?>
     </div>
 
     <?php

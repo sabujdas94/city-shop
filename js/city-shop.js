@@ -118,7 +118,7 @@
             e.preventDefault();
         }
     });
-
+if(jQuery("#mtt-single-product-gallery").length > 0){
     var $carousel = jQuery('#mtt-single-product-gallery').flickity({
         cellAlign: 'left',
         contain: true,
@@ -172,6 +172,7 @@
         }
         $carouselNav.animate({scrollTop: scrollY});
     });
+}
 
 
 })(jQuery);
