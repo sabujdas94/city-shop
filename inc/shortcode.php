@@ -9,13 +9,27 @@
  * @return MTT login form shortcode.
  */
 function mtt_login_form_shortcode() {
-	ob_start();
 
-	// if (is_user_logged_in()):
-	// 	$my_account = home_url();
-	// 	$my_account .= "/my-account";
-	// 	header('Location: ' . $my_account);
-	// endif;
+	if (is_admin() || is_user_logged_in()):
+?>
+<section class="section mtt-login-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="mtt-section-title text-center">
+						<h2 class="font-weight-bold"><?php esc_html_e("Login Successfull!", "city-shop");?></h2>
+						<p>Go to <a href="<?php echo home_url()?>/my-account">Dashboard</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- .mtt-login-section -->
+
+<?php
+		return;
+	endif;
+
+	ob_start();
 ?>
 	<section class="section mtt-login-section">
 		<div class="container">
@@ -35,7 +49,12 @@ function mtt_login_form_shortcode() {
 				<div class="col-md-4 offset-md-4">
 					<div class="mtt-login">
 						<p class="text-center py-2"><?php esc_html_e("Sign into your existing finessCity account", "city-shop");?></p>
+						
+<?php do_action( 'woocommerce_before_customer_login_form' ); ?>
+
 						<form class="woocommerce-form woocommerce-form-login login" method="post">
+
+							<?php do_action( 'woocommerce_login_form_start' ); ?>
 							<div class="form-group">
 								<label for="username" class="font-weight-bold"><?php esc_html_e( 'Email', 'woocommerce' ); ?> <span class="required">*</span></label>
 								<input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="username" id="username" placeholder="JOHN.SMIT@EXAMPLE.COM" autocomplete="username" value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( wp_unslash( $_POST['username'] ) ) : ''; ?>" />
@@ -54,7 +73,11 @@ function mtt_login_form_shortcode() {
 								<input class="woocommerce-form__input woocommerce-form__input-checkbox mt-3" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span><?php esc_html_e( 'Remember me', 'woocommerce' ); ?></span>
 								<p class="text-center py-3">New to finessCity? <a href="<?php echo home_url();?>/register" class="font-weight-bold">Create an account</a></p>
 							</div>
+							<?php do_action( 'woocommerce_login_form_end' ); ?>
 						</form>
+<?php do_action( 'woocommerce_after_customer_login_form' ); ?>
+
+
 					</div>
 				</div>
 			</div>
@@ -132,9 +155,9 @@ function mtt_popup_offer_shortcode() {
 ?>
 		<ul>
 		    <li><h6>Follow us and Enter into $100 Monthly Prize Draw.</h6></li>
-		    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-		    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-		    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+		    <li><a href="https://facebook.com/finessCity" target="_blank"><i class="fa fa-facebook"></i></a></li>
+		    <li><a href="https://twitter.com/finessCity" target="_blank"><i class="fa fa-twitter"></i></a></li>
+		    <li><a href="https://instagram.com/finesscity" target="_blank"><i class="fa fa-instagram"></i></a></li>
 		    <li><a href="#"><i id="popupNoticeTimes" class="fa fa-times"></i></a></li>
 		</ul>
 
@@ -192,7 +215,9 @@ function mtt_best_seller_shortcode() {
 			</div>
 			<div class="row">
 				<?php
-				echo do_shortcode('[products limit="4" columns="4" orderby="popularity" class="quick-sale" on_sale="false"]');
+				//echo do_shortcode('[products limit="4" columns="4" orderby="popularity" class="quick-sale" on_sale="false"]');
+
+				echo do_shortcode('[products limit="4" columns="4" skus="bestSeller1, bestSeller2, bestSeller3, bestSeller4" orderby="date" order="desc"]');
 				?>
 			</div>
 			<div class="row">

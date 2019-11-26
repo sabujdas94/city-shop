@@ -27,6 +27,43 @@ function city_shop_customize_register( $wp_customize ) {
 	}
 
 
+	/* --------- MTT Header PopUp Offer Options Register ------------ */
+
+	$wp_customize->add_panel( 'popup_offers' , array(
+        'title'		=> 'PopUp Offers',
+        'priority'	=> 1
+    ) );
+	// popup_offer_home Text Customization
+	$wp_customize->add_section('popup_offer_home', array(
+		'title' => __('Front Page PopUp Offer', 'city-shop'),
+		'panel' => 'popup_offers',
+		'priority' => 1
+	));
+	$wp_customize->add_setting('popup_offer_home_text', array(
+		'default' => __('Follow us and Enter into $100 Monthly Prize Draw.', 'city-shop'),
+		'transport' => 'refresh'
+	));
+	$wp_customize->add_control('popup_offer_home_text', array(
+		'section' => 'popup_offer_home',
+		'label' => __('Enter PopUp Offer Text: (Frontpage)', 'city-shop'),
+		'type' => 'text'
+	));
+	// popup_offer Text Customization
+	$wp_customize->add_section('popup_offer', array(
+		'title' => __('Without Front Page PopUp Offer', 'city-shop'),
+		'panel' => 'popup_offers',
+		'priority' => 1
+	));
+	$wp_customize->add_setting('popup_offer_text', array(
+		'default' => __('We Stand Behind all Our Products that\'s why we provide a Lifetime Warranty on all your Purchases.', 'city-shop'),
+		'transport' => 'refresh'
+	));
+	$wp_customize->add_control('popup_offer_text', array(
+		'section' => 'popup_offer',
+		'label' => __('Enter PopUp Offer Text:', 'city-shop'),
+		'type' => 'text'
+	));
+
 	/* --------- MTT Footer Options Register ------------ */
 	
 	$wp_customize->add_section('footer_section', array(
@@ -43,7 +80,7 @@ function city_shop_customize_register( $wp_customize ) {
 		'label' => __('Enter Footer Copyright Text:', 'city-shop'),
 		'type' => 'text'
 	));
-
+	
 
 }
 add_action( 'customize_register', 'city_shop_customize_register' );

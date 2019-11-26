@@ -25,7 +25,7 @@ if ( ! is_ajax() ) {
 ?>
 <div id="payment" class="woocommerce-checkout-payment">
 	<?php if ( WC()->cart->needs_payment() ) : ?>
-		<h4 id="checkout_payment_title" class="mtt-checkout-form-title"><?php esc_html_e( '05 PAYMENT', 'woocommerce' ); ?></h4>
+		<h4 id="checkout_payment_title" class="mtt-checkout-form-title"><?php esc_html_e( '04 PAYMENT', 'woocommerce' ); ?></h4>
 		<ul class="wc_payment_methods payment_methods methods">
 			<?php
 			if ( ! empty( $available_gateways ) ) {

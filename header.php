@@ -41,7 +41,8 @@
             </div>
         </div>
         <header id="masthead" class="header mtt-header site-header">
-            <div class="mtt-nav-area <?php if (is_front_page()) : echo 'mtt-transparent-nav-area'; endif ?>">
+            <div class="mtt-nav-area <?php if (is_front_page()) : echo 'mtt-transparent-nav-area';
+                                        endif ?>">
                 <div class="container-fluid">
                     <div class=" mtt-nav-area-row row">
                         <div class="col-md-5">
@@ -91,8 +92,36 @@
                                         <li class="nav-item"><a class="nav-link"
                                                 href="<?php echo home_url(); ?>/login">Login</a></li>
                                         <?php city_shop_woocommerce_header_cart(); ?>
-                                        <li class="nav-item"><a class="nav-link"
-                                                href="<?php echo home_url(); ?>">USD</a></li>
+
+                                        <!-- menu currency changer -->
+                                        <?php
+                                        $settings = new WOOMULTI_CURRENCY_Data();
+                                        $links = $settings->get_links();
+                                        $currency_selected = $settings->get_current_currency();
+                                        $currency_name = get_woocommerce_currencies();
+                                        ?>
+
+                                        <!-- menu currency changer -->
+                                        <div class="dropdown dropdown-currency">
+                                            <a class="btn dropdown-toggle pl-0" href="#" role="button"
+                                                id="dropdownMenuCurrency" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <?php echo $currency_selected; ?>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-currency-menu"
+                                                aria-labelledby="dropdownMenuCurrency">
+                                                <?php foreach ($links as $k => $link) :
+                                                    $selected = '';
+                                                    if ($currency_selected == $k) {
+                                                        $selected = 'wmc-active';
+                                                    }
+                                                    ?>
+                                                <a data-currency="<?php echo esc_attr($k) ?>"
+                                                    class="wmc-currency-redirect dropdown-item dropdown-currency-item <?php if ($selected) echo 'active'; ?>"
+                                                    href="#"><?php echo esc_html($currency_name[$k]); ?></a>
+                                                <?php endforeach ?>
+                                            </div>
+                                        </div>
                                     </ul>
                                 </nav>
                             </div>
