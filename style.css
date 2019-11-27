@@ -1576,18 +1576,21 @@ ul.products li.product:hover .mtt_product_thumb_wrapper::after{
 }
 
 
- .woocommerce-notices-wrapper .woocommerce-message, .woocommerce .woocommerce-form-coupon-toggle .woocommerce-info {
+ .woocommerce .woocommerce-message, 
+ .woocommerce .woocommerce-info {
      text-align: center;
      margin: 0px auto;
      color: #fff;
-     padding: 5px 20px;
+     padding: 10px 20px;
      width: 100%;
      background-color: #000;
 }
- .woocommerce-notices-wrapper .woocommerce-message a, .woocommerce-form-coupon-toggle .woocommerce-info a {
+ .woocommerce .woocommerce-message a, 
+ .woocommerce .woocommerce-info a {
      text-align: center;
      border: 1px solid #fff;
      padding: 2px 5px;
+     margin-right: 15px;
      color: #fff;
      text-decoration: none;
 }
@@ -1790,10 +1793,18 @@ ul.products li.product:hover .mtt_product_thumb_wrapper::after{
     padding-top:60px;
     border-top:1px solid #ccc;
  }
-/*Woocommerce cart and checkout page css*/
+ /* mtt boxed content area css*/
+ .boxed-content-area {
+    width: 85%;
+    margin: 0px auto;
+    padding: 25px 20px;
+    padding-bottom: 0px;
+}
+/* mtt full width page css*/
  .full-width-content-area .entry-content {
      margin: 0px;
 }
+
 /*Woocommerce cart page css*/
  .woocommerce .woocommerce-cart-form, .woocommerce .cart-collaterals, .woocommerce .woocommerce-notices-wrapper {
      background-color: #F9F9F9;
@@ -1917,26 +1928,25 @@ ul.products li.product:hover .mtt_product_thumb_wrapper::after{
  .woocommerce-input-wrapper {
      width: 100%;
 }
- .woocommerce .woocommerce-checkout input[type="text"], 
- .woocommerce .woocommerce-checkout input[type="email"], 
- .woocommerce .woocommerce-checkout input[type="url"], 
- .woocommerce .woocommerce-checkout input[type="password"], 
- .woocommerce .woocommerce-checkout input[type="search"], 
- .woocommerce .woocommerce-checkout input[type="number"], 
- .woocommerce .woocommerce-checkout input[type="tel"], 
- .woocommerce .woocommerce-checkout input[type="range"], 
- .woocommerce .woocommerce-checkout input[type="date"], 
- .woocommerce .woocommerce-checkout input[type="month"], 
- .woocommerce .woocommerce-checkout input[type="week"], 
- .woocommerce .woocommerce-checkout input[type="time"], 
- .woocommerce .woocommerce-checkout input[type="datetime"], 
- .woocommerce .woocommerce-checkout input[type="datetime-local"], 
- .woocommerce .woocommerce-checkout input[type="color"], 
- .woocommerce .woocommerce-checkout textarea {
+ .woocommerce input[type="text"], 
+ .woocommerce input[type="email"], 
+ .woocommerce input[type="url"], 
+ .woocommerce input[type="password"], 
+ .woocommerce input[type="search"], 
+ .woocommerce input[type="number"], 
+ .woocommerce input[type="tel"], 
+ .woocommerce input[type="range"], 
+ .woocommerce input[type="date"], 
+ .woocommerce input[type="month"], 
+ .woocommerce input[type="week"], 
+ .woocommerce input[type="time"], 
+ .woocommerce input[type="datetime"], 
+ .woocommerce input[type="datetime-local"], 
+ .woocommerce input[type="color"], 
+ .woocommerce textarea {
      width: 100%;
      padding: 15px;
 }
-
 
 
 /*------------------------------------------------------------------------edited*/
@@ -2276,6 +2286,11 @@ button.close-cart-widget {
     font-family: 'FontAwesome';
     content: "\f007";
 }
+/*current edit*/
+.woocommerce-account .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--tinv_wishlist a:before {
+    font-family: 'FontAwesome';
+    content: "\f004";
+}
 
 .woocommerce-account .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--customer-logout a:before {
     font-family: 'FontAwesome';
@@ -2352,7 +2367,36 @@ nav.woocommerce-MyAccount-navigation ul li:not(.is-active):hover:after {
   margin-right: -34px;
   margin-top: -7px;
 }
+.woocommerce-account tr.order{
+    padding: 10px 0px;
+    margin-top: 15px;
+    border-top: 1px solid #EDEDED;
+}
 
+.woocommerce-account .woocommerce-Address {
+    max-width: 100%;
+}
+.woocommerce-account .validate-email{
+    float: left;
+}
+.woocommerce-account .order:last-child{
+    border-bottom: 1px solid #EDEDED;
+}
+.woocommerce-account .button,
+.woocommerce-account .woocommerce-Button {
+    background-color: #2F5C85 !important;
+    color: #f0f0f0;
+    font-size: 14px;
+    font-family: "Brandon Grotesque Light";
+    letter-spacing: 2px;
+    font-weight: 700;
+    padding: 10px 15px;
+    width: 40%;
+}
+.woocommerce-account .button:hover,
+.woocommerce-account .woocommerce-Button:hover {
+     color: #f9f9f9;
+}
 
 /*===================Subscription Form===========*/
 .btn-subscribe{
@@ -2453,10 +2497,6 @@ nav.woocommerce-MyAccount-navigation ul li:not(.is-active):hover:after {
          margin-top: auto;
          display: table;
     }
-    /*nav-row*/
-    /* .mtt-nav-area-row {
-         display: none;
-    }*/
      .mtt-mobile-menu-row {
          display: block;
     }
@@ -2489,7 +2529,6 @@ nav.woocommerce-MyAccount-navigation ul li:not(.is-active):hover:after {
      .mtt-footer-signup-form input {
          width: 200px;
     }
-/*}*/
      .mtt-footer-signup-des {
          text-align: center;
     }
