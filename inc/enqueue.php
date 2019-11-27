@@ -30,6 +30,9 @@ function city_shop_styles()
 	wp_enqueue_style('slick-theme', 'https://kenwheeler.github.io/slick/slick/slick-theme.css');
 
 	wp_enqueue_style('mmenu-css', get_template_directory_uri() . '/mmenu/dist/mmenu.css');
+	wp_enqueue_style('select2', get_template_directory_uri() . '/vendors/select2/select2.min.css');
+	wp_enqueue_style('select2-bootstrap4', get_template_directory_uri() . '/vendors/select2/select2-bootstrap4.css');
+	wp_enqueue_style('jquery-ui', get_template_directory_uri() . '/vendors/jquery-ui/jquery-ui.min.css');
 
 	if (is_product()) {
 		wp_enqueue_style('flickity', get_template_directory_uri() . '/css/flickity.min.css');
@@ -51,6 +54,8 @@ function city_shop_scripts()
 
 	wp_enqueue_script('slick', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'), '20203', true);
 
+	wp_enqueue_script('jquery-ui', get_template_directory_uri() . '/vendors/jquery-ui/jquery-ui.min.js', array(), '20151215', true);
+	wp_enqueue_script('select2', get_template_directory_uri() . '/vendors/select2/select2.min.js', array(), '20151215', true);
 	wp_enqueue_script('city-shop-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true);
 
 	wp_enqueue_script('city-shop-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true);
