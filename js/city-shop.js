@@ -84,7 +84,6 @@
        jQuery(this).data('oldValue', jQuery(this).val());
     });
     jQuery('.input-number').change(function() {
-        
         minValue =  parseInt(jQuery(this).attr('min'));
         maxValue =  parseInt(jQuery(this).attr('max'));
         valueCurrent = parseInt(jQuery(this).val());
@@ -118,63 +117,67 @@
             e.preventDefault();
         }
     });
-if(jQuery("#mtt-single-product-gallery").length > 0){
-    var $carousel = jQuery('#mtt-single-product-gallery').flickity({
-        cellAlign: 'left',
-        contain: true,
-        prevNextButtons: false,
-        pageDots: false
+
+    jQuery('.select2').select2({
+        theme: 'bootstrap4',
     });
+    jQuery( "#datepicker" ).datepicker({dateFormat: "mm-dd-yy"});
 
-    // jQuery('#mtt-single-product-gallery-nav').flickity({
-    //     pageDots: false,
-    //     groupCells: true
-    // });
+    if(jQuery("#mtt-single-product-gallery").length > 0){
+        var $carousel = jQuery('#mtt-single-product-gallery').flickity({
+            cellAlign: 'left',
+            contain: true,
+            prevNextButtons: false,
+            pageDots: false
+        });
 
-    // jQuery('#mtt-single-product-gallery-nav').on( 'click', '.carousel-cell', function() {
-    //     var index = jQuery(this).index();
-    //     $viewport.flickity( 'selectCell', index );
-    // });
+        // jQuery('#mtt-single-product-gallery-nav').flickity({
+        //     pageDots: false,
+        //     groupCells: true
+        // });
 
-    var $carouselNav = jQuery('#mtt-single-product-gallery-nav');
-    var $carouselNavCells = $carouselNav.find('.carousel-cell');
+        // jQuery('#mtt-single-product-gallery-nav').on( 'click', '.carousel-cell', function() {
+        //     var index = jQuery(this).index();
+        //     $viewport.flickity( 'selectCell', index );
+        // });
 
-    $carouselNav.on( 'click', '.carousel-cell', function( event ) {
-      var index = jQuery( event.currentTarget ).index();
-      $carousel.flickity( 'selectCell', index );
-    });
+        var $carouselNav = jQuery('#mtt-single-product-gallery-nav');
+        var $carouselNavCells = $carouselNav.find('.carousel-cell');
 
-    var flkty = $carousel.data('flickity');
-    var navTop  = $carouselNav.position().top;
-    var navCellHeight = $carouselNavCells.height();
-    var navHeight = $carouselNav.height();
-    var scrollY = 0;
-    $carousel.on( 'select.flickity', function() {
-      // set selected nav cell
-      $carouselNav.find('.is-nav-selected').removeClass('is-nav-selected');
-      var $selected = $carouselNavCells.eq( flkty.selectedIndex )
-        .addClass('is-nav-selected');
-      // scroll nav
-        scrollY = $selected.position().top +
-            $carouselNav.scrollTop() - ( navHeight + navCellHeight ) / 2;
-        $carouselNav.animate({scrollTop: scrollY});
-    });
+        $carouselNav.on( 'click', '.carousel-cell', function( event ) {
+          var index = jQuery( event.currentTarget ).index();
+          $carousel.flickity( 'selectCell', index );
+        });
 
-    jQuery('.mtt-nav-arrow-up').on('click', function(){
-        scrollY += 110; 
-        $carouselNav.animate({scrollTop: scrollY});
-    });
+        var flkty = $carousel.data('flickity');
+        var navTop  = $carouselNav.position().top;
+        var navCellHeight = $carouselNavCells.height();
+        var navHeight = $carouselNav.height();
+        var scrollY = 0;
+        $carousel.on( 'select.flickity', function() {
+          // set selected nav cell
+          $carouselNav.find('.is-nav-selected').removeClass('is-nav-selected');
+          var $selected = $carouselNavCells.eq( flkty.selectedIndex )
+            .addClass('is-nav-selected');
+          // scroll nav
+            scrollY = $selected.position().top +
+                $carouselNav.scrollTop() - ( navHeight + navCellHeight ) / 2;
+            $carouselNav.animate({scrollTop: scrollY});
+        });
 
-    jQuery('.mtt-nav-arrow-down').on('click', function(){
-        scrollY -= 110;
-        if(scrollY<0){
-            scrollY = 0;
-        }
-        $carouselNav.animate({scrollTop: scrollY});
-    });
-}
+        jQuery('.mtt-nav-arrow-up').on('click', function(){
+            scrollY += 110; 
+            $carouselNav.animate({scrollTop: scrollY});
+        });
 
-
+        jQuery('.mtt-nav-arrow-down').on('click', function(){
+            scrollY -= 110;
+            if(scrollY<0){
+                scrollY = 0;
+            }
+            $carouselNav.animate({scrollTop: scrollY});
+        });
+    }
 })(jQuery);
 
 

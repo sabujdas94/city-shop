@@ -378,10 +378,11 @@ if (class_exists('WooCommerce')) {
  */
 require get_template_directory() . '/inc/shortcode.php';
 require get_template_directory() . '/inc/wc-shortcode.php';
+require get_template_directory() . '/inc/wholesale_query_hook.php';
 
 remove_filter('the_content', 'wpautop');
 
-function pre_process_shortcode() {
+function city_shop_controll_page_access() {
 	if (is_user_logged_in()){
 		if( is_page('Login') || is_page('Register') ){
 			wp_redirect( get_permalink( get_page_by_path('my-account') ) );
@@ -395,4 +396,21 @@ function pre_process_shortcode() {
 		}
 	}
 }
-add_action('template_redirect','pre_process_shortcode',1);
+add_action('template_redirect','city_shop_controll_page_access',1);
+
+function city_shop_products() {
+	// NOTICE! Understand what this does before running. 
+	return get_posts( array(
+	  'posts_per_page' => -1,
+	  'post_type' => array('product','product_variation'),
+	  'fields' => 'all',
+	) );
+}
+
+/**
+ * Remove woocommerce the breadcrumbs 
+ */
+add_action( 'init', 'mtt_remove_some_plugin_action' );
+function mtt_remove_some_plugin_action() {
+    remove_action( 'admin_menu', array( 'STCFQ_Admin_Menu', 'create_menu' ) );
+}

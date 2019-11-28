@@ -347,6 +347,9 @@
  a:hover, a:active {
      outline: 0;
 }
+.black{
+    color: #1b1b1b !important;
+}
 /*-------------------------------------------------------------- ## Menus --------------------------------------------------------------*/
  .main-navigation {
      clear: both;
@@ -2790,11 +2793,17 @@ input#ywqa-submit-question {
 .woocommerce-multi-currency {
     display: none;
 }
+.mtt-wholesale input::placeholder,
 .woocommerce-form-login input::placeholder,
 .woocommerce-form-register input::placeholder{
     font-size: 12px;
     color: #000 !important;
 }
+.mtt-wholesale input,
+.mtt-wholesale select,
+.mtt-wholesale a.btn,
+.mtt-wholesale .input-group-text,
+.mtt-wholesale textarea,
 .woocommerce-form-login input,
 .woocommerce-form-register input {
     font-family: 'Brandon Grotesque Light';
@@ -2804,4 +2813,13 @@ input#ywqa-submit-question {
     border: 2px solid #dfdfdf;
     border-radius: 0;
     letter-spacing: 1px;
+}
+.mtt-wholesale textarea{
+    height: auto;
+    min-height: 120px;
+}
+.mtt-wholesale a.btn.active
+{
+    background: #2e5c84 !important;
+    color: #fff !important;
 }
