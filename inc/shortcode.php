@@ -331,7 +331,7 @@ function mtt_products_categories_shortcode() {
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<div class="mtt-fitness-p-title text-center">
+					<div class="mtt-fitness-p-title text-center mb-5">
 						<h4>ALL FITNESS PRODUCTS ARE...</h4>
 					</div>
 				</div>
@@ -392,7 +392,7 @@ function mtt_products_categories_shortcode() {
 			<div class="row">
 				<div class="col-md-12">
 					<div class="mtt-fitness-p-section-btn">
-						<a class="btn rounded-0 mtt-btn px-5" href="<?php echo home_url();?>/why-titanium/">WHY YOU SHOULD BUY TITENIUM PRODUCTS?</a>
+						<a class="btn rounded-0 mtt-btn px-5 mt-4" href="<?php echo home_url();?>/why-titanium/">WHY YOU SHOULD BUY TITENIUM PRODUCTS?</a>
 					</div>
 				</div>
 			</div>

@@ -649,6 +649,9 @@
  ul {
      margin-left: 0;
 }
+.mtt-hide{
+    display: none;
+}
 .mtt-Brandon-grotesque-black {
      font-family: "Brandon Grotesque Black";
 }
@@ -2445,8 +2448,28 @@ nav.woocommerce-MyAccount-navigation ul li:not(.is-active):hover:after {
     .mtt-hide-sm{
         display: none;
     }
+    .mtt-show-sm{
+        display: block;
+    }
     .fixed-header.admin-bar .mtt-header .mtt-nav-area{
         top: 0;
+    }
+    .mtt-header .mtt-mobile-col{
+        width: 33.33%;
+        display: inline-block;
+        float: left;
+    }
+    /*wishlist & cart items for mobile view*/
+    .mtt-nav .mobile-wishlist-items,
+    .mtt-nav .mobile-cart-items{
+        position: absolute;
+        background-color: #fff;
+        color: #000;
+        padding: 0 7px;
+        margin-top: -8px;
+        margin-left: -8px;
+        border-radius: 100%;
+        font-family: 'Brandon Grotesque Black';
     }
     .mtt-single-woo-product-gallery {
          width: 100%;
@@ -2502,9 +2525,6 @@ nav.woocommerce-MyAccount-navigation ul li:not(.is-active):hover:after {
     }
      .mtt-mobile-menu-row h2 {
          font-size: 25px 
-    }
-     a.nav-link .fa {
-         color: #fff;
     }
     /* mtt-indoor-product */
     .mtt-indoor-product-col1, .mtt-indoor-product-col2, 
