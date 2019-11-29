@@ -62,7 +62,7 @@ function city_shop_scripts()
 
 	wp_enqueue_script('mmenu-js-polyfills', get_template_directory_uri() . '/mmenu/dist/mmenu.polyfills.js', array(), '20202', true);
 
-	//wp_enqueue_script( 'mmenu-js', get_template_directory_uri() . '/mmenu/dist/mmenu.js', array(), '20201', true );
+	wp_enqueue_script( 'mmenu-js', get_template_directory_uri() . '/mmenu/dist/mmenu.js', array(), '20201', true );
 
 	if (is_product()) {
 		wp_enqueue_script('flickity', get_template_directory_uri() . '/js/flickity.pkgd.min.js', array('jquery'), '202020', true);

@@ -922,35 +922,21 @@ a.wishlist_products_counter.top_wishlist-heart::before{
 /*=============================
     mtt Mobile menu by mmenu 
 ===============================*/
- .mtt-mobile-menu .mtt-mmenu-collaps-btn {
-     z-index: 999;
+#mtt-mmenu .mm-panels ul li a {
+    text-transform: uppercase;
+    font-size: 14px;
 }
- .mtt-mobile-menu .mtt-mmenu-collaps-btn i {
-     font-size: 25px;
-     color: #fff;
-     padding: 19px 15px;
+#mtt-mmenu .mm-panels .mm-navbar {
+    background-color: #121313;
+    color: #2e5c84;
+    text-transform: uppercase;
+    border: none;
 }
- .mtt-mobile-menu .mtt-mmenu-collaps-btn:before, .mtt-mobile-menu .mtt-mmenu-collaps-btn:after {
-     content: '';
-     display: none;
-     background: #000;
-     height: 5px;
+#mtt-mmenu .mm-panels .mm-navbar .mm-btn_prev {
+    color: #2e5c84;
+    background-color: #F1F1F1;
 }
- .mtt-mobile-menu-row {
-     display: none;
-}
- .mtt-mobile-menu-row .col-3, .mtt-mobile-menu-row .col-4, .mtt-mobile-menu-row .col-5 {
-     float: left;
-}
- .mtt-mobile-menu-row .col-4 {
-     padding: 0px!important;
-}
- .mtt-mobile-menu-row h2 {
-     color: #000;
-}
- .mtt-mobile-menu-row a {
-     text-decoration: none;
-}
+
 /*========================================= mtt blog layout design ===========================================*/
  #content.site-content {
     /*padding: 15px;

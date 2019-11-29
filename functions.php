@@ -232,6 +232,7 @@ if (!function_exists('city_shop_setup')) :
 		if (function_exists('register_nav_menus')) {
 			register_nav_menus(array(
 				'header_left_menu' => esc_html__('Header Left Menu', 'city-shop'),
+				'header_left_mobile_menu' => esc_html__('Header Left Mobile Menu', 'city-shop'),
 				'header_right_menu' => esc_html__('Header Right Menu', 'city-shop'),
 				'footer_menu' => esc_html__('Footer Menu', 'city-shop')
 			));

@@ -62,8 +62,22 @@
 
                             <div class="mtt-nav-left mtt-hide mtt-show-sm">
                                 <div class="mtt-mobile-nav-icon">
-                                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/img/finesscity-mobile-nav-icon.png" alt="FinessCity"></a>
+                                    <a href="#mtt-mmenu"><img src="<?php echo get_template_directory_uri(); ?>/img/finesscity-mobile-nav-icon.png" alt="FinessCity"></a>
                                 </div>
+                                <nav id="mtt-mmenu">
+                                    <?php
+                                    if (function_exists('wp_nav_menu')) {
+                                        wp_nav_menu(array(
+                                            'theme_location' => 'header_left_mobile_menu',
+                                            'container_class' => 'panel-menu',
+                                            // 'menu_class'    => '',
+                                            'echo'            => true,
+                                            'fallback_cb'     => 'wp_page_menu',
+                                            'walker'        => new city_shop_Walker_Mobile_Nav_Menu()
+                                        ));
+                                    }
+                                    ?>
+                                </nav>
                             </div>
                         </div><!-- .col-md-5 -->
                         <div class="col-md-2 mtt-mobile-col text-center text-sm-center">
