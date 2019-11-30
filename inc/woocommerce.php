@@ -348,6 +348,8 @@ function mtt_woocommerce_remove_actions() {
     remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15 );
 
     remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+    // Remove cross-sells at cart
+	remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display' );
 
 	remove_action( 'woocommerce_widget_shopping_cart_buttons', 'woocommerce_widget_shopping_cart_button_view_cart', 10 );
 	remove_theme_support( 'wc-product-gallery-zoom' );

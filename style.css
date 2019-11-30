@@ -1566,8 +1566,6 @@ ul.products li.product:hover .mtt_product_thumb_wrapper::after{
     font-size: 40px;
     color: #fff;
 }
-
-
  .woocommerce .woocommerce-message, 
  .woocommerce .woocommerce-info {
      text-align: center;
@@ -1575,7 +1573,7 @@ ul.products li.product:hover .mtt_product_thumb_wrapper::after{
      color: #fff;
      padding: 10px 20px;
      width: 100%;
-     background-color: #000;
+     background-color: #2D5C84;
 }
  .woocommerce .woocommerce-message a, 
  .woocommerce .woocommerce-info a {
@@ -1804,64 +1802,147 @@ ul.products li.product:hover .mtt_product_thumb_wrapper::after{
     text-align: center;
     width: 100%;
 }
- .woocommerce .woocommerce-cart-form, .woocommerce .cart-collaterals, .woocommerce .woocommerce-notices-wrapper {
+ .woocommerce .woocommerce-notices-wrapper {
      background-color: #F9F9F9;
 }
-}
- .woocommerce .cart-collaterals {
-     background-color: #F9F9F9;
-     padding: 15px;
-}
- .woocommerce-cart-form .cart_item {
-     padding: 15px 0px;
-     border-bottom: 1px solid #ccc;
-}
- .woocommerce-cart-form .product-thumbnail {
-     width: 15%;
-     padding: 10px;
-}
- .woocommerce-cart-form .product-remove a {
-     font-size: 30px;
-     text-decoration: none;
-     color: #ff0000;
-}
- .woocommerce-cart-form .coupon {
-     padding: 15px 0px;
-}
- .woocommerce .woocommerce-cart-form .coupon input[type="text"] {
-     padding: 8px 15px;
-}
- .woocommerce .woocommerce-cart-form .button, .woocommerce .wc-proceed-to-checkout .button, .woocommerce .woocommerce-cart-form .coupon .button {
+ .woocommerce .woocommerce-cart-form .button,
+ .woocommerce .wc-proceed-to-checkout .button,
+ .woocommerce .mtt-cart-right-sidear .coupon .button {
      background-color: #000;
      color: #fff;
      text-transform: uppercase;
      letter-spacing: 2px;
      word-spacing: 5px;
-     font-weight: bold;
-     width: 40%;
-     padding: 15px 50px;
+     padding: 12px 50px;
      margin-left: auto;
      float: right;
+     text-align: center;
 }
- .woocommerce .woocommerce-cart-form .coupon .button {
-     width: 30%;
+ .woocommerce .mtt-cart-page-content {
+     padding: 50px 0px;
 }
- .woocommerce .wc-proceed-to-checkout .button {
-     padding: 15px 150px;
-     margin-left: auto;
-     float: none;
+ .woocommerce .mtt-cart-page-content .woocommerce-cart-form thead{
+    border-bottom: 1px solid #ccc;
+ }
+ .woocommerce .mtt-cart-page-content .woocommerce-cart-form thead th {
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-family: "Brandon Grotesque Black";
+ }
+ .woocommerce .mtt-cart-page-content .actions {
+    padding: 15px 0px;
+ }
+ .woocommerce .mtt-cart-page-content .actions .cart-page-returnt-to-sop-btn {
+    border: 1px solid #000;
+    font-size: 14px;
+    border-radius: 0;
+}
+ .woocommerce .mtt-cart-page-content .actions .cart-page-returnt-to-sop-btn:hover {
+    background-color: #000;
+    color:#fff;
+}
+ .woocommerce .woocommerce-cart-form .product-remove a {
+     font-size: 16px;
      text-decoration: none;
+     color: #ff0000;
+     border: 1px solid #ccc;
+     border-radius: 100%;
+     padding: 0px 8px;
 }
- .woocommerce .cart-collaterals {
-     border-top: 1px solid #ccc;
+ .woocommerce .woocommerce-cart-form .cart_item {
+     padding: 15px 0px;
+     border-bottom: 1px solid #ccc;
 }
+ .woocommerce .woocommerce-cart-form .product-thumbnail {
+     width: 15%;
+     padding: 10px;
+}
+ .woocommerce .woocommerce-cart-form .cart_item .product-name a{
+    text-decoration: none;
+    color: #404040;
+ }
+.woocommerce .woocommerce-cart-form .cart_item .quantity input[type="number"]{
+    width: 50%;
+    margin:0px auto;
+    padding: 3px;
+    text-align: center;
+ }
  .woocommerce .cart-collaterals .woocommerce-Price-amount {
      float: right;
 }
+ .woocommerce .mtt-cart-right-sidear {
+     background-color: #F0F0F0;
+     height: 100%;
+     padding: 65px 30px;
+}
+ .woocommerce .mtt-cart-right-sidear .cart-collaterals h2 {
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    font-family: "Brandon Grotesque Black";
+}
+ .woocommerce .shipping td {
+    float: right;
+}
+
+ .woocommerce .shipping .shipping-calculator-button {
+    text-decoration: none;
+    float: right;
+}
+ .woocommerce .shipping .shipping-calculator-form {
+    background: #ddd;
+    padding: 10px;
+    float: right;
+}
+ .woocommerce .shipping .shipping-calculator-form #calc_shipping_state_field > span{
+    width: 100%;
+}
+ .woocommerce .shipping .shipping-calculator-form .button {
+    width: 100%;
+    padding: 10px 0px;
+}
+ .woocommerce .shipping .woocommerce-shipping-methods li{
+    list-style: none;
+}
+ .woocommerce .shipping .woocommerce-shipping-methods li label {
+    margin-left: 5px;
+}
+
  .woocommerce .wc-proceed-to-checkout {
      padding: 15px 0px;
      text-align: right;
 }
+ .woocommerce .wc-proceed-to-checkout .button {
+     width: 100%;
+     font-size: 0.75rem;
+     text-decoration: none;
+}
+ .woocommerce .mtt-cart-right-sidear .coupon {
+     padding: 30px 0px;
+     float: left;
+}
+ .woocommerce .mtt-cart-right-sidear .coupon label{
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-family: "Brandon Grotesque Black";
+ }
+ .woocommerce .mtt-cart-right-sidear .coupon input[type="text"] {
+     padding: 8px 15px;
+}
+ .woocommerce .mtt-cart-right-sidear .coupon .button {
+     width: 100%;
+     background-color: #ccc;
+     color: #000;
+     margin-top: 15px;
+}
+ .woocommerce .mtt-cart-right-sidear .coupon .button:hover {
+     background-color: #bbb;
+}
+
 /*Woocommerce checkout page css*/
  .mtt-checkout-page-content {
      padding: 15px 0px;
@@ -1885,10 +1966,6 @@ ul.products li.product:hover .mtt_product_thumb_wrapper::after{
      float: left;
      margin-right: 10px;
 }
-
-
-/*------------------------------------------------------------------------edited*/
-
 .woocommerce .woocommerce-checkout #billing_first_name_field,
 .woocommerce .woocommerce-checkout #billing_last_name_field,
 .woocommerce .woocommerce-checkout #billing_email_field {
@@ -1908,10 +1985,6 @@ ul.products li.product:hover .mtt_product_thumb_wrapper::after{
      display: none;
      margin:0px;
 }
-
-
-/*------------------------------------------------------------------------edited*/
-
 .woocommerce .woocommerce-checkout #billing_email_field label,
 .woocommerce .woocommerce-checkout #billing_first_name_field label,
 .woocommerce .woocommerce-checkout #billing_last_name_field label,
@@ -1925,6 +1998,14 @@ ul.products li.product:hover .mtt_product_thumb_wrapper::after{
 }
  .woocommerce-input-wrapper {
      width: 100%;
+}
+.select2-container--default .select2-selection--single{
+    padding: 10px;
+    height: 50px;
+    border:1px solid #ccc;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    padding: 24px;
 }
  .woocommerce input[type="text"], 
  .woocommerce input[type="email"], 
@@ -1945,9 +2026,6 @@ ul.products li.product:hover .mtt_product_thumb_wrapper::after{
      width: 100%;
      padding: 15px;
 }
-
-
-/*------------------------------------------------------------------------edited*/
  .woocommerce .woocommerce-checkout #billing_first_name_field input[type="text"],
  .woocommerce .woocommerce-checkout #billing_last_name_field input[type="text"],
  .woocommerce .woocommerce-checkout input[type="email"] {
@@ -1960,19 +2038,9 @@ ul.products li.product:hover .mtt_product_thumb_wrapper::after{
  .woocommerce .woocommerce-checkout input[type="email"]:focus {
     outline: none;
 }
-
-
-
-
-
-
-
-
-
 .woocommerce .woocommerce-checkout .mtt-checkout-form-title-span,
 .woocommerce .woocommerce-checkout .mtt-checkout-form-title {
     margin-top:25px;
-    /*margin-top:15px;*/
     font-family: "Brandon Grotesque Black";
 }
 .woocommerce .woocommerce-checkout #billing_email_field {
@@ -1989,8 +2057,6 @@ ul.products li.product:hover .mtt_product_thumb_wrapper::after{
 .woocommerce .woocommerce-checkout .mtt-shipping-tab-col{
     margin-top: 7rem;
 }
-
-
  .woocommerce .woocommerce-checkout-payment .wc_payment_methods {
      overflow: hidden;
 }
