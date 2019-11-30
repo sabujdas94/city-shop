@@ -2048,9 +2048,6 @@ ul.products li.product:hover .mtt_product_thumb_wrapper::after{
     position: absolute;
     top: 35px;
 }
-.woocommerce .woocommerce-checkout .shop_table.woocommerce-checkout-review-order-table{
-    display: none;
-}
 .woocommerce .woocommerce-checkout .woocommerce-billing-fields {
     padding-top: 35px;
 }
