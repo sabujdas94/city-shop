@@ -106,6 +106,7 @@
 </footer><!-- #footer -->
 
 <script>
+// for mobile menu -> mmenu
 document.addEventListener(
     "DOMContentLoaded", () => {
         new Mmenu("#mtt-mmenu", {

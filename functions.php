@@ -384,6 +384,10 @@ require get_template_directory() . '/inc/wholesale_query_hook.php';
 remove_filter('the_content', 'wpautop');
 
 function city_shop_controll_page_access() {
+	global $wp;
+	if('my-account/lost-password' == $wp->request){
+		return;
+	}
 	if (is_user_logged_in()){
 		if( is_page('Login') || is_page('Register') ){
 			wp_redirect( get_permalink( get_page_by_path('my-account') ) );

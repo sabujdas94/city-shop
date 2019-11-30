@@ -111,7 +111,8 @@
 
                                         <li class="nav-item">
                                             <?php if (is_user_logged_in()): ?>
-                                                <a class="nav-link" href="<?php echo esc_url( wc_logout_url() ); ?>">Logout</a>
+                                                <a class="nav-link" href="<?php echo home_url(); ?>/my-account">My Account</a>
+                                                <!-- <a class="nav-link" href="<?php echo esc_url( wc_logout_url() ); ?>">Logout</a> -->
                                             <?php else: ?>
                                                 <a class="nav-link" href="<?php echo home_url(); ?>/login">Login</a>
                                             <?php endif ?>

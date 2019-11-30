@@ -1798,9 +1798,15 @@ ul.products li.product:hover .mtt_product_thumb_wrapper::after{
 }
 
 /*Woocommerce cart page css*/
+.woocommerce-notices-wrapper ul{
+    list-style: none;
+    padding: 5px 10px;
+    text-align: center;
+    width: 100%;
+}
  .woocommerce .woocommerce-cart-form, .woocommerce .cart-collaterals, .woocommerce .woocommerce-notices-wrapper {
      background-color: #F9F9F9;
-     background-color: #F9F9F9;
+}
 }
  .woocommerce .cart-collaterals {
      background-color: #F9F9F9;
@@ -2384,12 +2390,15 @@ nav.woocommerce-MyAccount-navigation ul li:not(.is-active):hover:after {
     font-weight: 700;
     padding: 10px 15px;
     width: 40%;
+    text-decoration: none;
 }
 .woocommerce-account .button:hover,
 .woocommerce-account .woocommerce-Button:hover {
      color: #f9f9f9;
 }
-
+.woocommerce-account .woocommerce-MyAccount-orders.my_account_orders .button{
+    padding: 0px 10px;
+}
 /*===================Subscription Form===========*/
 .btn-subscribe{
     max-width: 200px;
