@@ -142,7 +142,7 @@ do_action('woocommerce_before_cart'); ?>
                         <tr>
                             <td colspan="6" class="actions">
                                 <a class="btn cart-page-returnt-to-sop-btn"
-                                    href="<?php echo get_permalink(woocommerce_get_page_id('shop')); ?>"><i
+                                    href="<?php echo get_permalink(wc_get_page_id('shop')); ?>"><i
                                         class="fa fa-long-arrow-left"></i> CONTINUE SHOPPING</a>
 
                                 <button type="submit" class="button" name="update_cart"
