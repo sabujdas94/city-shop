@@ -35,8 +35,10 @@
                         <div class="col-md-6 col-sm-12">
                             <div class="mtt-footer-signup-form">
                                 <form action="#">
-                                    <input type="email" class="text-center text-sm-left mb-3 mb-md-0" placeholder="Enter email address">
-                                    <input type='submit' class="btn rounded-0 mtt-btn text-uppercase px-xs-1 mb-3 mb-md-0"
+                                    <input type="email" class="text-center text-sm-left mb-3 mb-md-0"
+                                        placeholder="Enter email address">
+                                    <input type='submit'
+                                        class="btn rounded-0 mtt-btn text-uppercase px-xs-1 mb-3 mb-md-0"
                                         value="Sign Up">
                                 </form>
                             </div>
@@ -106,6 +108,17 @@
 </footer><!-- #footer -->
 
 <script>
+// for mobile menu -> mmenu
+document.addEventListener(
+    "DOMContentLoaded", () => {
+        new Mmenu("#mtt-mmenu", {
+            "extensions": [
+                "pagedim-black"
+            ],
+            "counters": true
+        });
+    }
+);
 jQuery("#close-cart-widget").on('click', function(e) {
     e.preventDefault();
     jQuery("#site-header-cart").removeClass('open');
@@ -114,7 +127,6 @@ jQuery(".menu-cart-link").on('click', function(e) {
     e.preventDefault();
     jQuery("#site-header-cart").addClass('open');
 });
-
 </script>
 
 <?php wp_footer(); ?>

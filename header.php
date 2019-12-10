@@ -45,7 +45,7 @@
                                         endif ?>">
                 <div class="container-fluid">
                     <div class=" mtt-nav-area-row row">
-                        <div class="col-md-5">
+                        <div class="col-md-5 mtt-mobile-col">
                             <div class="mtt-nav-left mtt-hide-sm">
                                 <?php
                                 if (function_exists('wp_nav_menu')) {
@@ -59,8 +59,28 @@
                                 }
                                 ?>
                             </div>
+
+                            <div class="mtt-nav-left mtt-hide mtt-show-sm">
+                                <div class="mtt-mobile-nav-icon">
+                                    <a href="#mtt-mmenu"><img src="<?php echo get_template_directory_uri(); ?>/img/finesscity-mobile-nav-icon.png" alt="FinessCity"></a>
+                                </div>
+                                <nav id="mtt-mmenu">
+                                    <?php
+                                    if (function_exists('wp_nav_menu')) {
+                                        wp_nav_menu(array(
+                                            'theme_location' => 'header_left_mobile_menu',
+                                            'container_class' => 'panel-menu',
+                                            // 'menu_class'    => '',
+                                            'echo'            => true,
+                                            'fallback_cb'     => 'wp_page_menu',
+                                            'walker'        => new city_shop_Walker_Mobile_Nav_Menu()
+                                        ));
+                                    }
+                                    ?>
+                                </nav>
+                            </div>
                         </div><!-- .col-md-5 -->
-                        <div class="col-md-2 text-center text-sm-left">
+                        <div class="col-md-2 mtt-mobile-col text-center text-sm-center">
                             <div class="mtt-logo site-branding">
                                 <?php
                                 if (get_custom_logo() != '') {
@@ -73,12 +93,12 @@
                             </div>
                         </div>
                         <!--.col-md-2 -->
-                        <div class="col-md-5">
+                        <div class="col-md-5 mtt-mobile-col">
                             <div class="mtt-nav-right mtt-hide-sm">
                                 <nav class="mtt-nav">
                                     <ul class="nav">
                                         <li class="nav-item"><a class="nav-link"
-                                                href="<?php echo home_url(); ?>/why-titanium">Our Story</a></li>
+                                                href="<?php echo home_url(); ?>/about">Our Story</a></li>
                                         <?php if (class_exists('TInvWL_Public_WishlistCounter')) : ?>
                                         <?php $count_item = TInvWL_Public_WishlistCounter::instance()->counter(); ?>
                                         <li class="nav-item">
@@ -91,7 +111,8 @@
 
                                         <li class="nav-item">
                                             <?php if (is_user_logged_in()): ?>
-                                                <a class="nav-link" href="<?php echo esc_url( wc_logout_url() ); ?>">Logout</a>
+                                                <a class="nav-link" href="<?php echo home_url(); ?>/my-account">My Account</a>
+                                                <!-- <a class="nav-link" href="<?php echo esc_url( wc_logout_url() ); ?>">Logout</a> -->
                                             <?php else: ?>
                                                 <a class="nav-link" href="<?php echo home_url(); ?>/login">Login</a>
                                             <?php endif ?>
@@ -127,6 +148,24 @@
                                                 <?php endforeach ?>
                                             </div>
                                         </div>
+                                    </ul>
+                                </nav>
+                            </div>
+
+                            <div class="mtt-nav-right mtt-hide mtt-show-sm">
+                                <nav class="mtt-nav">
+                                    <ul class="nav mtt-mobile-right-nav-icons">
+                                        <?php if (class_exists('TInvWL_Public_WishlistCounter')) : ?>
+                                            <li class="nav-item mtt-mobile-nav-wishlist-icon">
+                                                <?php $count_item = TInvWL_Public_WishlistCounter::instance()->counter(); ?>
+                                            <a class="nav-link wishlist-link"
+                                            href="<?php echo esc_url(tinv_url_wishlist_default()); ?>"><i
+                                            class="fa fa-heart-o"></i><span class="mobile-wishlist-items"><?php echo $count_item; ?></span></a>
+                                            </li>
+                                        <?php endif ?>
+                                        <li class="nav-item mtt-mobile-nav-cart-icon">
+                                            <?php city_shop_woocommerce_mobile_header_cart(); ?>
+                                        </li>
                                     </ul>
                                 </nav>
                             </div>

@@ -164,7 +164,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 						<?php esc_html_e( 'Shipping Priority', 'woocommerce' ); ?>
 					</div>
 					<div class="col-6">
-						<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>10.00</span>
+						<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span><?php echo WC()->cart->shipping_total; ?></span>
 					</div>
 				</div>
 				<div class="row">
