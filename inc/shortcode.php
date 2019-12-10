@@ -218,7 +218,7 @@ function mtt_best_seller_shortcode() {
 			<div class="row">
 				<div class="col-md-12">
 					<div class="mtt-bestseller-section-btn">
-						<a class="btn rounded-0 mtt-btn px-5" href="<?php echo get_permalink( woocommerce_get_page_id( 'shop' ) ); ?>">VIEW ALL PRODUCTS</a>
+						<a class="btn rounded-0 mtt-btn px-5" href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>">VIEW ALL PRODUCTS</a>
 					</div>
 				</div>
 			</div>
@@ -254,7 +254,7 @@ function mtt_related_products_shortcode() {
 			<div class="row">
 				<div class="col-md-12">
 					<div class="mtt-bestseller-section-btn">
-						<a class="btn rounded-0 mtt-btn px-5" href="<?php echo get_permalink( woocommerce_get_page_id( 'shop' ) ); ?>">DISCOVER MORE</a>
+						<a class="btn rounded-0 mtt-btn px-5" href="<?php echo get_permalink( wc_get_page_id( 'shop' ) ); ?>">DISCOVER MORE</a>
 					</div>
 				</div>
 			</div>
@@ -391,7 +391,7 @@ function mtt_products_categories_shortcode() {
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<div class="mtt-fitness-p-section-btn">
+					<div class="mtt-fitness-p-section-btn mt-3">
 						<a class="btn rounded-0 mtt-btn px-5" href="<?php echo home_url();?>/why-titanium/">WHY YOU SHOULD BUY TITENIUM PRODUCTS?</a>
 					</div>
 				</div>

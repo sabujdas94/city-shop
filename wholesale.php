@@ -7,7 +7,7 @@
 **/
 	get_header();
 ?>
-		<main>
+		<main class="mb-5">
 
 			<section class="section mtt-wholesale-section">
 				<div class="container">
@@ -143,7 +143,7 @@
 									    <div class="form-group col-md-3 col-sm-6 col-xs-12">
 									    	<label for="datepicker" class="mtt-Brandon-grotesque-black">Deadline To Recieve Product</label>
 									    	<div class="input-group">
-										    	<input type="text" name="dadeline" class="form-control border-right-0" id="datepicker" placeholder="MM-DD-YY">
+										    	<input type="text" name="dadeline" class="form-control border-right-0" id="datepicker" placeholder="MM-DD-YY" autocomplete="off">
 										    	<div class="input-group-append border-left-0">
 												    <span class="input-group-text"><i class="fa fa-calendar" aria-hidden="true"></i></span>
 												</div>
@@ -161,9 +161,9 @@
 									    	<label for="reference" class="mtt-Brandon-grotesque-black">How Did You Here About Us?</label>
 											<select class="form-control" name="reference" id="reference">
 												<option>AMAZON</option>
-												<option>AMAZON</option>
-												<option>AMAZON</option>
-												<option>AMAZON</option>
+												<option>GOOGLE</option>
+												<option>FACEBOOK</option>
+												<option>OTHER</option>
 											</select>
 									    </div>
 									</div>

@@ -22,6 +22,9 @@ defined( 'ABSPATH' ) || exit;
 do_action( 'woocommerce_before_mini_cart' ); ?>
 
 <?php if ( ! WC()->cart->is_empty() ) : ?>
+
+<form class="woocommerce-cart-form" id="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post" style="background: #f0f0f0;">
+	<?php do_action( 'woocommerce_before_cart_table' ); ?>
 	<ul class="woocommerce-mini-cart check cart_list product_list_widget float-none p-3 <?php echo esc_attr( $args['list_class'] ); ?>">
 		<?php
 		do_action( 'woocommerce_before_mini_cart_contents' );
@@ -52,11 +55,11 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 							<div class="mtt-mini-cart-input-qty">
 								<div class="input-group mb-3">
 								  	<div class="input-group-prepend btn-number" data-type="minus" data-field="input-qty">
-								    	<span class="input-group-text">-</span>
+								    	<span class="input-group-text wac-btn-sub">-</span>
 								  	</div>
-								  	<input type="text" name="input-qty" class="form-control input-qty" aria-label="quantity" value="<?php echo $cart_item['quantity']; ?>" min="0" max>
+								  	<input type="text" name="cart[<?php echo esc_attr( $cart_item_key ); ?>][qty]" class="form-control input-qty qty" aria-label="quantity" value="<?php echo $cart_item['quantity']; ?>" min="0" max>
 								  	<div class="input-group-append btn-number" data-type="plus" data-field="input-qty">
-								    	<span class="input-group-text">+</span>
+								    	<span class="input-group-text wac-btn-inc">+</span>
 								  	</div>
 								</div>
 								<div class="mtt-mini-cart-price">
@@ -101,10 +104,14 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 		do_action( 'woocommerce_widget_shopping_cart_total' );
 		?>
 	</p>
+	<?php wp_nonce_field( 'woocommerce-cart', 'woocommerce-cart-nonce' ); ?>
+	<input type="hidden" name="_wp_http_referer" value="" />
+	<button type="submit" class="button sr-only" id="mini-update-cart" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
+
+	</form>
 
 	<?php do_action( 'woocommerce_widget_shopping_cart_before_buttons' ); ?>
-
-	<p class="woocommerce-mini-cart__buttons buttons mt-4"><?php do_action( 'woocommerce_widget_shopping_cart_buttons' ); ?></p>
+		<p class="woocommerce-mini-cart__buttons buttons mt-4"><?php do_action( 'woocommerce_widget_shopping_cart_buttons' ); ?></p>
 
 	<?php do_action( 'woocommerce_widget_shopping_cart_after_buttons' ); ?>
 
@@ -115,71 +122,4 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 <?php endif; ?>
 
 <?php do_action( 'woocommerce_after_mini_cart' ); ?>
-<script>
-	jQuery('.btn-number').click(function(e){
-        e.preventDefault();
-        
-        fieldName = jQuery(this).attr('data-field');
-        type      = jQuery(this).attr('data-type');
-        var input = jQuery(this).parent('.input-group').find('.'+ fieldName);
-        var currentVal = parseInt(input.val());
-        if (!isNaN(currentVal)) {            
-            if(type == 'minus') {
-                if(currentVal > input.attr('min')) {
-                    input.val(currentVal - 1).change();
-                } 
-                if(parseInt(input.val()) == input.attr('min')) {
-                    jQuery(this).attr('disabled', true);
-                }
 
-            } else if(type == 'plus') {
-                if(currentVal < input.attr('max') || input.attr('max').length == 0 ) {
-                    input.val(currentVal + 1).change();
-                }
-                if(parseInt(input.val()) == input.attr('max')) {
-                    jQuery(this).attr('disabled', true);
-                }
-            }
-        } else {
-            input.val(0);
-        }
-    });
-    jQuery('.input-number').focusin(function(){
-       jQuery(this).data('oldValue', jQuery(this).val());
-    });
-    jQuery('.input-number').change(function() {
-        
-        minValue =  parseInt(jQuery(this).attr('min'));
-        maxValue =  parseInt(jQuery(this).attr('max'));
-        valueCurrent = parseInt(jQuery(this).val());
-        
-        name = jQuery(this).attr('name');
-        if(valueCurrent >= minValue) {
-            jQuery(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
-        } else {
-            alert('Sorry, the minimum value was reached');
-            jQuery(this).val(jQuery(this).data('oldValue'));
-        }
-        if(valueCurrent <= maxValue) {
-            jQuery(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
-        } else {
-            alert('Sorry, the maximum value was reached');
-            jQuery(this).val(jQuery(this).data('oldValue'));
-        }    
-    });
-    jQuery(".input-number").keydown(function (e) {
-        // Allow: backspace, delete, tab, escape, enter and .
-        if (jQuery.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
-             // Allow: Ctrl+A
-            (e.keyCode == 65 && e.ctrlKey === true) || 
-             // Allow: home, end, left, right
-            (e.keyCode >= 35 && e.keyCode <= 39)) {
-                 // let it happen, don't do anything
-                 return;
-        }
-        // Ensure that it is a number and stop the keypress
-        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
-            e.preventDefault();
-        }
-    });
-</script>

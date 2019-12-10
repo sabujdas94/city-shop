@@ -47,6 +47,7 @@
         scrollTopFunction();
         popupNotice();
     });
+    /*
     jQuery('.btn-number').click(function(e){
         e.preventDefault();
         
@@ -79,7 +80,7 @@
         } else {
             input.val(0);
         }
-    });
+    }); */
     jQuery('.input-number').focusin(function(){
        jQuery(this).data('oldValue', jQuery(this).val());
     });
@@ -145,8 +146,13 @@
         var $carouselNavCells = $carouselNav.find('.carousel-cell');
 
         $carouselNav.on( 'click', '.carousel-cell', function( event ) {
-          var index = jQuery( event.currentTarget ).index();
-          $carousel.flickity( 'selectCell', index );
+            var index = jQuery( event.currentTarget ).index();
+            jQuery(".reset_variations").trigger('click');
+            $carousel.flickity( 'selectCell', index );
+        });
+
+        jQuery(".swatch-anchor").on('click', function( event ){
+            $carousel.flickity( 'selectCell', 0 );
         });
 
         var flkty = $carousel.data('flickity');
@@ -178,6 +184,7 @@
             $carouselNav.animate({scrollTop: scrollY});
         });
     }
+    
 })(jQuery);
 
 

@@ -29,7 +29,7 @@ function city_shop_styles()
 	wp_enqueue_style('slick', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
 	wp_enqueue_style('slick-theme', 'https://kenwheeler.github.io/slick/slick/slick-theme.css');
 
-	wp_enqueue_style('mmenu-css', get_template_directory_uri() . '/mmenu/dist/mmenu.css');
+	// wp_enqueue_style('mmenu-css', get_template_directory_uri() . '/mmenu/dist/mmenu.css');
 	wp_enqueue_style('select2', get_template_directory_uri() . '/vendors/select2/select2.min.css');
 	wp_enqueue_style('select2-bootstrap4', get_template_directory_uri() . '/vendors/select2/select2-bootstrap4.css');
 	wp_enqueue_style('jquery-ui', get_template_directory_uri() . '/vendors/jquery-ui/jquery-ui.min.css');
@@ -69,6 +69,9 @@ function city_shop_scripts()
 	}
 
 	wp_enqueue_script('city-shop-js', get_template_directory_uri() . '/js/city-shop.js', array('jquery', 'slick'), '202020', true);
+
+	wp_enqueue_script('wc-cart-fragments');
+	wp_enqueue_script('wc-cart');
 
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
